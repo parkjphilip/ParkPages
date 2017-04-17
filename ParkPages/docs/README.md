@@ -5,7 +5,7 @@
 [Trello link][trello]
 
 [heroku]: http://www.herokuapp.com
-[trello]: https://trello.com/b/ALgfuX0Q/freshernote
+[trello]: https://trello.com/b/j4GnNUrW/parkpages
 
 ## Minimum Viable Product
 
@@ -40,17 +40,15 @@ ParkPages is a web application inspired by Yelp built using Ruby on Rails and Re
 
 ### Phase 2: Parks Model, API, and Components (2 days)
 
-**Objective:** Parks will be rendered on their show pages with appropriate content.
-Parks can be created, read, edited, and destroyed through the API.
+**Objective:** Parks will be rendered on their show pages with appropriate content.Parks can be created, read, edited, and destroyed through the API.
 
 ### Phase 3: Reviews Page (2 days)
 
-**Objective:** All reviews for a particular park will be displayed on a park's
-individual page. Reviews can be created, read, edited, and destroyed through the API. Users can add images to their reviews.
+**Objective:** All reviews for a particular park will be displayed on a park's individual page. Reviews can be created, read, edited, and destroyed through the API. Users can add images to their reviews.
 
 ### Phase 4: Home Page and Search Bar  (2 days)
 
-**Objective:** Create a Home Page with a Search Bar that can search for restaurants. Users can also search for parks through the use of tags.
+**Objective:** Create a Home Page with a Search Bar that can search for restaurants.
 
 ### Phase 5: Map (1 day)
 

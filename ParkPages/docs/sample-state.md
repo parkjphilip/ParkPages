@@ -20,16 +20,6 @@
       photo_url: "testpark.com/images/123"
       lat_coordinate: 12.1234,
       long_coordinate: 123.12345,    
-      tags: {
-        1: {
-          id: 1,             
-          name: "tennis"
-        },
-        2: {
-          id: 2,             
-          name: "hiking"
-        },
-      }  
     }
   }
   reviews: {

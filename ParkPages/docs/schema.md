@@ -46,22 +46,6 @@ belongs_to :user
 belongs_to :park
 has_many :photos
 
-## tags
-column name       | data type | details
-------------------|-----------|-----------------------
-id                | integer   | not null, primary key
-name              | string    | not null, indexed
-
-has_many :parks, through :taggings
-
-## taggings
-column name     | data type | details
-----------------|-----------|-----------------------
-id              | integer   | not null, foreign key
-park_id         | integer   | not null, foreign key (references parks), indexed
-tag_id          | integer   | not null, foreign key (references tags), indexed
-
-join table for :tags and :parks
 
 ## photos
 column name   | data type | details
