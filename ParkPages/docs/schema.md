@@ -51,8 +51,6 @@ has_many :photos
 column name   | data type | details
 --------------|-----------|-----------------------
 id            | integer   | not null, primary key
-user_id       | integer   | not null, foreign key (references users)
-park_id       | integer   | not null, foreign key (references parks)
 review_id     | integer   | not null, foreign key (references reviews)
 image_url     | string    | not null
 
