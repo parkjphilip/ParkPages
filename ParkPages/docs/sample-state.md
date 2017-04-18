@@ -47,7 +47,7 @@
       review_id: 1,
       // park_id: 1,
       // user_id: 1,
-      image_url: "testpicture.com"
+      // image_url: "testpicture.com"
     }
   }
 }
