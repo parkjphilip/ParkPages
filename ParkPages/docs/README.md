@@ -5,7 +5,7 @@
 [Trello link][trello]
 
 [heroku]: http://www.herokuapp.com
-[trello]: https://trello.com/b/ALgfuX0Q/freshernote
+[trello]: https://trello.com/b/j4GnNUrW/parkpages
 
 ## Minimum Viable Product
 
@@ -20,17 +20,11 @@ ParkPages is a web application inspired by Yelp built using Ruby on Rails and Re
 - [ ] Production README [sample](docs/production_readme.md)
 
 ## Design Docs
-* [View Wireframes][wireframes]
-* [React Components][components]
-* [API endpoints][api-endpoints]
-* [DB schema][schema]
-* [Sample State][sample-state]
-
-[wireframes]: docs/wireframes
-[components]: docs/component-hierarchy.md
-[sample-state]: docs/sample-state.md
-[api-endpoints]: docs/api-endpoints.md
-[schema]: docs/schema.md
+- [View Wireframes](wireframes)
+- [React Components](component-hierarchy.md)
+- [API endpoints](api-endpoints.md)
+- [DB schema](schema.md)
+- [Sample State](sample-state.md)
 
 ## Implementation Timeline
 
@@ -40,17 +34,24 @@ ParkPages is a web application inspired by Yelp built using Ruby on Rails and Re
 
 ### Phase 2: Parks Model, API, and Components (2 days)
 
-**Objective:** Parks will be rendered on their show pages with appropriate content.
-Parks can be created, read, edited, and destroyed through the API.
+**Objective:** Parks will be rendered on their show pages with appropriate content.Parks can be created, read, edited, and destroyed through the API.
 
 ### Phase 3: Home Page and Search Bar  (2 days)
 
+<<<<<<< HEAD
 **Objective:** Create a Home Page with a Search Bar that can search for restaurants. Users can also search for parks through the use of tags.
+=======
+**Objective:** All reviews for a particular park will be displayed on a park's individual page. Reviews can be created, read, edited, and destroyed through the API. Users can add images to their reviews.
+>>>>>>> 9d520beae7d419c589138ba5732170d6f9bf884a
 
 ### Phase 4: Reviews Page (2 days)
 
+<<<<<<< HEAD
 **Objective:** All reviews for a particular park will be displayed on a park's
 individual page. Reviews can be created, read, edited, and destroyed through the API. Users can add images to their reviews.
+=======
+**Objective:** Create a Home Page with a Search Bar that can search for restaurants.
+>>>>>>> 9d520beae7d419c589138ba5732170d6f9bf884a
 
 ### Phase 5: Map (1 day)
 

@@ -20,26 +20,23 @@
       photo_url: "testpark.com/images/123"
       lat_coordinate: 12.1234,
       long_coordinate: 123.12345,    
-      tags: {
-        1: {
-          id: 1,             
-          name: "tennis"
-        },
-        2: {
-          id: 2,             
-          name: "hiking"
-        },
-      }  
     }
   }
-  reviews: {
-    1: {
+  reviews: [
+    {
       id: 1,             
       rating: 4,
       body: "This park is a very good park. Great for dog-walking...",
       user_id: 1,
       park_id: 1
+      photos: [
+        {
+          id: 1,
+          image_url: "testpicture.com"
+        }
+      ]
     }
+<<<<<<< HEAD
   }
   photos: {
     1: {
@@ -50,5 +47,8 @@
       // image_url: "testpicture.com"
     }
   }
+=======
+  ]
+>>>>>>> 9d520beae7d419c589138ba5732170d6f9bf884a
 }
 ```
