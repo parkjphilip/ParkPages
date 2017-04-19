@@ -24,7 +24,8 @@ class SessionForm extends React.Component {
 		e.preventDefault();
 		debugger
 		const user = this.state;
-		this.props.processForm(user);
+		this.props.processForm(user)
+							.then(() => this.props.router.push("/"));
 	}
 
 	navLink() {
@@ -39,7 +40,7 @@ class SessionForm extends React.Component {
   		return(
   			<ul>
   				{this.props.errors.map((error, i) => (
-  					<li>
+  					<li key={`${i}`}>
   						{error}
   					</li>
   				))}

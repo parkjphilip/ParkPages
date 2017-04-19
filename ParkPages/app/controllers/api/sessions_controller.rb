@@ -1,20 +1,25 @@
 class Api::SessionsController < ApplicationController
 
 	def create
-		debugger
 		@user = User.find_by_credentials(
       params[:user][:username],
       params[:user][:password]
     )
     if @user
 			login(@user)
-			debugger
 			render "api/users/show"
 		else
-			render(
-        json: ["Invalid username/password combination"],
-        status: 401
-      )
+			if(params[:user][:username] = "" || params[:user][:password] = "")
+				render(
+					json: ["Username/password can't be blank."],
+					status: 401
+				)
+			else
+				render(
+	        json: ["Invalid username/password combination"],
+	        status: 401
+	      )
+			end
 		end
 	end
 
