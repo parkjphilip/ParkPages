@@ -1,0 +1,24 @@
+header {
+  background-color: #d32323;
+  height: 75px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.login-signup {
+  display: flex;
+  width: 150px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  padding-right: 160px;
+}
+
+.login {
+  border: 10px;
+  border-color: white;
+}
+
+.login-signup a {
+  color: white;
+  margin: 5px;
+}
