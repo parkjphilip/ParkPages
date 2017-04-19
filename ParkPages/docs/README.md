@@ -4,7 +4,7 @@
 
 [Trello link][trello]
 
-[heroku]: http://www.herokuapp.com
+[heroku]: https://parkpages.herokuapp.com/
 [trello]: https://trello.com/b/j4GnNUrW/parkpages
 
 ## Minimum Viable Product
