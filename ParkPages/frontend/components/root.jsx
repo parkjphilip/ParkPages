@@ -10,7 +10,6 @@ const Root = ({ store }) => {
   const redirectIfLoggedIn = (nextState, replace) => {
     console.log('i am here');
     const currentUser = store.getState().session.currentUser;
-    debugger
     if (currentUser) {
       replace('/');
     }
