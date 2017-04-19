@@ -22,6 +22,10 @@ export const logout = () => dispatch => (
   APIUtil.logout().then(user => dispatch(receiveCurrentUser(null)))
 );
 
+export const loginGuest = () => (dispatch) => (
+  APIUtil.loginGuest().then(guest => dispatch(receiveCurrentUser(guest)))
+);
+
 export const receiveCurrentUser = currentUser => {
   return {
     type: RECEIVE_CURRENT_USER,

@@ -13,3 +13,5 @@ const App = ( props ) => {
 };
 
 export default App;
+
+// <img src=" " alt="Smiley face" height="42" width="42"/>

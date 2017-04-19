@@ -32,3 +32,16 @@ export const logout = () => {
     url: '/api/session'
   });
 };
+
+export const loginGuest = () => {
+  return $.ajax({
+    method: 'post',
+    url: '/api/session',
+    data: {
+      user: {
+        username: 'guest',
+        password: 'password123'
+      }
+    }
+  });
+};
