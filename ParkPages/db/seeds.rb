@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 user1 = User.create({username: "philip", password: "password123"});
+guest = User.create({username: "guest", password: "password123"});

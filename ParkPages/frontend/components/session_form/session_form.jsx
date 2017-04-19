@@ -6,6 +6,7 @@ class SessionForm extends React.Component {
 		super(props);
 		this.state = { username: "", password: "" };
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleGuestLogin = this.handleGuestLogin.bind(this);
 	}
 
 	redirectIfLoggedIn() {
@@ -32,6 +33,13 @@ class SessionForm extends React.Component {
 		e.preventDefault();
 		const user = this.state;
 		this.props.processForm(user)
+							.then(() => this.props.router.push("/"));
+	}
+
+	handleGuestLogin(e) {
+		debugger
+		e.preventDefault();
+		this.props.processForm({username: 'guest', password: 'password123'})
 							.then(() => this.props.router.push("/"));
 	}
 
@@ -81,6 +89,9 @@ class SessionForm extends React.Component {
 						<br/>
 						<input type="submit" value="Submit" />
 					</div>
+				</form>
+				<form onClick={this.handleGuestLogin}>
+					<input type="submit" value="Click here for guest login"/>
 				</form>
 			</div>
 		);

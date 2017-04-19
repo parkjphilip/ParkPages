@@ -8,7 +8,6 @@ import SessionFormContainer from './session_form/session_form_container';
 const Root = ({ store }) => {
 
   const redirectIfLoggedIn = (nextState, replace) => {
-    console.log('i am here');
     const currentUser = store.getState().session.currentUser;
     if (currentUser) {
       replace('/');
