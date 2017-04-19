@@ -1,24 +1,35 @@
 class Api::SessionsController < ApplicationController
 
 	def create
-		@user = User.find_by_credentials(
-      params[:user][:username],
-      params[:user][:password]
-    )
+		user = params[:user][:username]
+		password = params[:user][:password]
+
+		@user = User.find_by_credentials(user, password)
     if @user
 			login(@user)
 			render "api/users/show"
 		else
-			if(params[:user][:username] = "" || params[:user][:password] = "")
+			case
+			when user == "" && password != ""
 				render(
-					json: ["Username/password can't be blank."],
+					json: ["Username can't be blank"],
+					status: 401
+				)
+			when user != "" && password == ""
+				render(
+					json: ["Password can't be blank"],
+					status: 401
+				)
+			when user == "" && password == ""
+				render(
+					json: ["Username & password can't be blank"],
 					status: 401
 				)
 			else
 				render(
-	        json: ["Invalid username/password combination"],
-	        status: 401
-	      )
+					json: ["Invalid login credentials- please try again"],
+					status: 401
+				)
 			end
 		end
 	end
