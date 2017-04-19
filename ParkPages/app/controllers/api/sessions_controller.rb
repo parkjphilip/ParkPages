@@ -5,9 +5,10 @@ class Api::SessionsController < ApplicationController
       params[:user][:username],
       params[:user][:password]
     )
-
+		debugger
     if @user
 			login(@user)
+			debugger
 			render "api/users/show"
 		else
 			render(
@@ -29,5 +30,5 @@ class Api::SessionsController < ApplicationController
       )
 		end
 	end
-  
+
 end
