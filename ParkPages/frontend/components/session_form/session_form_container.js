@@ -4,7 +4,6 @@ import SessionForm from './session_form';
 
 
 const mapStateToProps = ( state ) => {
-  debugger
   return ({
     loggedIn: Boolean(state.session.currentUser),
     errors: state.session.errors
@@ -12,10 +11,8 @@ const mapStateToProps = ( state ) => {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  debugger
   const formType = ownProps.location.pathname.slice(1);
-  const processForm = (ownProps.formType === 'login') ? login : signup;
-  debugger
+  const processForm = (formType === 'login') ? login : signup;
 
   return ({
     processForm: user => dispatch(processForm(user)),
