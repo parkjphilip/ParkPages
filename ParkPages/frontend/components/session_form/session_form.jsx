@@ -14,6 +14,14 @@ class SessionForm extends React.Component {
 		}
 	}
 
+	// componentWillReceiveProps(newProps){
+	// 	const currentPath = this.props.route.path;
+	// 	if (currentPath !== this.oldRoutePath){
+	// 		newProps.resetErrors();
+	// 	}
+	// 	this.oldRoutePath = currentPath;
+	// }
+
 	update(field) {
 		return e => this.setState({
 			[field]: e.currentTarget.value
