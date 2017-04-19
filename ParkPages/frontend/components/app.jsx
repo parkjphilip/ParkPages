@@ -6,7 +6,6 @@ const App = ( props ) => {
     <div>
       <h1>Park Pages App Page</h1>
       <GreetingContainer />
-      { props.children }
     </div>
   );
 };
