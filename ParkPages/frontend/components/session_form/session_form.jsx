@@ -16,11 +16,9 @@ class SessionForm extends React.Component {
 	}
 
 	componentWillReceiveProps(newProps){
-		const currentPath = this.props.route.path;
-		if (currentPath !== this.oldRoutePath){
-			newProps.resetErrors();
+		if (newProps.formType !== this.props.formType){
+			this.props.resetErrors();
 		}
-		this.oldRoutePath = currentPath;
 	}
 
 	update(field) {
@@ -46,13 +44,13 @@ class SessionForm extends React.Component {
 		if (this.props.formType === "login") {
 			return <Link to="/signup">sign up</Link>;
 		} else {
-			return <Link to="/login">log in instead</Link>;
+			return <Link to="/login">log in</Link>;
 		}
 	}
 
 	renderErrors() {
   		return(
-  			<ul>
+  			<ul className="login-signup-errors">
   				{this.props.errors.map((error, i) => (
   					<li key={`${i}`}>
   						{error}
@@ -63,13 +61,14 @@ class SessionForm extends React.Component {
 	}
 
 	render() {
+		let action = this.props.formType;
 		return (
 			<div className="login-form-header">
 				<div className="login-form-container">
 					<form onSubmit={this.handleSubmit} className="login-form-box">
-						Welcome to ParkPages!
+						<h1 className="login-welcome">Welcome to ParkPages!</h1>
 						<br/>
-						Please {this.props.formType} or {this.navLink()}
+						<h1 className="please-message">Please {this.props.formType} or {this.navLink()} instead</h1>
 						{this.renderErrors()}
 						<div className="login-signup-form">
 							<br/>
@@ -83,12 +82,14 @@ class SessionForm extends React.Component {
 									onChange={this.update("password")}
 									className="login-input" placeholder="Password"/>
 							<br/>
-							<input type="submit" value="Submit" />
+							<input type="submit" value={this.props.formType} className="login-signup-submit"/>
 						</div>
 					</form>
+
 					<form onClick={this.handleGuestLogin}>
-						<input type="submit" value="Guest Login"/>
+						<input type="submit" className="guest-submit" value="Guest Login"/>
 					</form>
+					<img className="login-signup-image" src="https://cdn.pixabay.com/photo/2016/02/18/11/50/animal-1207073__480.jpg" />
 				</div>
 			</div>
 		);

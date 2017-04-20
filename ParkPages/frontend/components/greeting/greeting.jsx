@@ -5,7 +5,7 @@ const sessionLinks = () => (
   <div className="welcome-header">
       <nav className="login-signup">
         <Link to="/login" className="login" activeClassName="current">Login</Link>
-        <Link to="/signup" className="signup" activeClassName="current">Sign up</Link>
+        <Link to="/signup" className="signup" activeClassName="current">Sign Up</Link>
       </nav>
 
       <img className="home-image" src="https://images.pexels.com/photos/2946/dawn-nature-sunset-trees.jpg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Park Image" />

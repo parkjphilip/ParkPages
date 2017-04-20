@@ -11,5 +11,3 @@ const App = ({ children }) => {
 };
 
 export default App;
-
-// <img src=" " alt="Smiley face" height="42" width="42"/>

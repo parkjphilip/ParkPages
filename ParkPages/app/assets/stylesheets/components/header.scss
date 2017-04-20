@@ -1,0 +1,43 @@
+.header-group {
+  background-color: #d32323;
+  height: 75px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-name {
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  display: inline-block;
+  padding-right: 25px;
+}
+
+.header-button {
+  background-color: d32323;
+  margin-right: 15%;
+  border-color: white;
+  border-style: solid;
+  border-width: medium;
+  padding: 5px 1px 5px 1px;
+  border-radius: 10px;
+  white-space: nowrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-button:hover {
+  background-color: white;
+  color: gray;
+}
+
+// .signup {
+//   border-color: white;
+//   border-style: solid;
+//   border-width: medium;
+//   padding: 5px 1px 5px 1px;
+//   border-radius: 10px;
+//   white-space: nowrap;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }

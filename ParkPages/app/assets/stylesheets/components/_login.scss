@@ -1,0 +1,62 @@
+.login-input {
+  width: 200px;
+  height: 30px;
+  font-size: 20;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 3;
+}
+
+.login-welcome {
+  color: #C00F00;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.login-form-box {
+  text-align: center;
+  width: 300px;
+}
+
+.please-message {
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-weight: bold;
+}
+
+.login-signup-submit {
+  text-transform: capitalize;
+  background-color: #D62420;
+  width: 210px;
+  color: white;
+  height: 35px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.guest-submit {
+  position: absolute;
+  left: 45px;
+  background-color: #D62420;
+  width: 210px;
+  color: white;
+  height: 35px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.login-signup-errors {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.login-signup-image {
+  position: absolute;
+  left: 500px;
+  bottom: -120px;
+}
