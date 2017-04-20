@@ -13,8 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
- /*CSS RESET*/
-
-/*Components*/
-@import "components/"
