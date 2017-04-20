@@ -5,9 +5,9 @@ export const fetchParks = () => {
   });
 };
 
-export const fetchPark = (park) => {
+export const fetchPark = (id) => {
   return $.ajax({
     method: 'get',
-    url: `/api/park/${park.id}`
+    url: `/api/parks/${id}`
   });
 };

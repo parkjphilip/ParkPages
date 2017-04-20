@@ -13,8 +13,9 @@ const ParkReducer = (state = {}, action) => {
       let park = action.park;
       return merge({}, state, { park });
     default:
+
       return state;
-  }
+  };
 };
 
 export default ParkReducer;

@@ -39,6 +39,10 @@ input::-webkit-input-placeholder {
   font-size: 14px;
 }
 
+.login-signup-submit:hover {
+  cursor: pointer;
+}
+
 .guest-submit {
   position: absolute;
   left: 45px;
@@ -50,6 +54,10 @@ input::-webkit-input-placeholder {
   font-size: 14px;
 }
 
+.guest-submit:hover {
+  cursor:pointer;
+}
+
 .login-signup-errors {
   list-style-type: none;
   padding-top: 10px;
@@ -58,5 +66,8 @@ input::-webkit-input-placeholder {
 .login-signup-image {
   position: absolute;
   left: 500px;
-  bottom: -120px;
+  top: -20px;
+  width: 260px;
+  height: 320px;
+
 }

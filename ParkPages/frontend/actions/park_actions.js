@@ -4,8 +4,8 @@ export const RECEIVE_PARK = "RECEIVE_PARK";
 export const RECEIVE_PARKS = "RECEIVE_PARKS";
 // export const RESET_ERRORS = "RESET_ERRORS";
 
-export const fetchPark = park => dispatch => {
-  return ParkAPIUtil.fetchPark(park).then(park => dispatch(receivePark(park)));
+export const fetchPark = id => dispatch => {
+  return ParkAPIUtil.fetchPark(id).then(park => dispatch(receivePark(park)));
 }
 
 export const fetchParks = () => dispatch => {
@@ -23,5 +23,5 @@ export const receiveParks = parks => {
   return {
     type: RECEIVE_PARKS,
     parks
-  }
+  };
 }

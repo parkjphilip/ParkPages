@@ -1,27 +1,18 @@
 import { connect } from 'react-redux';
-import { login, logout, signup, resetErrors, loginGuest } from '../../actions/park_actions';
-import SessionForm from './session_form';
+import { fetchPark } from '../../actions/park_actions';
+import ParkDetail from './park_detail';
 
 
-const mapStateToProps = ( state ) => {
+const mapStateToProps = ( state, ownProps ) => {
   return ({
-    park: state.parks[ownProps.params.parkId]
+    parkId: ownProps.params.parkId
   });
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
-  const formType = ownProps.location.pathname.slice(1);
-  const processForm = (formType === 'login') ? login : signup;
-
+const mapDispatchToProps = ( dispatch ) => {
   return ({
-    processForm: user => dispatch(processForm(user)),
-    resetErrors: () => dispatch(resetErrors()),
-    loginGuest: () => dispatch(loginGuest()),
-    formType
+    fetchPark: id => dispatch(fetchPark(id))
   });
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(SessionForm);
+export default connect(mapStateToProps, mapDispatchToProps)(ParkDetail);

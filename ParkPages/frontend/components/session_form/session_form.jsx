@@ -89,7 +89,7 @@ class SessionForm extends React.Component {
 					<form onClick={this.handleGuestLogin}>
 						<input type="submit" className="guest-submit" value="Guest Login"/>
 					</form>
-					<img className="login-signup-image" src="https://cdn.pixabay.com/photo/2016/02/18/11/50/animal-1207073__480.jpg" />
+					<img className="login-signup-image" src="/images/animal-1207073_1280.jpg" />
 				</div>
 			</div>
 		);
