@@ -18,7 +18,7 @@ column names    | data type | details
 ----------------|-----------|----------------------
 id              | integer   | not null, primary key
 name            | string    | not null, indexed
-street_name     | string    | not null
+street          | string    | not null
 city            | string    | not null
 state           | string    | not null
 zip_code        | string    | not null
