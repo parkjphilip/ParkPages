@@ -11,7 +11,6 @@ password_digest | string    | not null
 session_token   | string    | not null, unique
 
 has_many :reviews
-has_many :parks
 has_many :photos
 
 ## parks
@@ -29,7 +28,6 @@ photo_url       | string    | not null
 latitude        | float     | not null
 longitude       | float     | not null
 
-belongs_to :user
 has_many :reviews
 has_many :photos
 
