@@ -1,13 +1,11 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 
-const App = ( props ) => {
+const App = ({ children }) => {
   return(
     <div>
-      <header>
-        <GreetingContainer />
-      </header>
-      { props.children }
+      <GreetingContainer />
+      { children }
     </div>
   );
 };

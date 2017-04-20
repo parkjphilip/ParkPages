@@ -2,10 +2,14 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const sessionLinks = () => (
-  <nav className="login-signup">
-      <Link to="/login" className="login" activeClassName="current">Login</Link>
-      <Link to="/signup" className="signup" activeClassName="current">Sign up</Link>
-  </nav>
+  <div className="welcome-header">
+      <nav className="login-signup">
+        <Link to="/login" className="login" activeClassName="current">Login</Link>
+        <Link to="/signup" className="signup" activeClassName="current">Sign up</Link>
+      </nav>
+
+      <img className="home-image" src="https://images.pexels.com/photos/2946/dawn-nature-sunset-trees.jpg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Park Image" />
+  </div>
 );
 
 const personalGreeting = (currentUser, logout) => (
@@ -20,3 +24,11 @@ const Greeting = ({ currentUser, logout }) => (
 );
 
 export default Greeting;
+
+
+
+
+
+
+<img className="home-image
+" src="https://images.pexels.com/photos/2946/dawn-nature-sunset-trees.jpg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Park Image" />

@@ -1,4 +1,4 @@
-header {
+.welcome-header {
   background-color: #d32323;
   height: 75px;
   display: flex;
@@ -8,17 +8,28 @@ header {
 
 .login-signup {
   display: flex;
-  width: 150px;
+  width: 200px;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  padding-right: 160px;
-}
-
-.login {
-  border: 10px;
-  border-color: white;
+  margin-right: 240px;
 }
 
 .login-signup a {
   color: white;
-  margin: 10px;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+.login:hover {
+  border-bottom: solid;
+  border-color: white;
+}
+
+.signup:hover {
+
+}
+
+.signup {
+  border-color: white;
+  border-width: thick;
+  z-index: 100000;
 }
