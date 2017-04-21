@@ -11,6 +11,8 @@ class ParkIndex extends React.Component {
     this.props.fetchParks();
   }
 
+
+
   // componentWillReceiveProps(newProps) {
   // if (this.props.params.id !== newProps.params.id) {
   //   this.props.fetchPark(newProps.params.id);

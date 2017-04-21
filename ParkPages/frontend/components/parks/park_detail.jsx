@@ -28,10 +28,11 @@ class ParkDetail extends React.Component {
       return (
         <div className="show-park-container">
           <div className="show-name"> {this.props.currentPark.name} </div>
-          <div className="show-street"> {this.props.currentPark.street} </div>
-          <div className="city"> {this.props.currentPark.city} </div>
-          <div className="state"> {this.props.currentPark.state} </div>
-          <div className="zip_code"> {this.props.currentPark.zip_code} </div>
+          <div className="address1"> {this.props.currentPark.street} </div>
+          <div className="address2"> {this.props.currentPark.city}
+            {this.props.currentPark.state} {this.props.currentPark.zip_code}
+            {this.props.currentPark.phone_number}
+          </div>
           <div className="phone_number"> {this.props.currentPark.phone_number} </div>
           <div className="web_site"> {this.props.currentPark.web_site} </div>
         </div>
