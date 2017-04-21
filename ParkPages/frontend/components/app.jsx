@@ -1,14 +1,15 @@
 import React from 'react';
-import GreetingContainer from './greeting/greeting_container';
+import { connect } from 'react-redux';
+import HeaderContainer from './header/header_container';
 
-const App = ({ children }) => {
-  return(
-    <div>
-      
-      <GreetingContainer />
-      { children }
-    </div>
-  );
+const App = ( props ) => {
+    return (
+      <div>
+        <HeaderContainer />
+        { props.children }
+      </div>
+    );
 };
+
 
 export default App;
