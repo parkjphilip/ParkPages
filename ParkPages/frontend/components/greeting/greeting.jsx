@@ -2,13 +2,17 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const sessionLinks = () => (
-  <div className="welcome-header">
+  <div className="welcome-page" >
+    <div className="welcome-header" >
       <nav className="login-signup">
         <Link to="/login" className="login" activeClassName="current">Login</Link>
         <Link to="/signup" className="signup" activeClassName="current">Sign Up</Link>
       </nav>
-
-      <img className="home-image" src="https://images.pexels.com/photos/2946/dawn-nature-sunset-trees.jpg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Park Image" />
+    </div>
+    <div className="image-box">
+      <img className="home-image" src="/images/homeimage.png" alt="Park Image" />
+      <img className="home-logo" src="/images/ParkPages.png" alt="Logo" />
+    </div>
   </div>
 );
 
@@ -24,11 +28,3 @@ const Greeting = ({ currentUser, logout }) => (
 );
 
 export default Greeting;
-
-
-
-
-
-
-<img className="home-image
-" src="https://images.pexels.com/photos/2946/dawn-nature-sunset-trees.jpg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Park Image" />

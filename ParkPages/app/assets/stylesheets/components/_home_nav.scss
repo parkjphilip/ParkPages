@@ -1,16 +1,15 @@
 .welcome-header {
-  background-color: #d32323;
   height: 75px;
   display: flex;
   justify-content: flex-end;
+  z-index: -1;
   align-items: center;
 }
 
 .login-signup {
-  display: flex;
-  width: 200px;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  margin-right: 15%;
+  margin-right: 100px;
+  z-index: 1;
 }
 
 .login-signup a {
@@ -21,6 +20,7 @@
 
 .login {
   margin-top: 10px;
+  z-index: 1;
 }
 
 .signup {
@@ -32,6 +32,7 @@
   white-space: nowrap;
   padding-left: 15px;
   padding-right: 15px;
+  z-index: 1;
 }
 
 .login:hover {
