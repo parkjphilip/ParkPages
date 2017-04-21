@@ -3,14 +3,12 @@ import { Link, withRouter } from 'react-router';
 import ParkIndexItem from './park_index_item';
 
 class ParkIndex extends React.Component {
-	// constructor(props) {
-	// 	super(props);
-	// }
+	constructor(props) {
+		super(props);
+	}
 
   componentWillMount(){
-    //
     this.props.fetchParks();
-    //
   }
 
   // componentWillReceiveProps(newProps) {
@@ -18,19 +16,6 @@ class ParkIndex extends React.Component {
   //   this.props.fetchPark(newProps.params.id);
   //   }
   // }
-
-	// render() {
-  //   if (!this.props.parks.length) {
-  //     return <div>loading...</div>;
-  //   } else {
-  //     return(
-  //       <div>
-  //         {this.props.parks.map(park => <ParkIndexItem keypark={park}/>)}
-  //       </div>
-  //     );
-  //   }
-  //
-	// }
 
   render() {
 
@@ -40,7 +25,6 @@ class ParkIndex extends React.Component {
       return <div> {this.props.parks.map(park => <ParkIndexItem park={park}/>)} </div>;
     }
 	}
-
 }
 
 export default withRouter(ParkIndex);

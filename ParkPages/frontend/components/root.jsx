@@ -22,7 +22,7 @@ const Root = ({ store }) => {
           <Route path="/login" component={SessionFormContainer} onEnter={redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={redirectIfLoggedIn} />
           <Route path="/parks" component={ParkIndexContainer} />
-            <Route path="/:parkId" component={ParkDetailContainer} />
+          <Route path="/parks/:parkId" component={ParkDetailContainer} />
       </Router>
     </Provider>
   );

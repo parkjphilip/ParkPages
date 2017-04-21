@@ -5,10 +5,8 @@ import ParkDetail from './park_detail';
 
 const mapStateToProps = ( state, ownProps ) => {
   return ({
-    // currentPark: ownProps.parks.park,
-    // currentUser: state.session.currentUser,
-    // parkId: ownProps.params.parkId,
-    parks: state.parks
+    parkId: ownProps.params.parkId,
+    currentPark: state.parks.park
   });
 };
 
