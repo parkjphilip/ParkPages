@@ -13,9 +13,12 @@
   height: 95%;
 }
 .login-form-container {
+
   display: flex;
   flex-direction: row;
   height: 100%;
+  width:800px;
+  margin:0 auto;
 }
 
 .login-form-box {
@@ -26,11 +29,11 @@
   height: 100%;
 }
 
-.login-page-left {
-  height: 100%;
-  padding-left: 400px;
-  padding-top: 50px;
+.login-page-left,.login-page-right {
+  width:50%;
+  height:100%;
 }
+
 
 .login-welcome {
   color: red;
@@ -117,9 +120,7 @@ input::-webkit-input-placeholder {
   // position: absolute;
   // left: 500px;
   // top: -20px;
-  padding-top: 100px;
   width: 260px;
   height: 320px;
-  padding-right: 250px;
 
 }

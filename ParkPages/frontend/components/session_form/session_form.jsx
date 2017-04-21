@@ -70,7 +70,6 @@ class SessionForm extends React.Component {
 				</div>
 
 				<div className="login-form-container">
-					<div className="login-form-box">
 
 						<form onSubmit={this.handleSubmit} className="login-page-left">
 							<h1 className="login-welcome">Welcome to ParkPages!</h1>
@@ -85,9 +84,9 @@ class SessionForm extends React.Component {
 								<input type="submit" className="guest-submit" value="Guest Login"/>
 							</form>
 						</form>
-					</div>
+            <div className='login-page-right'>
 					<img className="login-signup-image" src="/images/animal-1207073_1280.jpg" />
-
+</div>
 				</div>
 			</div>
 		);
