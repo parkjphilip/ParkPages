@@ -1,4 +1,4 @@
-import * as ParkAPIUtil from '../util/park_api_util'
+import * as ParkAPIUtil from '../util/park_api_util';
 
 export const RECEIVE_PARK = "RECEIVE_PARK";
 export const RECEIVE_PARKS = "RECEIVE_PARKS";
@@ -6,22 +6,26 @@ export const RECEIVE_PARKS = "RECEIVE_PARKS";
 
 export const fetchPark = id => dispatch => {
   return ParkAPIUtil.fetchPark(id).then(park => dispatch(receivePark(park)));
-}
+};
 
 export const fetchParks = () => dispatch => {
-  return ParkAPIUtil.fetchPark(park).then(park => dispatch(receivePark(park)));
-}
+  return ParkAPIUtil.fetchParks()
+  .then(park => {
+    debugger
+    return dispatch(receiveParks(park));
+  });
+};
 
 export const receivePark = park => {
-  return {
+  return ({
     type: RECEIVE_PARK,
     park
-  }
-}
+  });
+};
 
 export const receiveParks = parks => {
-  return {
+  return ({
     type: RECEIVE_PARKS,
     parks
-  };
-}
+  });
+};

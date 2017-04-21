@@ -1,13 +1,10 @@
 import { connect } from 'react-redux';
 import { fetchPark, fetchParks } from '../../actions/park_actions';
-import ParkDetail from './park_detail';
+import ParkIndex from './park_index';
 
 
-const mapStateToProps = ( state, ownProps ) => {
+const mapStateToProps = ( state ) => {
   return ({
-    // currentPark: ownProps.parks.park,
-    // currentUser: state.session.currentUser,
-    // parkId: ownProps.params.parkId,
     parks: state.parks
   });
 };
@@ -19,4 +16,4 @@ const mapDispatchToProps = ( dispatch ) => {
   });
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ParkDetail);
+export default connect(mapStateToProps, mapDispatchToProps)(ParkIndex);

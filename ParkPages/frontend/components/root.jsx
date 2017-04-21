@@ -3,7 +3,8 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
-import ParkDetailContainer from './parks/park_detail_container'
+import ParkDetailContainer from './parks/park_detail_container';
+import ParkIndexContainer from './parks/park_index_container';
 
 const Root = ({ store }) => {
 
@@ -20,7 +21,8 @@ const Root = ({ store }) => {
         <Route path="/" component={ App } />
           <Route path="/login" component={SessionFormContainer} onEnter={redirectIfLoggedIn} />
           <Route path="/signup" component={SessionFormContainer} onEnter={redirectIfLoggedIn} />
-          <Route path="/parks/:parkId" component={ParkDetailContainer} />
+          <Route path="/parks" component={ParkIndexContainer} />
+            <Route path="/:parkId" component={ParkDetailContainer} />
       </Router>
     </Provider>
   );
