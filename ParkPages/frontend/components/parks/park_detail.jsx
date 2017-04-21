@@ -18,7 +18,7 @@ class ParkDetail extends React.Component {
   // }
 
 	render() {
-    // debugger
+    //
 		return (
       <h1> park details here </h1>
 		);

@@ -3,7 +3,6 @@ export const fetchParks = () => {
     method: 'get',
     url: '/api/parks'
   });
-  // debugger
 };
 
 export const fetchPark = (id) => {

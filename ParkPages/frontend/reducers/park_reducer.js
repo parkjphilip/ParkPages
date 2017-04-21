@@ -3,7 +3,7 @@ import merge from 'lodash/merge';
 
 const ParkReducer = (state = {}, action) => {
   Object.freeze(state);
-  // debugger
+  //
   switch(action.type) {
     case RECEIVE_PARKS:
       // let parks = action.parks;

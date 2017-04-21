@@ -11,7 +11,7 @@ export const fetchPark = id => dispatch => {
 export const fetchParks = () => dispatch => {
   return ParkAPIUtil.fetchParks()
   .then(park => {
-    debugger
+
     return dispatch(receiveParks(park));
   });
 };

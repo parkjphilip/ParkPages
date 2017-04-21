@@ -8,9 +8,9 @@ class ParkIndex extends React.Component {
 	// }
 
   componentWillMount(){
-    // debugger
+    //
     this.props.fetchParks();
-    // debugger
+    //
   }
 
   // componentWillReceiveProps(newProps) {
@@ -19,17 +19,26 @@ class ParkIndex extends React.Component {
   //   }
   // }
 
-	render() {
+	// render() {
+  //   if (!this.props.parks.length) {
+  //     return <div>loading...</div>;
+  //   } else {
+  //     return(
+  //       <div>
+  //         {this.props.parks.map(park => <ParkIndexItem keypark={park}/>)}
+  //       </div>
+  //     );
+  //   }
+  //
+	// }
+
+  render() {
+
     if (!this.props.parks.length) {
       return <div>loading...</div>;
     } else {
-      return(
-        <div>
-          {this.props.parks.map(park => <ParkIndexItem park={park} />)}
-        </div>
-      );
+      return <div> {this.props.parks.map(park => <ParkIndexItem park={park}/>)} </div>;
     }
-
 	}
 
 }
