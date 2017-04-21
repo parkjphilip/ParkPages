@@ -31,13 +31,13 @@ class SessionForm extends React.Component {
 		e.preventDefault();
 		const user = this.state;
 		this.props.processForm(user)
-							.then(() => this.props.router.push("/"));
+							.then(() => this.props.router.push("/parks"));
 	}
 
 	handleGuestLogin(e) {
 		e.preventDefault();
 		this.props.loginGuest()
-							.then(() => this.props.router.push("/"));
+							.then(() => this.props.router.push("/parks"));
 	}
 
 	navLink() {

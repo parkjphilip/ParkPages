@@ -1,27 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, withRouter } from 'react-router';
+
 
 class Header extends React.Component {
 
   render() {
 
+    let headerStatus = this.props.location.pathname !== '/' ? "solid" : "transparent";
+    // stsaus = path !== '/' ? "solid" : "transparent"
 
     if(this.props.currentUser){
       return(
-        <hgroup className="header-group">
+        <hgroup className={`header-group ${headerStatus}`}>
           <h2 className="header-name">Hi, {this.props.currentUser.username}!</h2>
           <button className="header-button" onClick={this.props.logout}>Log Out</button>
         </hgroup>
       );
     }else{
       return (
-        <div className="welcome-page" >
-          <div className="welcome-header" >
-            <nav className="login-signup">
-              <Link to="/login" className="login" activeClassName="current">Login</Link>
-              <Link to="/signup" className="signup" activeClassName="current">Sign Up</Link>
-            </nav>
-          </div>
+        <div className={`header-group ${headerStatus}`} >
+          <nav className="login-signup">
+            <Link to="/login" className="login" activeClassName="current">Login</Link>
+            <Link to="/signup" className="signup" activeClassName="current">Sign Up</Link>
+          </nav>
         </div>
       );
 
@@ -42,4 +43,4 @@ class Header extends React.Component {
 //   currentUser ? personalGreeting(currentUser, logout) : <sessionLinks/>
 // );
 
-export default Header;
+export default withRouter(Header);

@@ -12,7 +12,7 @@ const Root = ({ store }) => {
   const redirectIfLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().session.currentUser;
     if (currentUser) {
-      replace('/');
+      replace('/parks');
     }
   };
 

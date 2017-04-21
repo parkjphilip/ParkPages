@@ -13,7 +13,22 @@
   z-index: 20;
   width: 220px;
   height: 160px;
+  top: 110px;
   left:50%;
   margin-left: -110px;
   align-items: center;
+}
+
+
+body .image-box{
+  top:0;
+  position: absolute;
+  // display: block;
+
+  // background: red;
+  background-image: url("/images/homeimage.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
 }
