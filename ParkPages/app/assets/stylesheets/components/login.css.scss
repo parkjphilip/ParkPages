@@ -2,7 +2,7 @@
   height: 520px;
 }
 .login-form-header {
-  background-color: #d32323;
+  background-color: #11931e;
   height: 75px;
   display: flex;
   justify-content: center;
@@ -75,8 +75,8 @@
 
 .login-submit, .guest-submit {
   text-transform: capitalize;
-  background-color: #D00B03;
-  border-color: #8D0005;
+  background-color: #11931e;
+  border-color: rgb(10, 103, 8);
   box-shadow: 0 1px 1px rgba(0,0,0,0.3);
   border-radius: 4px;
   width: 310px;
@@ -88,7 +88,7 @@
 }
 //
 .login-submit:hover, .guest-submit:hover {
-  background-color: rgb(235, 17, 4);
+  background-color: rgb(29, 168, 12);
 }
 .login-signup-errors {
   list-style-type: none;

@@ -7,6 +7,12 @@ class Home extends React.Component {
 
         <div className="image-box">
           <img className="home-logo" src="/images/ParkPages.png" alt="Logo" />
+          <div className="home-search-container">
+            <input type="text" className="home-search" placeholder="Find" />
+            <button className="home-search-button">
+              <img className="home-search-glass" src="/images/glass.png" />
+            </button>
+          </div>
         </div>
 
 		);
