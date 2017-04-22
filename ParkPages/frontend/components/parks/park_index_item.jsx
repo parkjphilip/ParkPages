@@ -8,7 +8,20 @@ class ParkIndexItem extends React.Component {
 
 	render() {
 		return (
-      <li> {this.props.park.name} </li>
+      <li className="index-item-container">
+        <div className="index-item-image-container">
+          <div className="index-image"></div>
+        </div>
+        <div className="index-item-info-container">
+          <div className="index-name"> {this.props.park.name} </div>
+        </div>
+        <div className="index-item-address-container">
+          <div className="index-street"> {this.props.park.street} </div>
+          <div className="index-city"> {this.props.park.city} </div>
+          <div className="index-phone"> {this.props.park.phone_number} </div>
+        </div>
+      </li>
+
 		);
 	}
 
