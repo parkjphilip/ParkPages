@@ -13,10 +13,9 @@ class Header extends React.Component {
       return(
         <div className={`header ${headerStatus}`}>
           <div className={`header-left ${headerStatus}`}>
-            <img className={`logo ${headerStatus}`} src="/images/ParkPages.png" alt="Logo" />
+            <img className={`logo ${headerStatus}`} onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" alt="Logo" />
           </div>
           <div className="header-middle">
-          wefwefeorqhfowefjowejfofheufuewfhueiwfhueiwhfuiewhfuiewfhuiewhfuiewfhui
           </div>
           <div className="header-right">
             <h2 className="header-name">Hi, {this.props.currentUser.username}!</h2>
@@ -28,7 +27,7 @@ class Header extends React.Component {
       return (
         <div className={`header ${headerStatus}`}>
           <div className={`header-left ${headerStatus}`}>
-            <img className={`logo ${headerStatus}`} src="/images/ParkPages.png" alt="Logo" />
+            <img className={`logo ${headerStatus}`} onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" alt="Logo" />
           </div>
           <div className="header-middle">
           </div>
@@ -46,16 +45,5 @@ class Header extends React.Component {
 
   }
 }
-
-// const personalGreeting = (currentUser, logout) => (
-// 	<hgroup className="header-group">
-//     <h2 className="header-name">Hi, {currentUser.username}!</h2>
-//     <button className="header-button" onClick={logout}>Log Out</button>
-// 	</hgroup>
-// );
-//
-// const Header2 = ({ currentUser, logout }) => (
-//   currentUser ? personalGreeting(currentUser, logout) : <sessionLinks/>
-// );
 
 export default withRouter(Header);
