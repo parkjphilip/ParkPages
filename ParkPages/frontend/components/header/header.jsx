@@ -11,20 +11,35 @@ class Header extends React.Component {
 
     if(this.props.currentUser){
       return(
-        <hgroup className={`header-group ${headerStatus}`}>
-          <h2 className="header-name">Hi, {this.props.currentUser.username}!</h2>
-          <button className="header-button" onClick={this.props.logout}>Log Out</button>
-        </hgroup>
+        <div className={`header ${headerStatus}`}>
+          <div className={`header-left ${headerStatus}`}>
+            <img className={`logo ${headerStatus}`} src="/images/ParkPages.png" alt="Logo" />
+          </div>
+          <div className="header-middle">
+          wefwefeorqhfowefjowejfofheufuewfhueiwfhueiwhfuiewhfuiewfhuiewhfuiewfhui
+          </div>
+          <div className="header-right">
+            <h2 className="header-name">Hi, {this.props.currentUser.username}!</h2>
+            <button className="header-button" onClick={this.props.logout}>Log Out</button>
+          </div>
+        </div>
       );
     }else{
       return (
-        <div className={`header-group ${headerStatus}`} >
-          <nav className="login-signup">
-            <Link to="/login" className="login" activeClassName="current">Login</Link>
-            <Link to="/signup" className="signup" activeClassName="current">Sign Up</Link>
-          </nav>
+        <div className={`header ${headerStatus}`}>
+          <div className={`header-left ${headerStatus}`}>
+            <img className={`logo ${headerStatus}`} src="/images/ParkPages.png" alt="Logo" />
+          </div>
+          <div className="header-middle">
+          </div>
+          <div className="header-right">
+            <nav className="login-signup">
+              <Link to="/login" className="login" activeClassName="current">Login</Link>
+              <Link to="/signup" className="signup" activeClassName="current">Sign Up</Link>
+            </nav>
+          </div>
         </div>
-      );
+        );
 
     }
 

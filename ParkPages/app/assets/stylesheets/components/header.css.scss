@@ -1,11 +1,44 @@
-.header-group {
+.header {
   background-color: #d32323;
   height: 75px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  padding-top: 10px;
+  color: white;
+  position: relative;
+  z-index: 1;
 }
 
+.header-left {
+  width: 150px;
+  height: 100%;
+  margin-right: 30px;
+}
+
+.header-middle {
+  max-width: 500px;
+  height: 100%;
+}
+
+.header-right {
+  padding-top: 10px;
+  width: 320px;
+  height: 100%;
+  margin-left: 30px;
+}
+
+.logo {
+  position: relative;
+  margin-left: 40px;
+  width: 100px;
+
+}
+
+.logo.transparent {
+  display: none;
+}
 .header-name {
   color: white;
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -36,5 +69,5 @@
 }
 
 .transparent {
-  background-color: white;
+  background-color: transparent;
 }

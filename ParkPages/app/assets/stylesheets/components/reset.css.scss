@@ -19,3 +19,11 @@ time, mark, audio, video {
  box-sizing: border-box;
  border: 2px solid blue;
 }
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}

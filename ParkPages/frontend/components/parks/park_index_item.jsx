@@ -17,8 +17,7 @@ class ParkIndexItem extends React.Component {
         </div>
         <div className="index-item-address-container">
           <div className="index-street"> {this.props.park.street} </div>
-          <div className="index-city"> {this.props.park.city} </div>
-          <div className="index-phone"> {this.props.park.phone_number} </div>
+          <div className="index-city"> {this.props.park.city} {this.props.park.phone_number} {this.props.park.zip_code}</div>
         </div>
       </li>
 

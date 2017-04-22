@@ -36,7 +36,7 @@
 
 
 .login-welcome {
-  color: red;
+  color: #D32323;
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -64,22 +64,21 @@
 //   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 // }
 
-.login-input-username {
+.login-input-username, .login-input-password {
   width: 300px;
   height: 30px;
   margin-bottom: 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.login-input-password {
-  width: 300px;
-  height: 30px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.15);
+  border-radius: 3px;
+  border: 1px solid #bbb;
 }
 
 .login-submit, .guest-submit {
   text-transform: capitalize;
-  background-color: #D62420;
+  background-color: #D00B03;
+  border-color: #8D0005;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  border-radius: 4px;
   width: 310px;
   color: white;
   height: 35px;
@@ -87,15 +86,10 @@
   font-size: 14px;
   margin-top: 7px;
 }
-
-.login-signup-submit:hover {
-  cursor: pointer;
+//
+.login-submit:hover, .guest-submit:hover {
+  background-color: rgb(235, 17, 4);
 }
-
-.guest-submit:hover {
-  cursor: pointer;
-}
-
 .login-signup-errors {
   list-style-type: none;
   padding-top: 10px;

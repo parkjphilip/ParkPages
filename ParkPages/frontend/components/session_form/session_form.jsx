@@ -66,7 +66,7 @@ class SessionForm extends React.Component {
 			<div className="login-submit-page">
 
 				<div className="login-form-header">
-          <img className="header-logo" src="/images/ParkPages.png" />
+          <img className="header-logo cursor-pointer" onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" />
 				</div>
 
 				<div className="login-form-container">
@@ -78,10 +78,10 @@ class SessionForm extends React.Component {
 							<div className="login-signup-form">
 								<input type="text" value={this.state.username} onChange={this.update("username")} className="login-input-username" placeholder="Username"/>
 								<input type="password" value={this.state.password} onChange={this.update("password")} className="login-input-password" placeholder="Password"/>
-								<input type="submit" value={this.props.formType} className="login-submit"/>
+								<input type="submit" value={this.props.formType} className="login-submit cursor-pointer"/>
 							</div>
 							<form onClick={this.handleGuestLogin}>
-								<input type="submit" className="guest-submit" value="Guest Login"/>
+								<input type="submit" className="guest-submit cursor-pointer" value="Guest Login"/>
 							</form>
 						</form>
             <div className='login-page-right'>
