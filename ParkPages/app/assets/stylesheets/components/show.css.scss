@@ -1,6 +1,6 @@
 .show-park-container-upper {
   background: #F5F5F5;
-  height: 300px;
+  height: 270px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: flex;
 }
@@ -8,42 +8,59 @@
 
 .show-park-info {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 325px;
+  height: 270px;
   left: 100px;
-  top: 20px;
+  top: 30px;
   background: #FFFFFF;
   border: 1px solid lightgrey;
 }
 
+.detail-lower {
+  font-size: 14px;
+}
+
 .detail-name {
-  height: 100px;
+  height: 60px;
   font-size: 30px;
+  font-weight: bold;
 }
 
-.detail-address1 {
-  height: 40px;
+.detail-icon-address, .detail-icon-phone, .detail-icon-website {
+  display: flex;
+  margin-top: 7px;
+  margin-left: 7px;
 }
 
-.detail-address2 {
-  height: 40px;
+.fa-address-card-o {
+
 }
 
-.detail-phone-number {
-  height: 40px;
+.detail-address1, .detail-address2 {
+  margin-left: 10px;
+  font-weight: bold;
 }
 
-.detail-web-site {
-  height: 40px;
+.detail-phone {
+  margin-left: 17px;
 }
 
-.show-park-image {
+.detail-website {
+  margin-left: 11px;
+}
+.show-park-image-container {
   position: relative;
   left: 200px;
   width: 700px;
   height: 300px;
 }
 
+.show-park-image {
+  position: relative;
+  top: 25px;
+  width: 400px;
+  height: 300px;
+}
 .show-park-container-lower {
   width: 100%;
   height: 500px;

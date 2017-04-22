@@ -10,5 +10,12 @@ User.destroy_all
 user1 = User.create({username: "philip", password: "password123"});
 guest = User.create({username: "guest", password: "password123"});
 
-Park.create!({name: "Central Park", street: "123 Street Avenue", city: "Manhattan", state: "New York", zip_code: "12345", phone_number: "123456890"})
-Park.create!({name: "Overpeck Park", street: "321 Overpeck Avenue", city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "0987654321", photo_url: "/images/overpeck.jpg", website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"})
+Park.create!({name: "Central Park", street: "5th Ave to Central Park West, 59th Street to 110 Street",
+              city: "Manhattan", state: "New York", zip_code: "10024", phone_number: "(212-310-6600)",
+              image: File.open("app/assets/images/centralpark.jpg"), website: "https://www.nycgovparks.org/parks/central-park"})
+Park.create!({name: "Overpeck Park", street: "321 Overpeck Avenue",
+              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201)-336-7275",
+              image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"})
+Park.create!({name: "Wood Park", street: "370 Broad Avenue",
+              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201)-592-5783",
+              image: File.open("app/assets/images/woodpark.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})

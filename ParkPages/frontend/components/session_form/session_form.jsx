@@ -37,7 +37,7 @@ class SessionForm extends React.Component {
 	handleGuestLogin(e) {
 		e.preventDefault();
 		this.props.loginGuest()
-							.then(() => this.props.router.push("/parks"));
+							.then(() => this.props.router.push("/"));
 	}
 
 	navLink() {
@@ -85,7 +85,7 @@ class SessionForm extends React.Component {
 							</form>
 						</form>
             <div className='login-page-right'>
-					     <img className="login-signup-image" src="/images/animal-1207073_1280.jpg" />
+					     <img className="login-signup-image" src="/images/login.jpg" />
             </div>
 				</div>
 			</div>

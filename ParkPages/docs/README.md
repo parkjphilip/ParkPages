@@ -34,7 +34,7 @@ ParkPages is a web application inspired by Yelp built using Ruby on Rails and Re
 
 ### Phase 2: Parks Model, API, and Components (2 days)
 
-**Objective:** Parks will be rendered on their show pages with appropriate content. Parks can be created, read, edited, and destroyed through the API.
+**Objective:** Parks will be rendered on their show pages with appropriate content.
 
 ### Phase 3: Home Page and Search Bar  (2 days)
 
