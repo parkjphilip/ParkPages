@@ -7,20 +7,7 @@ class ParkIndex extends React.Component {
 		super(props);
 	}
 
-  componentWillMount(){
-    this.props.fetchParks();
-  }
-
-
-
-  // componentWillReceiveProps(newProps) {
-  // if (this.props.params.id !== newProps.params.id) {
-  //   this.props.fetchPark(newProps.params.id);
-  //   }
-  // }
-
   render() {
-
     if (!this.props.parks.length) {
       return <div>loading...</div>;
     } else {

@@ -4,6 +4,7 @@ import ParkIndex from './park_index';
 
 
 const mapStateToProps = ( state ) => {
+  
   return ({
     parks: state.parks
   });
@@ -11,8 +12,6 @@ const mapStateToProps = ( state ) => {
 
 const mapDispatchToProps = ( dispatch ) => {
   return ({
-    fetchPark: id => dispatch(fetchPark(id)),
-    fetchParks: () => dispatch(fetchParks())
   });
 };
 

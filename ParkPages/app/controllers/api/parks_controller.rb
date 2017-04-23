@@ -1,16 +1,21 @@
 class Api::ParksController < ApplicationController
-  def index
-    @parks = Park.all
-    render :index
-  end
-
   # def index
-  #   if (park_params)
-  #     @parks = Park.all.where("name = #{park_params}")
-  #   else
-  #     @parks = Park.all
-  #   end
+  #   @parks = Park.all
+  #   render :index
   # end
+
+  def index
+    input = park_params[:name].split(' ')
+    input.map! do |word|
+      word.capitalize!
+    end
+    final_input = input.join(' ')
+    if (params[:park][:name])
+      @parks = Park.all.where("name LIKE ?", "%#{final_input}%")
+    else
+      @parks = Park.all
+    end
+  end
 
   def create
     @park = Park.new(park_params)
