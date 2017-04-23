@@ -5,13 +5,8 @@ class Api::ParksController < ApplicationController
   # end
 
   def index
-    input = park_params[:name].split(' ')
-    input.map! do |word|
-      word.capitalize!
-    end
-    final_input = input.join(' ')
     if (params[:park][:name])
-      @parks = Park.all.where("name LIKE ?", "%#{final_input}%")
+      @parks = Park.all.where("name ILIKE ?", "%#{park_params[:name]}%")
     else
       @parks = Park.all
     end
