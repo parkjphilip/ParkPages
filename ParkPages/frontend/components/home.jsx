@@ -22,5 +22,11 @@ class Home extends React.Component {
 export default withRouter(Home);
 
 
-// <img className="home-image" src="/images/homeimage.png" alt="Park Image" />
-//add this to css
+// <form onSubmit = this.handlesubmit >
+//   <input typye=text value = ? >
+//   <input type=submit >
+// </form>
+//
+// handlesubmit(e){
+//   this.props.fetchParks(e.target.value).then(() => this.props.router,push(/search)
+// }

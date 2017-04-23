@@ -5,6 +5,18 @@ export const fetchParks = () => {
   });
 };
 
+// export const fetchParks = (query) => {
+//   return $.ajax({
+//     method: 'get',
+//     url: '/api/parks',
+//     data: {
+//       parks: {
+//         name: `${query}`
+//       }
+//     }
+//   });
+// };
+
 export const fetchPark = (id) => {
   return $.ajax({
     method: 'get',

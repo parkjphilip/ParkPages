@@ -4,6 +4,14 @@ class Api::ParksController < ApplicationController
     render :index
   end
 
+  # def index
+  #   if (park_params)
+  #     @parks = Park.all.where("name = #{park_params}")
+  #   else
+  #     @parks = Park.all
+  #   end
+  # end
+
   def create
     @park = Park.new(park_params)
     if @park.save
