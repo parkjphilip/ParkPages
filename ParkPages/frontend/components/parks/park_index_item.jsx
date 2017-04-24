@@ -14,6 +14,8 @@ class ParkIndexItem extends React.Component {
         </div>
         <div className="index-item-info-container">
           <div className="index-name"> {this.props.park.name} </div>
+          <div className="index-rating"> rating here </div>
+          <div className="index-reviews"> number of reviews here </div>
         </div>
         <div className="index-item-address-container">
           <div className="index-street"> {this.props.park.street} </div>
