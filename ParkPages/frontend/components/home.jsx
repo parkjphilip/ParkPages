@@ -8,9 +8,6 @@ class Home extends React.Component {
 
         <div className="image-box">
           <img className="home-logo" src="/images/ParkPages.png" alt="Logo" />
-          <div className="home-search-container">
-            <SearchContainer />
-          </div>
         </div>
 
 		);

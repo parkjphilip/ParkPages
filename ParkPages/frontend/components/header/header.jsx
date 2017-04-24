@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
+import SearchContainer from '../search/search_container';
 
 
 class Header extends React.Component {
@@ -16,6 +17,9 @@ class Header extends React.Component {
             <img className={`logo ${headerStatus}`} onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" alt="Logo" />
           </div>
           <div className="header-middle">
+            <div className="home-search-container">
+                <SearchContainer />
+            </div>
           </div>
           <div className="header-right">
             <h2 className="header-name">Hi, {this.props.currentUser.username}!</h2>
@@ -30,6 +34,9 @@ class Header extends React.Component {
             <img className={`logo ${headerStatus}`} onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" alt="Logo" />
           </div>
           <div className="header-middle">
+            <div className="home-search-container">
+              <SearchContainer />
+            </div>
           </div>
           <div className="header-right">
             <nav className="login-signup">

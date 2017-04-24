@@ -9,7 +9,7 @@ class ParkIndex extends React.Component {
 
   render() {
     if (!this.props.parks.length) {
-      return <div>loading...</div>;
+      return <div>No results found</div>;
     } else {
       return <ul className="index-container"> {this.props.parks.map(park => <ParkIndexItem park={park}/>)} </ul>;
     }
