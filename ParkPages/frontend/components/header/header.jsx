@@ -8,7 +8,7 @@ class Header extends React.Component {
   render() {
 
     let headerStatus = this.props.location.pathname !== '/' ? "solid" : "transparent";
-    // stsaus = path !== '/' ? "solid" : "transparent"
+    let searchPosition = this.props.location.pathname!== '/' ? "top-search" : "mid-search";
 
     if(this.props.currentUser){
       return(
@@ -17,7 +17,7 @@ class Header extends React.Component {
             <img className={`logo ${headerStatus}`} onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" alt="Logo" />
           </div>
           <div className="header-middle">
-            <div className="home-search-container">
+            <div className={`home-search-container ${searchPosition}`}>
                 <SearchContainer />
             </div>
           </div>
@@ -34,7 +34,7 @@ class Header extends React.Component {
             <img className={`logo ${headerStatus}`} onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" alt="Logo" />
           </div>
           <div className="header-middle">
-            <div className="home-search-container">
+            <div className={`home-search-container ${searchPosition}`}>
               <SearchContainer />
             </div>
           </div>
