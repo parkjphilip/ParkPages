@@ -80,9 +80,7 @@ class SessionForm extends React.Component {
 								<input type="password" value={this.state.password} onChange={this.update("password")} className="login-input-password" placeholder="Password"/>
 								<input type="submit" value={this.props.formType} className="login-submit cursor-pointer"/>
 							</div>
-							<form onClick={this.handleGuestLogin}>
-								<input type="submit" className="guest-submit cursor-pointer" value="Guest Login"/>
-							</form>
+              <button className="guest-submit cursor-pointer" onClick={this.handleGuestLogin} >Guest Login</button>
 						</form>
             <div className='login-page-right'>
 					     <img className="login-signup-image" src="/images/login.jpg" />
@@ -95,3 +93,8 @@ class SessionForm extends React.Component {
 }
 
 export default withRouter(SessionForm);
+
+
+// <form onClick={this.handleGuestLogin}>
+// <input type="submit" className="guest-submit cursor-pointer" value="Guest Login"/>
+// </form>

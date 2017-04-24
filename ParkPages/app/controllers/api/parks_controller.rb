@@ -1,16 +1,24 @@
 class Api::ParksController < ApplicationController
-  # def index
-  #   @parks = Park.all
-  #   render :index
-  # end
 
   def index
-    if (params[:park][:name])
-      @parks = Park.all.where("name ILIKE ?", "%#{park_params[:name]}%")
-      # have to also search for tags through has_many tags association
-    else
+    if (params[:park][:name].blank?)
       @parks = Park.all
+    else
+      nameparks = Park.name_search(params[:park][:name])
+      tagparks = Park.tag_search(params[:park][:name])
+      @parks = nameparks + tagparks
     end
+    # if (params[:park][:name])
+    #   debugger
+    #   nameparks = Park.name_search(params[:park][:name])
+    #   tagparks = Park.tag_search(params[:park][:name])
+    #   @parks = nameparks + tagparks
+    #   # @parks = Park.all.where("name ILIKE ?", "%#{park_params[:name]}%")
+    #   # have to also search for tags through has_many tags association
+    # else
+    #   debugger
+    #   @parks = Park.all
+    # end
   end
 
   def create
