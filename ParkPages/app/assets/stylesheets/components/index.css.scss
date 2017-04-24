@@ -1,24 +1,34 @@
 .index-container {
   position: relative;
-  left: 2%;
+  left: 4%;
   width: 60%;
-  top: 20px;
+  top: 50px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
 }
 .index-item-container {
   display: flex;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(182, 183, 187);
+  padding-top: 20px;
 }
 
 .index-item-image-container {
-  width: calc(38%);
-  height: 200px;
+  width: calc(25%);
+  height: 150px;
+  border: 1px solid black;
 }
 
 .index-item-info-container {
   width: calc(28%);
-  height: 200px;
+  height: 150px;
+  margin-left: 20px;
+  padding-top: 20px;
 }
 
 .index-item-address-container {
+  padding-top: 20px;
   width: calc(34%);
-  height: 200px;
+  height: 150px;
+  margin-left: 20px;
 }

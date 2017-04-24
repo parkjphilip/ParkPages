@@ -13,7 +13,9 @@ class ParkIndexItem extends React.Component {
           <img className="show-park-image" src={`${this.props.park.image_url}`}/>
         </div>
         <div className="index-item-info-container">
-          <div className="index-name"> {this.props.park.name} </div>
+          <div className="index-name">
+            <Link to={`/parks/${this.props.park.id}`}>{this.props.park.name}</Link>
+          </div>
           <div className="index-rating"> rating here </div>
           <div className="index-reviews"> number of reviews here </div>
         </div>
