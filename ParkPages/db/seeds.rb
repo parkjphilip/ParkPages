@@ -19,3 +19,22 @@ park2 = Park.create!({name: "Overpeck Park", street: "321 Overpeck Avenue",
 park3 = Park.create!({name: "Wood Park", street: "370 Broad Avenue",
               city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201)-592-5783",
               image: File.open("app/assets/images/woodpark.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
+
+tag1 = Tag.create!({tag_name: "basketball"})
+tag2 = Tag.create!({tag_name: "tennis"})
+tag3 = Tag.create!({tag_name: "jogging"})
+tag4 = Tag.create!({tag_name: "relaxing"})
+tag5 = Tag.create!({tag_name: "people-watching"})
+tag6 = Tag.create!({tag_name: "playground"})
+
+tagging1 = Tagging.create!({park_id: 1, tag_id: 3})
+tagging2 = Tagging.create!({park_id: 1, tag_id: 4})
+tagging3 = Tagging.create!({park_id: 1, tag_id: 5})
+
+tagging4 = Tagging.create!({park_id: 2, tag_id: 2})
+tagging5 = Tagging.create!({park_id: 2, tag_id: 3})
+tagging6 = Tagging.create!({park_id: 2, tag_id: 6})
+
+tagging7 = Tagging.create!({park_id: 3, tag_id: 1})
+tagging8 = Tagging.create!({park_id: 3, tag_id: 2})
+tagging9 = Tagging.create!({park_id: 3, tag_id: 6})

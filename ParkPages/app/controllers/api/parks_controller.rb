@@ -7,6 +7,7 @@ class Api::ParksController < ApplicationController
   def index
     if (params[:park][:name])
       @parks = Park.all.where("name ILIKE ?", "%#{park_params[:name]}%")
+      # have to also search for tags through has_many tags association
     else
       @parks = Park.all
     end
@@ -24,12 +25,13 @@ class Api::ParksController < ApplicationController
   def show
     @park = Park.find(params[:id])
     render :show
+
   end
 
   private
   def park_params
-    params.require(:park).permit(:name, :street, :city, :state, :zip_code,
-                                  :phone_number)
+    params.require(:park).permit(:name, :street, :city, :state,
+                                :zip_code, :phone_number)
   end
 
 end

@@ -25,4 +25,5 @@ json.array! @parks do |park|
   json.phone_number park.phone_number
   json.website park.website
   json.image_url asset_path(park.image.url)
+  json.tags park.tags
 end

@@ -24,7 +24,6 @@ class Search extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit} >
           <input type="text" value={this.state.query} onChange={this.update("query")} className="home-search" placeholder="Find Parks..." />
-
           <input type="image" value="submit" className="home-search-button home-search-glass" src="/images/glass.png" alt="search submit button" />
         </form>
       </div>
