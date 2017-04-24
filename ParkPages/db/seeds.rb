@@ -19,13 +19,3 @@ park2 = Park.create!({name: "Overpeck Park", street: "321 Overpeck Avenue",
 park3 = Park.create!({name: "Wood Park", street: "370 Broad Avenue",
               city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201)-592-5783",
               image: File.open("app/assets/images/woodpark.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
-
-parks = []
-parks.push(park1)
-parks.push(park2)
-parks.push(park3)
-
-parks.each do |park|
-  search_document = park.pg_search_document
-  search_document.searchable
-end

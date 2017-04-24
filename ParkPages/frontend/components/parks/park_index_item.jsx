@@ -10,7 +10,7 @@ class ParkIndexItem extends React.Component {
 		return (
       <li className="index-item-container">
         <div className="index-item-image-container">
-          <div className="index-image"></div>
+          <img className="show-park-image" src={`${this.props.park.image_url}`}/>
         </div>
         <div className="index-item-info-container">
           <div className="index-name"> {this.props.park.name} </div>

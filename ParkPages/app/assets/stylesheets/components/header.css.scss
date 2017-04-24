@@ -43,9 +43,14 @@
 
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .logo.transparent {
   display: none;
 }
+
 .header-name {
   color: white;
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -69,6 +74,7 @@
 .header-button:hover {
   background-color: white;
   color: gray;
+  cursor: pointer;
 }
 
 .solid {
