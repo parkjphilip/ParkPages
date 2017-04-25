@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   namespace :api, defaults: {format: :json} do
     resources :users, only: [:create]
     resource :session, only: [:create, :destroy, :show]
-    resources :parks, only: [:index, :show, :create]
+    resources :parks, only: [:index, :show, :create] do
+      resources :reviews, only: [:create, :destroy, :update]
+    end
     resources :search, only: [:index]
   end
+  get 'api/parkreviews/:parkId', :to => 'api/reviews#index',:defaults => { :format => 'json' }
 end

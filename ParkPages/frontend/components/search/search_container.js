@@ -16,7 +16,7 @@ const mapDispatchToProps = ( dispatch ) => {
 
 // const mapDispatchToProps = ( dispatch ) => {
 //   return ({
-//     debugger
+//      
 //     fetchParks: query => dispatch(fetchParks(query))
 //   });
 // };

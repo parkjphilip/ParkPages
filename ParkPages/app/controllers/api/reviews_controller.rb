@@ -3,6 +3,7 @@ class Api::ReviewsController < ApplicationController
   def index
     @park = Park.find(:park_id)
     @reviews = @park.reviews
+    # @reviews = Review.all
   end
 
   def create

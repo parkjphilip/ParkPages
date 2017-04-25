@@ -10,7 +10,7 @@
 
 # json.array! @parks, :id, :name, :street, :city, :state, :zip_code, :phone_number, :website, :photo_url
 # @parks.each do |park|
-#   debugger
+#    
 #   json.image_url park.image.url(:medium)
 # end
 # json.image_url asset_path(@parks.image.url(:medium))

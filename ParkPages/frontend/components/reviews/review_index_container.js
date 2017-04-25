@@ -1,18 +1,19 @@
 import { connect } from 'react-redux';
-// import { fetchPark, fetchParks } from '../../actions/park_actions';
+import { fetchReviews } from '../../actions/review_actions';
 import ReviewIndex from './review_index';
 
 
 const mapStateToProps = ( state ) => {
 
   return ({
-    parks: state.parks
+    reviews: state.reviews,
+    currentParkId: state.parks.park.id
   });
 };
 
 const mapDispatchToProps = ( dispatch ) => {
   return ({
-    fetchParks: query => dispatch(fetchParks(query))
+    fetchReviews: () => dispatch(fetchReviews())
   });
 };
 

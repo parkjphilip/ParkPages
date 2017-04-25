@@ -77,20 +77,14 @@ park8.tag_ids = [1, 2, 11, 14, 19] #astoria park
 park9.tag_ids = [11, 14] #teardrop park
 
 
+park1review1 = Review.create!({user_id: 1, park_id: 1, rating: 4, body: "PARK 1 REVIEW 1"})
+park1review2 = Review.create!({user_id: 1, park_id: 1, rating: 5, body: "PARK 1 REVIEW 2"})
+park1review3 = Review.create!({user_id: 2, park_id: 1, rating: 3, body: "PARK 1 REVIEW 3"})
+park1review4 = Review.create!({user_id: 2, park_id: 1, rating: 4, body: "PARK 1 REVIEW 4"})
+park1review5 = Review.create!({user_id: 2, park_id: 1, rating: 5, body: "PARK 1 REVIEW 5"})
 
-
-
-
-
-
-# tagging1 = Tagging.create!({park_id: 1, tag_id: 3})
-# tagging2 = Tagging.create!({park_id: 1, tag_id: 4})
-# tagging3 = Tagging.create!({park_id: 1, tag_id: 5})
-#
-# tagging4 = Tagging.create!({park_id: 2, tag_id: 2})
-# tagging5 = Tagging.create!({park_id: 2, tag_id: 3})
-# tagging6 = Tagging.create!({park_id: 2, tag_id: 6})
-#
-# tagging7 = Tagging.create!({park_id: 3, tag_id: 1})
-# tagging8 = Tagging.create!({park_id: 3, tag_id: 2})
-# tagging9 = Tagging.create!({park_id: 3, tag_id: 6})
+park1review5 = Review.create!({user_id: 1, park_id: 2, rating: 1, body: "PARK 2 REVIEW 5"})
+park1review5 = Review.create!({user_id: 1, park_id: 2, rating: 2, body: "PARK 2 REVIEW 5"})
+park1review5 = Review.create!({user_id: 2, park_id: 2, rating: 3, body: "PARK 2 REVIEW 5"})
+park1review5 = Review.create!({user_id: 2, park_id: 2, rating: 4, body: "PARK 2 REVIEW 5"})
+park1review5 = Review.create!({user_id: 2, park_id: 2, rating: 5, body: "PARK 2 REVIEW 5"})
