@@ -9,6 +9,7 @@ class ReviewIndexItem extends React.Component {
 	}
 
   render() {
+    star = <StarRating name="park-rating" className="stars" rating={this.props.review.rating} totalStars={5} />;
     debugger
     return (
       <div className="review-index-item">
@@ -21,7 +22,9 @@ class ReviewIndexItem extends React.Component {
         <div>
           {this.props.review.body}
         </div>
-        <StarRating className="stars" name="airbnb-rating" caption="Rate your stay!" rating={this.props.review.rating} totalStars={5} />
+        <div>
+          {star}
+        </div>
       </div>
     );
   }

@@ -22,7 +22,7 @@ class ReviewIndex extends React.Component {
     } else {
       return (
         <div className="review-index">
-          { this.props.reviews.map((review, idx) => (<ReviewIndexItem key={idx} review={review} currentParkId={this.props.currentParkId} />)) }
+          { this.props.reviews.map((review, idx) => (<ReviewIndexItem key={idx} review={review} currentParkId={this.props.currentParkId} author={review.author}/>)) }
         </div>
       );
     }

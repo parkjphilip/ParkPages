@@ -11,7 +11,7 @@ const mapStateToProps = ( state ) => {
 
 const mapDispatchToProps = ( dispatch ) => {
   return ({
-    fetchParks: query => dispatch(fetchParks(query))
+    createReview: review => dispatch(createReview(review))
   });
 };
 

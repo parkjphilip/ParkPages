@@ -1,8 +1,14 @@
 export const fetchReviews = (currentParkId) => {
-
   return $.ajax({
     method: 'get',
     url: `/api/parkreviews/${currentParkId}`,
+  });
+};
+
+export const createReview = (review) => {
+  return $.ajax({
+    method: 'post',
+    url: `/api/parks/${review.park_id}/reviews`,
   });
 };
 

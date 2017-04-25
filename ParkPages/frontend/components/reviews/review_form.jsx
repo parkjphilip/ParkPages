@@ -8,13 +8,19 @@ class ReviewForm extends React.Component {
 		super(props);
 	}
 
+  handleSubmit(e) {
+    e.preventDefault();
+      this.props.createReview(e.currentTarget.value);
+  }
+
   render() {
     return (
       <div className="review-form">
-        <form>
-          <div className="top-review-message"> Write a Review!</div>
+        <div className="top-review-message"> Write a Review!</div>
+        <form onSubmit={this.handleSubmit}>
           <textarea rows="15" cols="70" className="review-body" placeholder="Your review goes here!">
           </textarea>
+          <input type="submit" value="Post Review" />
         </form>
       </div>
     );
