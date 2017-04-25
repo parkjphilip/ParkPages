@@ -7,6 +7,14 @@ class ParkIndexItem extends React.Component {
 	}
 
 	render() {
+    let tag_string = "";
+    for (var i = 0; i < this.props.park.tags.length; i++) {
+      tag_string += this.props.park.tags[i].tag_name;
+      if (i === (this.props.park.tags.length - 1)){
+        break;
+      }
+      tag_string += ", ";
+    }
 		return (
       <li className="index-item-container">
         <div className="index-item-image-container">
@@ -14,20 +22,20 @@ class ParkIndexItem extends React.Component {
         </div>
         <div className="index-item-info-container">
           <div className="index-name">
-            <Link to={`/parks/${this.props.park.id}`}>{this.props.park.name}</Link>
+            <Link to={`/parks/${this.props.park.id}`} className="index-name-link">{this.props.park.name}</Link>
           </div>
           <div className="index-rating"> rating here </div>
           <div className="index-reviews"> number of reviews here </div>
           <div className="index-tags">
-            {this.props.park.tags[0].tag_name}, {this.props.park.tags[1].tag_name}, {this.props.park.tags[2].tag_name}
+            {`${tag_string}`}
           </div>
         </div>
         <div className="index-item-address-container">
           <div className="index-street"> {this.props.park.street} </div>
-          <div className="index-city"> {this.props.park.city} {this.props.park.phone_number} {this.props.park.zip_code}</div>
+          <div className="index-city"> {this.props.park.city}, {this.props.park.zip_code}</div>
+          <div className="index-phone-number"> {this.props.park.phone_number} </div>
         </div>
       </li>
-
 		);
 	}
 

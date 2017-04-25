@@ -44,7 +44,7 @@ class ParkDetail extends React.Component {
                   <i className="fa fa-address-card-o fa-2x" aria-hidden="true"></i>
                   <div className="detail-address">
                     <div className="detail-address1"> {this.props.currentPark.street}</div>
-                    <div className="detail-address2"> {this.props.currentPark.city} {this.props.currentPark.state} {this.props.currentPark.zip_code}</div>
+                    <div className="detail-address2"> {this.props.currentPark.city}, {this.props.currentPark.state} {this.props.currentPark.zip_code}</div>
                   </div>
                 </div>
                 <div className="detail-icon-phone">
@@ -53,7 +53,7 @@ class ParkDetail extends React.Component {
                 </div>
                 <div className="detail-icon-website">
                   <i className="fa fa-external-link fa-2x" aria-hidden="true"></i>
-                  <a className="detail-website" href={`{this.props.currentPark.website}`}>{this.props.currentPark.website}</a>
+                  <a className="detail-website" href={this.props.currentPark.website}>{this.props.currentPark.website}</a>
                 </div>
               </div>
             </div>
