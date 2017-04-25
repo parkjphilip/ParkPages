@@ -9,5 +9,5 @@ Rails.application.routes.draw do
     end
     resources :search, only: [:index]
   end
-  get 'api/parkreviews/:parkId', :to => 'api/reviews#index',:defaults => { :format => 'json' }
+  get 'api/parkreviews/:park_id', :to => 'api/reviews#index',:defaults => { :format => 'json' }
 end

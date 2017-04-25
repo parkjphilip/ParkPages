@@ -65,7 +65,7 @@ class ParkDetail extends React.Component {
           </div>
           <div className="show-park-container-lower">
             <div className="review-container">
-              <ReviewIndexContainer />
+              <ReviewIndexContainer currentParkId={this.props.currentPark.id} />
             </div>
             <div className="show-lower-right">
               <div className="show-map">
@@ -84,4 +84,5 @@ class ParkDetail extends React.Component {
 
 }
 
+// <ReviewIndexContainer currentParkId={this.props.currentPark.id}/>
 export default withRouter(ParkDetail);

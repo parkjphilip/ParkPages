@@ -8,12 +8,12 @@ class ReviewIndex extends React.Component {
 	}
 
   componentWillMount() {
-    debugger
+    const currentId = this.props.currentParkId;
     this.props.fetchReviews(this.props.currentParkId);
   }
 
   render() {
-
+    debugger
     if (!this.props.reviews.length) {
       return (
         <div className="reviews-loading-message">
@@ -23,7 +23,7 @@ class ReviewIndex extends React.Component {
     } else {
       return (
         <div className="review-index">
-          { this.props.reviews.map((review) => (<ReviewIndexItem review={review} currentParkId={this.props.currentParkId} />)) }
+          { this.props.reviews.map((review, idx) => (<ReviewIndexItem key={idx} review={review} currentParkId={this.props.currentParkId} />)) }
         </div>
       );
     }

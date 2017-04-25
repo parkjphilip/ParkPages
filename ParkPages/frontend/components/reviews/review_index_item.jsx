@@ -9,15 +9,12 @@ class ReviewIndexItem extends React.Component {
 	}
 
   render() {
-
-    if (this.props.review.park_id === this.props.currentParkId){
-      return (
-        <div>
-          {this.props.review.body}
-          <ReactStars count={5} size={24} edit={`false`} color2={'#ffd700'} />
-        </div>
-      );
-  	}
+    return (
+      <div>
+        {this.props.review.body}
+        <ReactStars count={5} size={24} edit={`false`} color2={'#ffd700'} />
+      </div>
+    );
   }
 }
 

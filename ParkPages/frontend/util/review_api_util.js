@@ -1,8 +1,8 @@
 export const fetchReviews = (currentParkId) => {
-   
+
   return $.ajax({
     method: 'get',
-    url: `/api/parkreviews/${currentParkId}`
+    url: `/api/parkreviews/${currentParkId}`,
   });
 };
 

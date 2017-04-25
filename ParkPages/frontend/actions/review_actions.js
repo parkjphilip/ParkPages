@@ -5,6 +5,7 @@ export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
 
 
 export const fetchReviews = (currentParkId) => dispatch => {
+
   return ReviewAPIUtil.fetchReviews(currentParkId)
                       .then(reviews => dispatch(receiveReviews(reviews)));
 };

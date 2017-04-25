@@ -1,7 +1,7 @@
 class Api::ReviewsController < ApplicationController
 
   def index
-    @park = Park.find(:park_id)
+    @park = Park.find(params[:park_id])
     @reviews = @park.reviews
     # @reviews = Review.all
   end
