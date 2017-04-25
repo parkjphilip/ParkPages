@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router';
 import ReviewFormContainer from '../reviews/review_form_container';
 import ReviewIndexContainer from '../reviews/review_index_container';
+var Rating = require('react-rating');
 
 class ParkDetail extends React.Component {
 	constructor(props) {
@@ -35,8 +36,15 @@ class ParkDetail extends React.Component {
                 <div className="detail-name">{this.props.currentPark.name} </div>
                 <div className="detail-upper-bottom">
                   <div className="detail-rating">
-                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                  </div>
+                    <Rating
+                      className="park-detail-stars"
+                      empty={<img src="images/star-empty.png"/>}
+                      full={<img src="images/star-full.png"/>}
+                      initialRate={this.props.currentPark.avg_rating}
+                      start={0}
+                      stop={5}
+                      readonly={true}
+                    />                  </div>
                   <div className="detail-reviews">Number of reviews</div>
                   <div className="detail-tags">Basketball, Tennis, Dog-walking</div>
                 </div>

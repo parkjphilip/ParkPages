@@ -4,6 +4,7 @@ import ReviewForm from './review_form';
 
 
 const mapStateToProps = ( state ) => {
+
   return ({
     currentParkId: state.parks.park.id,
     currentUserId: state.session.currentUser.id
@@ -11,6 +12,7 @@ const mapStateToProps = ( state ) => {
 };
 
 const mapDispatchToProps = ( dispatch ) => {
+
   return ({
     createReview: review => dispatch(createReview(review)),
     fetchReviews: (currentParkId) => dispatch(fetchReviews(currentParkId))

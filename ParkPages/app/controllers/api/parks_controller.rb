@@ -32,8 +32,18 @@ class Api::ParksController < ApplicationController
 
   def show
     @park = Park.find(params[:id])
-    render :show
+    ratings = []
+    @park.reviews.each do |review|
+      ratings.push(review.rating)
+    end
 
+    sum = 0
+    ratings.each do |rating|
+      sum += rating
+    end
+    @avg_rating = sum / ratings.length
+     
+    render :show
   end
 
   private
