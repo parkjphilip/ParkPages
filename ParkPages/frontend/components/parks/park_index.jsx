@@ -6,10 +6,10 @@ class ParkIndex extends React.Component {
 	constructor(props) {
 		super(props);
 	}
-  //
-  // componentDidMount() {
-  //   this.props.fetchParks("");
-  // }
+
+  componentWillMount() {
+    this.props.fetchParks(this.props.location.query.query);
+  }
 
   render() {
     if (!this.props.parks.length) {
