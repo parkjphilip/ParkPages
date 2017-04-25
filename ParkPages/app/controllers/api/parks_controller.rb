@@ -42,7 +42,7 @@ class Api::ParksController < ApplicationController
       sum += rating
     end
     @avg_rating = sum / ratings.length
-     
+    @num_ratings = ratings.length
     render :show
   end
 

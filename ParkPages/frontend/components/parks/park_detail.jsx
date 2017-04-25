@@ -14,6 +14,12 @@ class ParkDetail extends React.Component {
     this.props.fetchPark(this.props.parkId);
   }
 
+  componentWillReceiveProps(newProps) {
+    if (this.props.parkId != newProps.parkId){
+      this.props.fetchPark(this.props.parkId);
+    }
+  }
+  
   // componentWillMount() {
   //   this.props.fetchPark(this.props.parkId);
   // }
@@ -41,11 +47,10 @@ class ParkDetail extends React.Component {
                       empty={<img src="images/star-empty.png"/>}
                       full={<img src="images/star-full.png"/>}
                       initialRate={this.props.currentPark.avg_rating}
-                      start={0}
-                      stop={5}
-                      readonly={true}
-                    />                  </div>
-                  <div className="detail-reviews">Number of reviews</div>
+                      start={0} stop={5} readonly={true}
+                    />
+                  </div>
+                  <div className="detail-reviews">{this.props.currentPark.num_ratings} total reviews</div>
                   <div className="detail-tags">Basketball, Tennis, Dog-walking</div>
                 </div>
               </div>

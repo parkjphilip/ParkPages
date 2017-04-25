@@ -6,4 +6,5 @@ json.array! @reviews do |review|
   json.park_id review.park_id
   json.body review.body
   json.rating review.rating
+  json.author review.author.username
 end

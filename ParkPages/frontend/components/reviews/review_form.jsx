@@ -33,26 +33,35 @@ class ReviewForm extends React.Component {
   }
 
   render() {
-    return (
-      <div className="review-form">
-        <div className="top-review-message"> Write a Review!</div>
-        <form onSubmit={this.handleSubmit}>
-          <Rating
-            className="review-form-stars"
-            empty={<img src="images/star-empty.png"/>}
-            full={<img src="images/star-full.png"/>}
-            start={0}
-            stop={5}
-            fractions={2}
-            initialRate={this.state.rating}
-            onClick={this.updateRating}
-            value={this.state.rating}
-          />
-          <textarea rows="15" cols="70" value={this.state.body} onChange={this.update("body")} className="review-body" placeholder="Your review goes here!"></textarea>
-          <input type="submit" value="Post Review" />
-        </form>
-      </div>
-    );
+    debugger
+    if(this.props.currentUserId === 0) {
+      return (
+        <div>
+          Please log in to submit a review!
+        </div>
+      );
+    } else {
+      return (
+        <div className="review-form">
+          <div className="top-review-message"> Write a Review!</div>
+          <form onSubmit={this.handleSubmit}>
+            <Rating
+              className="review-form-stars"
+              empty={<img src="images/star-empty.png"/>}
+              full={<img src="images/star-full.png"/>}
+              start={0}
+              stop={5}
+              fractions={2}
+              initialRate={this.state.rating}
+              onClick={this.updateRating}
+              value={this.state.rating}
+            />
+            <textarea rows="15" cols="70" value={this.state.body} onChange={this.update("body")} className="review-body" placeholder="Your review goes here!"></textarea>
+            <input type="submit" value="Post Review" />
+          </form>
+        </div>
+      );
+    }
 	}
 }
 

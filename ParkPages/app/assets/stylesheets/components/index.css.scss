@@ -13,8 +13,6 @@
   font-size: 26px;
   height: 130px;
   width: 330px;
-  // left: 50%;
-  // right: 50%;
   margin: 0 auto;
   padding-top: 28px;
   margin-top: 200px;
@@ -23,6 +21,12 @@
   border: 2px solid black;
   text-align: center;
   color: white;
+}
+
+.review-index {
+  width: 500px;
+  height: 500px;
+  overflow: scroll;
 }
 
 .index-item-container {

@@ -4,10 +4,15 @@ import ReviewForm from './review_form';
 
 
 const mapStateToProps = ( state ) => {
-
+  let checkCurrentUser = 0;
+  if (state.session.currentUser === null) {
+    checkCurrentUser = 0;
+  } else {
+    checkCurrentUser = state.session.currentUser.id;
+  }
   return ({
     currentParkId: state.parks.park.id,
-    currentUserId: state.session.currentUser.id
+    currentUserId: checkCurrentUser
   });
 };
 

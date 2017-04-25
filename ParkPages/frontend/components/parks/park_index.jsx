@@ -19,7 +19,13 @@ class ParkIndex extends React.Component {
         </div>
       );
     } else {
-      return <ul className="index-container"> {this.props.parks.map(park => <ParkIndexItem key={park.id} park={park}/>)} </ul>;
+      return (
+      <div className="review-index">
+        <ul className="index-container">
+          {this.props.parks.map(park => <ParkIndexItem key={park.id} park={park}/>)}
+        </ul>
+      </div>
+    );
     }
 	}
 }
