@@ -10,8 +10,8 @@ class Header extends React.Component {
     let headerStatus = this.props.location.pathname !== '/' ? "solid" : "transparent";
     let searchPosition = this.props.location.pathname!== '/' ? "top-search" : "mid-search";
 
-    if(this.props.currentUser){
-      return(
+    if (this.props.currentUser){
+      return (
         <div className={`header ${headerStatus}`}>
           <div className={`header-left ${headerStatus}`}>
             <img className={`logo ${headerStatus}`} onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" alt="Logo" />
@@ -27,7 +27,7 @@ class Header extends React.Component {
           </div>
         </div>
       );
-    }else{
+    } else {
       return (
         <div className={`header ${headerStatus}`}>
           <div className={`header-left ${headerStatus}`}>
@@ -46,10 +46,7 @@ class Header extends React.Component {
           </div>
         </div>
         );
-
     }
-
-
   }
 }
 

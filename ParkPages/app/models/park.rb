@@ -22,4 +22,9 @@ class Park < ApplicationRecord
     through: :taggings,
     source: :tag
 
+  has_many :reviews,
+    primary_key: :id,
+    foreign_key: :park_id,
+    class_name: "Review"
+
 end

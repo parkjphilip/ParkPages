@@ -1,6 +1,7 @@
 .login-submit-page {
   height: 520px;
 }
+
 .login-form-header {
   background-color: #11931e;
   height: 75px;
@@ -12,8 +13,8 @@
   width: auto;
   height: 95%;
 }
-.login-form-container {
 
+.login-form-container {
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -34,9 +35,8 @@
   height:100%;
 }
 
-
 .login-welcome {
-  color: #D32323;
+  color: #0e7816;
   font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -56,13 +56,6 @@
   display: flex;
   flex-direction: column;
 }
-
-// .login-input {
-//   width: 200px;
-//   height: 30px;
-//   font-size: 20;
-//   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-// }
 
 .login-input-username, .login-input-password {
   width: 300px;
@@ -90,6 +83,7 @@
 .login-submit:hover, .guest-submit:hover {
   background-color: rgb(29, 168, 12);
 }
+
 .login-signup-errors {
   list-style-type: none;
   padding-top: 10px;
@@ -101,9 +95,6 @@ input::-webkit-input-placeholder {
 }
 
 .login-signup-image {
-  // position: absolute;
-  // left: 500px;
-  // top: -20px;
   width: 260px;
   height: 320px;
   margin-top: 60px;
