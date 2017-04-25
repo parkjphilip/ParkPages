@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
+import ReviewFormContainer from '../reviews/review_form_container';
+import ReviewIndexContainer from '../reviews/review_index_container';
 
 class ParkDetail extends React.Component {
 	constructor(props) {
@@ -63,11 +65,14 @@ class ParkDetail extends React.Component {
           </div>
           <div className="show-park-container-lower">
             <div className="review-container">
+              <ReviewIndexContainer />
             </div>
             <div className="show-lower-right">
               <div className="show-map">
+                <div> Google Maps here </div>
               </div>
               <div className="review-form">
+                <ReviewFormContainer />
               </div>
             </div>
           </div>
