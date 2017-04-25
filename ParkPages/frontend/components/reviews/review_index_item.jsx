@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactStars from 'react-stars';
 import { Link, withRouter } from 'react-router';
+import StarRating from 'react-star-rating';
 // import ReviewIndexItem from './review_index_item';
 
 class ReviewIndexItem extends React.Component {
@@ -9,10 +9,19 @@ class ReviewIndexItem extends React.Component {
 	}
 
   render() {
+    debugger
     return (
-      <div>
-        {this.props.review.body}
-        <ReactStars count={5} size={24} edit={`false`} color2={'#ffd700'} />
+      <div className="review-index-item">
+        <div>
+          {this.props.review.author}
+        </div>
+        <div>
+          {this.props.review.rating}
+        </div>
+        <div>
+          {this.props.review.body}
+        </div>
+        <StarRating className="stars" name="airbnb-rating" caption="Rate your stay!" rating={this.props.review.rating} totalStars={5} />
       </div>
     );
   }

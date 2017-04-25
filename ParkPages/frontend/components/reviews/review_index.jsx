@@ -13,7 +13,6 @@ class ReviewIndex extends React.Component {
   }
 
   render() {
-    debugger
     if (!this.props.reviews.length) {
       return (
         <div className="reviews-loading-message">
