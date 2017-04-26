@@ -27,7 +27,7 @@ json.array! @parks do |park|
   json.image_url asset_path(park.image.url)
   json.tags park.tags
   json.num_ratings park.reviews.length
-  
+
   ratings = []
   park.reviews.each do |review|
     ratings.push(review.rating)
@@ -37,7 +37,7 @@ json.array! @parks do |park|
     sum += rating
   end
   if (ratings.length > 0)
-    avg_rating = sum/ratings.length
+    avg_rating = ((Float(sum) / Float(ratings.length) * 2).round) / (2.0)
   else
     avg_rating = 0
   end

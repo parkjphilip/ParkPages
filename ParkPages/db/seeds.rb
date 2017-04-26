@@ -19,33 +19,32 @@ user9 = User.create({username: "jessica", password: "password123"});
 user10 = User.create({username: "ashley", password: "password123"});
 
 park1 = Park.create!({name: "Central Park", street: "5th Ave to Central Park West, 59th Street to 110 Street",
-              city: "Manhattan", state: "New York", zip_code: "10024", phone_number: "(212) 310-6600",
+              city: "Manhattan", state: "New York", zip_code: "10024", phone_number: "(212) 310-6600", lat: 40.782873, lng: -73.965334,
               image: File.open("app/assets/images/centralpark.jpg"), website: "https://www.nycgovparks.org/parks/central-park"})
 park2 = Park.create!({name: "Overpeck Park", street: "321 Overpeck Avenue",
-              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 336-7275",
+              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 336-7275", lat: 40.871116, lng: -73.991944,
               image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"})
 park3 = Park.create!({name: "Wood Park", street: "370 Broad Avenue",
-              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783",
+              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783", lat: 40.863537, lng: -73.988549,
               image: File.open("app/assets/images/woodpark.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
 park4 = Park.create!({name: "Overpeck County Dog Park", street: "Fort Lee Road",
-              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783",
+              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783", lat: 40.871270, lng: -73.992062,
               image: File.open("app/assets/images/overpeckdog.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
 park5 = Park.create!({name: "Brooklyn Bridge Park", street: "334 Furman St",
-              city: "Brooklyn", state: "New York", zip_code: "11201", phone_number: "(718) 222-9939",
+              city: "Brooklyn", state: "New York", zip_code: "11201", phone_number: "(718) 222-9939", lat: 40.700316, lng: -73.996410,
               image: File.open("app/assets/images/brooklynbridge.jpg"), website: "http://www.brooklynbridgepark.org/"})
 park6 = Park.create!({name: "Gantry Plaza State Park", street: "474 48th Ave",
-              city: "Long Island City", state: "New York", zip_code: "11101", phone_number: "(718) 786-6385",
+              city: "Long Island City", state: "New York", zip_code: "11101", phone_number: "(718) 786-6385", lat: 40.745483, lng: -73.958716,
               image: File.open("app/assets/images/gantryplaza.jpg"), website: "https://parks.ny.gov/parks/149/details.aspx/"})
 park7 = Park.create!({name: "Prospect Park", street: "95 Prospect Park W",
-              city: "Brooklyn", state: "New York", zip_code: "11215", phone_number: "(718) 965-8951",
+              city: "Brooklyn", state: "New York", zip_code: "11215", phone_number: "(718) 965-8951", lat: 40.660179, lng: -73.968924,
               image: File.open("app/assets/images/prospect.jpg"), website: "https://www.prospectpark.org/"})
 park8 = Park.create!({name: "Astoria Park", street: "Astoria Park",
-              city: "Astoria", state: "New York", zip_code: "11102", phone_number: "(212) 639-9675",
+              city: "Astoria", state: "New York", zip_code: "11102", phone_number: "(212) 639-9675", lat: 40.779628, lng: -73.921589,
               image: File.open("app/assets/images/astoria.jpg"), website: "https://www.nycgovparks.org/parks/astoria-park"})
 park9 = Park.create!({name: "Teardrop Park", street: "Warren St",
-              city: "New York", state: "New York", zip_code: "10005", phone_number: "(212) 267-9700",
+              city: "New York", state: "New York", zip_code: "10005", phone_number: "(212) 267-9700", lat: 40.717039, lng: -74.015556,
               image: File.open("app/assets/images/teardrop.jpg"), website: "http://bpcparks.org/whats-here/parks/teardrop-park/"})
-
 
 tag1 = Tag.create!({tag_name: "Basketball"})
 tag2 = Tag.create!({tag_name: "Tennis"})
