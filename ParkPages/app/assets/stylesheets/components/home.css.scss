@@ -20,8 +20,6 @@
 }
 
 .home-search-container {
-  // left: 50%;
-  // margin-left: -250px;
   top: 60%;
   top: 330px;
   display: flex;
@@ -32,7 +30,6 @@
   left: 50%;
   justify-content: space-between;
   transition: 1s;
-  // top: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -90,9 +87,6 @@
 body .image-box {
   top:0;
   position: absolute;
-  // display: block;
-
-  // background: red;
   background-image: url("/images/homeimage.png");
   background-size:cover;
   background-repeat: no-repeat;
