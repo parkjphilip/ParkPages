@@ -19,8 +19,8 @@ class ReviewIndexItem extends React.Component {
         <div>
           <Rating
             className="review-index-stars"
-            empty={<img src="images/star-empty.png"/>}
-            full={<img src="images/star-full.png"/>}
+            empty={<img height="28" width="28" src="images/star-empty.png"/>}
+            full={<img height="28" width="28" src="images/star-full.png"/>}
             initialRate={this.props.review.rating}
             start={0}
             stop={5}

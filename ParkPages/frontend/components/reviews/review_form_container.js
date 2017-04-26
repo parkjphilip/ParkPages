@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { createReview, fetchReviews } from '../../actions/review_actions';
+import { fetchPark } from '../../actions/park_actions';
 import ReviewForm from './review_form';
 
 
@@ -17,10 +18,10 @@ const mapStateToProps = ( state ) => {
 };
 
 const mapDispatchToProps = ( dispatch ) => {
-
   return ({
     createReview: review => dispatch(createReview(review)),
-    fetchReviews: (currentParkId) => dispatch(fetchReviews(currentParkId))
+    fetchReviews: (currentParkId) => dispatch(fetchReviews(currentParkId)),
+    fetchPark: id => dispatch(fetchPark(id)),
   });
 };
 

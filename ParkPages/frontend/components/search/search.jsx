@@ -21,14 +21,21 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit} >
-          <input type="text" value={this.state.query} onChange={this.update("query")} className="home-search" placeholder="Find Park or Activity.." />
-          <input type="image" value="submit" className="home-search-button home-search-glass" src="/images/glass.png" alt="search submit button" />
+        <form className="search-form" onSubmit={this.handleSubmit} >
+          <input type="text" value={this.state.query} onChange={this.update("query")} className="home-search" placeholder="Search by Park or Activity.." />
+          <button type="submit" className="home-search-glass" />
         </form>
-      </div>
     );
   }
 }
 
 export default withRouter(Search);
+
+
+
+
+// <div className="search-button-container">
+// <input type="image" value="submit" className="home-search-button" alt="search submit button" >
+// </input>
+// <img className="home-search-glass" src="/images/glass.png" />
+// </div>

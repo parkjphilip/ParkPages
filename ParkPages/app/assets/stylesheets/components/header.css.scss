@@ -12,13 +12,14 @@
 }
 
 .header-left {
-  width: 150px;
+  width: 25%;
   height: 100%;
   margin-right: 30px;
 }
 
 .header-middle {
-  max-width: 500px;
+  // max-width: 500px;
+  width: 50%;
   height: 100%;
   width: 100%;
 }
@@ -30,17 +31,24 @@
 }
 
 .header-right {
-  padding-top: 20px;
-  width: 320px;
+  white-space: nowrap;
+  padding-top: 14px;
+  width: 270px;
   height: 100%;
-  margin-left: 30px;
+}
+
+.search-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .logo {
   position: relative;
   margin-left: 40px;
   width: 100px;
-
 }
 
 .logo:hover {
@@ -53,7 +61,7 @@
 
 .header-name {
   color: white;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: inline-block;
   padding-right: 25px;
 }

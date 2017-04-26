@@ -41,7 +41,7 @@ class Api::ParksController < ApplicationController
     ratings.each do |rating|
       sum += rating
     end
-    @avg_rating = sum / ratings.length
+    @avg_rating = ((Float(sum) / Float(ratings.length) * 2).round) / (2.0)
     @num_ratings = ratings.length
     render :show
   end

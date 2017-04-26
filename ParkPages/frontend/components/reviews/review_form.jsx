@@ -17,6 +17,7 @@ class ReviewForm extends React.Component {
     e.preventDefault();
     let currentReview = this.state;
     this.props.createReview(currentReview)
+              .then(() => this.props.fetchPark(this.props.currentParkId))
               .then(() => this.props.fetchReviews(this.props.currentParkId));
   }
 
@@ -33,7 +34,6 @@ class ReviewForm extends React.Component {
   }
 
   render() {
-    debugger
     if(this.props.currentUserId === 0) {
       return (
         <div>

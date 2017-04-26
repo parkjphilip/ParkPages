@@ -15,6 +15,11 @@
   border: 1px solid lightgrey;
 }
 
+.detail-upper {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 .detail-lower {
   font-size: 14px;
 }
@@ -24,10 +29,11 @@
   font-weight: bold;
 }
 
-.detail-upper {
-  margin-top: 10px;
-  margin-left: 10px;
+.star {
+  width: 20px;
+  height: 20px;
 }
+
 .detail-icon-address, .detail-icon-phone, .detail-icon-website {
   display: flex;
   margin-top: 7px;

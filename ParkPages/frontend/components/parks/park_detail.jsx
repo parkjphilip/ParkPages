@@ -19,16 +19,6 @@ class ParkDetail extends React.Component {
       this.props.fetchPark(this.props.parkId);
     }
   }
-  
-  // componentWillMount() {
-  //   this.props.fetchPark(this.props.parkId);
-  // }
-
-  // componentWillReceiveProps(newProps) {
-  // if (this.props.params.id !== newProps.params.id) {
-  //   this.props.fetchPark(newProps.params.id);
-  //   }
-  // }
 
   render() {
     if (!this.props.currentPark) {
@@ -44,10 +34,10 @@ class ParkDetail extends React.Component {
                   <div className="detail-rating">
                     <Rating
                       className="park-detail-stars"
-                      empty={<img src="images/star-empty.png"/>}
-                      full={<img src="images/star-full.png"/>}
+                      empty={<img height="28" width="28" src="images/star-empty.png"/>}
+                      full={<img height="28" width="28" src="images/star-full.png"/>}
                       initialRate={this.props.currentPark.avg_rating}
-                      start={0} stop={5} readonly={true}
+                      start={0} stop={5} readonly={true} fractions={2}
                     />
                   </div>
                   <div className="detail-reviews">{this.props.currentPark.num_ratings} total reviews</div>
