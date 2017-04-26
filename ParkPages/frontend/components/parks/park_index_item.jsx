@@ -20,7 +20,7 @@ class ParkIndexItem extends React.Component {
 		return (
       <li className="index-item-container">
         <div className="index-item-image-container">
-          <img className="index-park-image" src={`${this.props.park.image_url}`}/>
+          <img onClick={()=>this.props.router.push(`/parks/${this.props.park.id}`)} className="index-park-image" src={`${this.props.park.image_url}`}/>
         </div>
         <div className="index-item-info-container">
           <div className="index-name">

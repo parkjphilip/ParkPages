@@ -8,19 +8,19 @@ class ReviewIndexItem extends React.Component {
 	}
 
   render() {
-    // debugger
     let timestamp = new Date(this.props.review.date);
     let newTimestamp = timestamp.toLocaleDateString();
-    debugger
     return (
       <div className="review-index-item">
-        <div className="review-index-author">
-          {this.props.review.author}
-        </div>
-        <div className="review-index-info">
+        <div className="review-index-author-info">
+          <div>
+            {this.props.review.author}
+          </div>
           <div>
             {newTimestamp}
           </div>
+        </div>
+        <div className="review-index-info">
           <Rating
             className="review-index-stars"
             empty={<img height="28" width="28" src="images/star-empty.png"/>}
@@ -29,6 +29,7 @@ class ReviewIndexItem extends React.Component {
             start={0}
             stop={5}
             readonly={true}
+            fractions={2}
           />
           <div className="review-index-body">
             {this.props.review.body}
