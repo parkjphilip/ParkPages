@@ -89,6 +89,9 @@
 
 .review-index-item {
   display: flex;
+  border-top: 1px solid rgb(182, 183, 187);
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .reviews-index-title {
   color: #11931e;
@@ -96,6 +99,18 @@
   // text-align: center;
   padding-left: 30px;
   font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.review-index-author {
+  padding-left: 30px;
+  margin: auto auto;
+  width: 25%;
+  font-weight: bold;
+}
+
+.review-index-info {
+  width: 75%;
 }
 
 .show-lower-right {
