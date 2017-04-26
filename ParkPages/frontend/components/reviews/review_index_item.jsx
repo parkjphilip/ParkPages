@@ -9,6 +9,9 @@ class ReviewIndexItem extends React.Component {
 
   render() {
     // debugger
+    let timestamp = new Date(this.props.review.date);
+    let newTimestamp = timestamp.toLocaleDateString();
+    debugger
     return (
       <div className="review-index-item">
         <div className="review-index-author">
@@ -16,8 +19,7 @@ class ReviewIndexItem extends React.Component {
         </div>
         <div className="review-index-info">
           <div>
-            // slice the string here
-            {this.props.review.created_at}
+            {newTimestamp}
           </div>
           <Rating
             className="review-index-stars"
