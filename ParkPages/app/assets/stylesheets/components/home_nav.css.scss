@@ -7,15 +7,22 @@
 }
 
 .login-signup {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-right: 100px;
   z-index: 1;
+}
+
+.header-right-logged-in {
+  margin-right: 65px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .login-signup a {
   color: white;
   margin-right: 50px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .login {

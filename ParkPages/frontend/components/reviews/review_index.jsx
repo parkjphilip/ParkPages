@@ -15,13 +15,16 @@ class ReviewIndex extends React.Component {
   render() {
     if (!this.props.reviews.length) {
       return (
-        <div className="reviews-loading-message">
-          Reviews Loading...
+        <div className="no-reviews-message">
+          There are currently no reviews for this park. Be the first one to submit a review!
         </div>
       );
     } else {
       return (
         <div className="review-index">
+          <div className="reviews-index-title">
+            Reviews
+          </div>
           { this.props.reviews.map((review, idx) => (<ReviewIndexItem key={idx} review={review} currentParkId={this.props.currentParkId} author={review.author}/>)) }
         </div>
       );

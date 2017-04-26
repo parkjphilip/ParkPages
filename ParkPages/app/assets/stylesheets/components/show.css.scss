@@ -7,9 +7,9 @@
 
 .show-park-info {
   position: relative;
-  width: 325px;
+  width: 350px;
   height: 270px;
-  left: 100px;
+  left: 15%;
   top: 30px;
   background: #FFFFFF;
   border: 1px solid lightgrey;
@@ -59,10 +59,10 @@
 }
 .show-park-image-container {
   position: relative;
-  left: 200px;
+  left: 30%;
   top: 35px;
-  width: 320px;
-  height: 230px;
+  width: 450px;
+  height: 260px;
 }
 
 .show-park-image {
@@ -77,8 +77,25 @@
 }
 
 .review-container {
-  width: 50%;
+  width: 60%;
   height: 100%;
+}
+
+.review-index {
+  margin: 80px auto;
+  width: 600px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.review-index-item {
+  display: flex;
+}
+.reviews-index-title {
+  color: #11931e;
+  font-weight: bold;
+  // text-align: center;
+  padding-left: 30px;
+  font-size: 20px;
 }
 
 .show-lower-right {
@@ -87,11 +104,10 @@
 }
 
 .show-map {
-  height: 50%;
+  height: 40%;
   width: 100%;
 }
-
 .review-form {
-  height: 50%;
+  height: 40%;
   width:100%;
 }

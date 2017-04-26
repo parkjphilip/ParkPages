@@ -35,6 +35,7 @@
   padding-top: 14px;
   width: 270px;
   height: 100%;
+  // margin-right: 150px;
 }
 
 .search-form {
@@ -61,13 +62,14 @@
 
 .header-name {
   color: white;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   padding-right: 25px;
+  font-size: 18px;
 }
 
 .header-button {
-  background-color: d32323;
+  background-color: transparent;
   margin-right: 15%;
   border-color: white;
   border-style: solid;
@@ -77,6 +79,8 @@
   white-space: nowrap;
   padding-left: 15px;
   padding-right: 15px;
+  font-size: 18px;
+  color: white;
 }
 
 .header-button:hover {

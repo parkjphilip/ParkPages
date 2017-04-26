@@ -21,7 +21,7 @@ class Header extends React.Component {
                 <SearchContainer />
             </div>
           </div>
-          <div className="header-right">
+          <div className="header-right header-right-logged-in">
             <h2 className="header-name">Hi, {this.props.currentUser.username}!</h2>
             <button className="header-button" onClick={this.props.logout}>Log Out</button>
           </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
+var Rating = require('react-rating');
+
 
 class ParkIndexItem extends React.Component {
 	constructor(props) {
@@ -18,14 +20,26 @@ class ParkIndexItem extends React.Component {
 		return (
       <li className="index-item-container">
         <div className="index-item-image-container">
-          <img className="show-park-image" src={`${this.props.park.image_url}`}/>
+          <img className="index-park-image" src={`${this.props.park.image_url}`}/>
         </div>
         <div className="index-item-info-container">
           <div className="index-name">
             <Link to={`/parks/${this.props.park.id}`} className="index-name-link">{this.props.park.name}</Link>
           </div>
-          <div className="index-rating"> rating here </div>
-          <div className="index-reviews"> number of reviews here </div>
+          <div className="index-rating">
+            <Rating
+              className="review-index-stars"
+              empty={<img height="28" width="28" src="images/star-empty.png"/>}
+              full={<img height="28" width="28" src="images/star-full.png"/>}
+              initialRate={this.props.park.avg_rating}
+              start={0}
+              stop={5}
+              readonly={true}
+            />
+          </div>
+          <div className="index-reviews">
+            {this.props.park.num_ratings} total reviews
+          </div>
           <div className="index-tags">
             {`${tag_string}`}
           </div>

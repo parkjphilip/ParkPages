@@ -4,7 +4,7 @@ import HeaderContainer from './header/header_container';
 
 const App = ( props ) => {
     return (
-      <div>
+      <div className="full-page">
         <HeaderContainer />
         { props.children }
       </div>

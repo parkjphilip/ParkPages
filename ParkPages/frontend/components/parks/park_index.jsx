@@ -14,18 +14,14 @@ class ParkIndex extends React.Component {
   render() {
     if (!this.props.parks.length) {
       return (
-        <div className="enter-search-message">
-          Results not available. Please enter a search !
-        </div>
+        <div className="spinner"></div>
       );
     } else {
       return (
-      <div className="review-index">
         <ul className="index-container">
           {this.props.parks.map(park => <ParkIndexItem key={park.id} park={park}/>)}
         </ul>
-      </div>
-    );
+      );
     }
 	}
 }

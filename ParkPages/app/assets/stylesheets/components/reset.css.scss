@@ -17,7 +17,7 @@ time, mark, audio, video {
  font: inherit;
  vertical-align: baseline;
  box-sizing: border-box;
- // border: 2px solid blue;
+ border: 1px solid blue;
 }
 
 .cursor-pointer:hover {
@@ -26,4 +26,41 @@ time, mark, audio, video {
 
 .hide {
   display: none;
+}
+.full-page {
+  height: 900px;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #11931e; /* Green */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: relative;
+    left: 50%;
+    top: 35%;
+
+}
+
+.enter-search-message {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  font-size: 26px;
+  height: 130px;
+  width: 330px;
+  margin: 0 auto;
+  padding-top: 28px;
+  margin-top: 200px;
+  background: #11931e;
+  border-radius: 50%;
+  border: 2px solid black;
+  text-align: center;
+  color: white;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

@@ -10,7 +10,7 @@
 
 # json.array! @parks, :id, :name, :street, :city, :state, :zip_code, :phone_number, :website, :photo_url
 # @parks.each do |park|
-#    
+#
 #   json.image_url park.image.url(:medium)
 # end
 # json.image_url asset_path(@parks.image.url(:medium))
@@ -26,4 +26,20 @@ json.array! @parks do |park|
   json.website park.website
   json.image_url asset_path(park.image.url)
   json.tags park.tags
+  json.num_ratings park.reviews.length
+  
+  ratings = []
+  park.reviews.each do |review|
+    ratings.push(review.rating)
+  end
+  sum = 1;
+  ratings.each do |rating|
+    sum += rating
+  end
+  if (ratings.length > 0)
+    avg_rating = sum/ratings.length
+  else
+    avg_rating = 0
+  end
+  json.avg_rating avg_rating
 end

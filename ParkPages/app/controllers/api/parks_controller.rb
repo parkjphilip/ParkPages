@@ -8,17 +8,6 @@ class Api::ParksController < ApplicationController
       tagparks = Park.tag_search(params[:park][:name])
       @parks = nameparks + tagparks
     end
-    # if (params[:park][:name])
-    #
-    #   nameparks = Park.name_search(params[:park][:name])
-    #   tagparks = Park.tag_search(params[:park][:name])
-    #   @parks = nameparks + tagparks
-    #   # @parks = Park.all.where("name ILIKE ?", "%#{park_params[:name]}%")
-    #   # have to also search for tags through has_many tags association
-    # else
-    #
-    #   @parks = Park.all
-    # end
   end
 
   def create
@@ -41,7 +30,11 @@ class Api::ParksController < ApplicationController
     ratings.each do |rating|
       sum += rating
     end
-    @avg_rating = ((Float(sum) / Float(ratings.length) * 2).round) / (2.0)
+    if ratings.length > 0
+      @avg_rating = ((Float(sum) / Float(ratings.length) * 2).round) / (2.0)
+    else
+      @avg_rating = 0
+    end
     @num_ratings = ratings.length
     render :show
   end
