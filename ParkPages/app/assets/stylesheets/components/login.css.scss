@@ -92,8 +92,13 @@
 }
 
 input::-webkit-input-placeholder {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 3;
+}
+
+textarea::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 2;
 }
 
 .login-signup-image {

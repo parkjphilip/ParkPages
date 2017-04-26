@@ -28,7 +28,7 @@ time, mark, audio, video {
   display: none;
 }
 .full-page {
-  height: 900px;
+  height: 1600px;
 }
 
 .spinner {
@@ -40,8 +40,7 @@ time, mark, audio, video {
     animation: spin 2s linear infinite;
     position: relative;
     left: 50%;
-    top: 35%;
-
+    top: 250px;
 }
 
 .enter-search-message {
@@ -54,7 +53,6 @@ time, mark, audio, video {
   padding-top: 28px;
   margin-top: 200px;
   background: #11931e;
-  border-radius: 50%;
   border: 2px solid black;
   text-align: center;
   color: white;

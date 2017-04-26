@@ -14,7 +14,7 @@ class ParkIndex extends React.Component {
   render() {
     if (!this.props.parks.length) {
       return (
-        <div className="spinner"></div>
+        <div className="enter-search-message">Search Results not found. Please try again!</div>
       );
     } else {
       return (

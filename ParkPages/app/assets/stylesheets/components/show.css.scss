@@ -1,3 +1,6 @@
+.show-park-area {
+  height: 2000px;
+}
 .show-park-container-upper {
   background: #F5F5F5;
   height: 270px;
@@ -72,11 +75,12 @@
 }
 .show-park-container-lower {
   width: 100%;
-  height: 500px;
+  height: 600px;
   display: flex;
 }
 
 .review-container {
+  position: relative;
   width: 60%;
   height: 100%;
 }
@@ -97,7 +101,6 @@
 .reviews-index-title {
   color: #11931e;
   font-weight: bold;
-  // text-align: center;
   padding-left: 30px;
   font-size: 20px;
   margin-bottom: 5px;
@@ -115,15 +118,61 @@
 }
 
 .show-lower-right {
-  width: 50%;
+  width: 46%;
   height: 100%;
+  position: relative;
 }
 
 .show-map {
+  margin-top: 100px;
   height: 40%;
   width: 100%;
 }
+
+.login-to-review {
+  color: #11931e;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .review-form {
-  height: 40%;
-  width:100%;
+  margin-top: 80px;
+  height: 80%;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #11931e;
+  font-weight: bold;
+  display: flex;
+}
+
+.review-submit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-submit-button {
+  width: 160px;
+  margin: 0 auto;
+  background-color: #11931e;
+  border-color: rgb(10, 103, 8);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  border-radius: 4px;
+  color: white;
+  height: 35px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.review-submit-button:hover {
+  background-color: rgb(29, 168, 12);
+}
+
+.review-form-stars {
+
+}
+
+.review-body {
+  font-size: 20px;
+  margin-top: 5px;
 }

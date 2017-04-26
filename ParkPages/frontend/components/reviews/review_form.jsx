@@ -36,19 +36,19 @@ class ReviewForm extends React.Component {
   render() {
     if(this.props.currentUserId === 0) {
       return (
-        <div>
+        <div className="login-to-review">
           Please log in to submit a review!
         </div>
       );
     } else {
       return (
-        <div className="review-form">
+        <div>
           <div className="top-review-message"> Write a Review!</div>
-          <form onSubmit={this.handleSubmit}>
+          <form className="review-submit-form" onSubmit={this.handleSubmit}>
             <Rating
               className="review-form-stars"
-              empty={<img src="images/star-empty.png"/>}
-              full={<img src="images/star-full.png"/>}
+              empty={<img height="40" width="40" src="images/star-empty.png"/>}
+              full={<img height="40" width="40" src="images/star-full.png"/>}
               start={0}
               stop={5}
               fractions={2}
@@ -56,8 +56,8 @@ class ReviewForm extends React.Component {
               onClick={this.updateRating}
               value={this.state.rating}
             />
-            <textarea rows="15" cols="70" value={this.state.body} onChange={this.update("body")} className="review-body" placeholder="Your review goes here!"></textarea>
-            <input type="submit" value="Post Review" />
+            <textarea rows="8" cols="40" value={this.state.body} onChange={this.update("body")} className="review-body" placeholder="Your review goes here!"></textarea>
+            <input className="review-submit-button cursor-pointer" type="submit" value="Post Review" />
           </form>
         </div>
       );
