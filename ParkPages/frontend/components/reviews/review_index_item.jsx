@@ -8,7 +8,7 @@ class ReviewIndexItem extends React.Component {
 	}
 
   render() {
-    debugger
+    // debugger
     return (
       <div className="review-index-item">
         <div className="review-index-author">
