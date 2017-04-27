@@ -15,6 +15,11 @@ export const fetchParks = (query) => dispatch => {
                     .then(hashHistory.push(`/parks?query=${query}`));
 };
 
+export const fetchFeaturedParks = () => dispatch => {
+  return ParkAPIUtil.fetchFeaturedParks()
+                    .then(parks => dispatch(receiveParks(parks)));
+};
+
 export const receivePark = park => {
   return ({
     type: RECEIVE_PARK,

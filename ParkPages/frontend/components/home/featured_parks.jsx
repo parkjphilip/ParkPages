@@ -1,54 +1,38 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
+var Rating = require('react-rating');
+import FeaturedPark from './featured_park';
 
 class FeaturedParks extends React.Component {
 
   componentWillMount(){
-    this.props.fetchParks("");
+    // debugger
+    this.props.fetchFeaturedParks("");
   }
 
 	render() {
+    // debugger
+    if (Object.keys(this.props.parks).length === 0){
+      return <div></div>;
+    } else {
+      // debugger
 		return (
-      <div>
-        <div className="featured-park">
-          <div className="featured-park-upper">
-          </div>
-          <div className="featured-park-lower">
-          </div>
+      <div className="featured-parks">
+        <div className="featured-title">Featured Parks</div>
+        <div className="upper-featured">
+          <FeaturedPark park={this.props.parks[1]} />
+          <FeaturedPark park={this.props.parks[2]} />
+          <FeaturedPark park={this.props.parks[3]} />
         </div>
-        <div className="featured-park">
-          <div className="featured-park-upper">
-          </div>
-          <div className="featured-park-lower">
-          </div>
-        </div>
-        <div className="featured-park">
-          <div className="featured-park-upper">
-          </div>
-          <div className="featured-park-lower">
-          </div>
-        </div>
-        <div className="featured-park">
-          <div className="featured-park-upper">
-          </div>
-          <div className="featured-park-lower">
-          </div>
-        </div>
-        <div className="featured-park">
-          <div className="featured-park-upper">
-          </div>
-          <div className="featured-park-lower">
-          </div>
-        </div>
-        <div className="featured-park">
-          <div className="featured-park-upper">
-          </div>
-          <div className="featured-park-lower">
-          </div>
+        <div className="lower-featured">
+          <FeaturedPark park={this.props.parks[4]} />
+          <FeaturedPark park={this.props.parks[5]} />
+          <FeaturedPark park={this.props.parks[6]} />
         </div>
       </div>
 		);
-	}
+	 }
+ }
 }
 
 export default withRouter(FeaturedParks);

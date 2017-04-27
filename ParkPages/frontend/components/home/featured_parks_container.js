@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
-import { fetchPark, fetchParks } from '../../actions/park_actions';
+import { fetchFeaturedParks } from '../../actions/park_actions';
 import FeaturedParks from './featured_parks';
 
 
 const mapStateToProps = ( state ) => {
+  // debugger
   return ({
     parks: state.parks
   });
@@ -11,7 +12,7 @@ const mapStateToProps = ( state ) => {
 
 const mapDispatchToProps = ( dispatch ) => {
   return ({
-    fetchParks: (query) => dispatch(fetchParks(query))
+    fetchFeaturedParks: () => dispatch(fetchFeaturedParks())
   });
 };
 

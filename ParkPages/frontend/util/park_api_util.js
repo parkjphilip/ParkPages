@@ -17,6 +17,18 @@ export const fetchParks = (query) => {
   });
 };
 
+export const fetchFeaturedParks = () => {
+  return $.ajax({
+    method: 'get',
+    url: '/api/parks',
+    data: {
+      park: {
+        name: ``
+      }
+    }
+  });
+};
+
 export const fetchPark = (id) => {
   return $.ajax({
     method: 'get',

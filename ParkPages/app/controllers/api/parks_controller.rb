@@ -1,13 +1,17 @@
 class Api::ParksController < ApplicationController
 
   def index
+    # debugger
     if (params[:park][:name].blank?)
+      # debugger
       @parks = Park.all
     else
+      # debugger
       nameparks = Park.name_search(params[:park][:name])
       tagparks = Park.tag_search(params[:park][:name])
       @parks = nameparks + tagparks
     end
+    # debugger
   end
 
   def create
@@ -36,7 +40,7 @@ class Api::ParksController < ApplicationController
       @avg_rating = 0
     end
     @num_ratings = ratings.length
-      
+
     render :show
   end
 
