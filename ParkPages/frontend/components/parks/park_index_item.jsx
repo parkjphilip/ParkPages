@@ -52,7 +52,6 @@ class ParkIndexItem extends React.Component {
       </li>
 		);
 	}
-
 }
 
 export default withRouter(ParkIndexItem);
