@@ -4,7 +4,7 @@ import FeaturedParks from './featured_parks';
 
 
 const mapStateToProps = ( state ) => {
-  // debugger
+  //
   return ({
     parks: state.parks
   });

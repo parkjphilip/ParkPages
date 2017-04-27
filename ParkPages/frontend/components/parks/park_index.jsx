@@ -9,14 +9,12 @@ class ParkIndex extends React.Component {
 	}
 
   componentWillMount() {
-    debugger
     this.props.fetchParks(this.props.location.query.query);
   }
 
   render() {
     if (!this.props.parks.length) {
       if (this.props.location.query.query.length > 0){
-
         return (
           <div className="enter-search-message">Search Results not found. Please try again!</div>
         );

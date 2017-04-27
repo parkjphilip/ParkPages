@@ -6,16 +6,16 @@ import FeaturedPark from './featured_park';
 class FeaturedParks extends React.Component {
 
   componentWillMount(){
-    // debugger
+    //     
     this.props.fetchFeaturedParks("");
   }
 
 	render() {
-    // debugger
+    //
     if (Object.keys(this.props.parks).length === 0){
       return <div></div>;
     } else {
-      // debugger
+      //
 		return (
       <div className="featured-parks">
         <div className="featured-title">Check out our Featured Parks!</div>
