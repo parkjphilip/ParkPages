@@ -5,27 +5,13 @@
   height: 98%;
   top: 50px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   border: 1px solid black;
   border-radius: 3px;
   background-color: rgb(195, 222, 189);
   overflow: scroll;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
-
-// .park-index {
-//   width: 50%;
-//   // width: 900px;
-//   height: 50%;
-//   overflow: scroll;
-//   margin-left: 170px;
-//   border: 1px solid black;
-//   border-radius: 3px;
-//   background-color: rgb(195, 222, 189);
-//   overflow-x: hidden;
-//   // overflow-y: hidden;
-// }
-
 
 .index-item-container {
   display: flex;
@@ -61,12 +47,26 @@
   width: 33%;
   height: 100%;
   margin-left: 20px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
+.index-lower {
+  display: flex;
+  height: 95%;
+}
 
+.index-map {
+  margin-top: 100px;
+  height: 350px;
+  width: 350px;
+  border: 1px solid black;
+  position: relative;
+  div:first-child {
+    height: 100%;
+  }
+}
 .index-item-address-container {
-  padding-top: 45px;
+  padding-top: 20px;
   width: 30%;
   height: 100%;
   margin-left: 15px;
