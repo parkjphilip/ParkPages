@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
-import SearchContainer from './search/search_container';
+import SearchContainer from '../search/search_container';
+import FeaturedParksContainer from './featured_parks_container';
 
 class Home extends React.Component {
 	render() {
+
 		return (
       <div>
         <div className="image-box">
@@ -23,7 +25,9 @@ class Home extends React.Component {
             Barbecue
           </button>
         </div>
-
+        <div className="featured-parks-container">
+          <FeaturedParksContainer />
+        </div>
       </div>
 		);
 	}

@@ -5,7 +5,7 @@ import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
 import ParkDetailContainer from './parks/park_detail_container';
 import ParkIndexContainer from './parks/park_index_container';
-import Home from './home';
+import Home from './home/home';
 
 const Root = ({ store }) => {
 
@@ -15,7 +15,7 @@ const Root = ({ store }) => {
       replace('/parks');
     }
   };
-
+   
   return (
     <Provider store={ store }>
       <Router history={ hashHistory }>
