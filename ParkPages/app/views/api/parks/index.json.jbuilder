@@ -26,6 +26,8 @@ json.array! @parks do |park|
   json.website park.website
   json.image_url asset_path(park.image.url)
   json.tags park.tags
+  json.lat park.lat
+  json.lng park.lng
   json.num_ratings park.reviews.length
 
   ratings = []

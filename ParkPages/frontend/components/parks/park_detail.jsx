@@ -73,7 +73,7 @@ class ParkDetail extends React.Component {
             </div>
             <div className="show-lower-right">
               <div className="show-map">
-                <ParkMap className="map"/>
+                <ParkMap currentPark={this.props.currentPark} className="map"/>
               </div>
               <div className="review-form">
                 <ReviewFormContainer />
