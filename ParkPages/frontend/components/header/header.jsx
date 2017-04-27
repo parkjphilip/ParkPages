@@ -9,7 +9,6 @@ class Header extends React.Component {
 
     let headerStatus = this.props.location.pathname !== '/' ? "solid" : "transparent";
     let searchPosition = this.props.location.pathname!== '/' ? "top-search" : "mid-search";
-
     if (this.props.currentUser){
       return (
         <div className={`header ${headerStatus}`}>

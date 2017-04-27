@@ -173,11 +173,16 @@
   background-color: rgb(29, 168, 12);
 }
 
-.review-form-stars {
-
-}
-
 .review-body {
   font-size: 20px;
   margin-top: 5px;
+}
+
+.no-reviews-message {
+  margin-top: 100px;
+  width: 350px;
+  margin: 100px auto;
+  color: #11931e;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

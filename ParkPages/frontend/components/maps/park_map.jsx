@@ -26,3 +26,8 @@ class ParkMap extends React.Component {
 }
 
 export default withRouter(ParkMap);
+
+
+// [basketball, pool, bbq]
+
+// i = 0

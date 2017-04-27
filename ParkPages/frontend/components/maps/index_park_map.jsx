@@ -5,7 +5,6 @@ import { withRouter } from 'react-router';
 class IndexParkMap extends React.Component {
 
   componentWillReceiveProps(newProps) {
-    debugger
 
     if (this.props.parks != newProps.parks ) {
 

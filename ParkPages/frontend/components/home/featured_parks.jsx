@@ -5,11 +5,18 @@ import FeaturedPark from './featured_park';
 
 class FeaturedParks extends React.Component {
 
-  componentWillMount(){
-    this.props.fetchFeaturedParks("");
+  componentDidMount(){
+    this.props.fetchFeaturedParks();
   }
-
+  //
+  // componentWillReceiveProps(newProps) {
+  //   debugger
+  //   if (Object.keys(this.props.parks).length != Object.keys(newProps.parks).length) {
+  //     this.props.fetchFeaturedParks("");
+  //   }
+  // }
 	render() {
+    // debugger
     if (Object.keys(this.props.parks).length === 0){
       return <div></div>;
     } else {
@@ -17,14 +24,14 @@ class FeaturedParks extends React.Component {
       <div className="featured-parks">
         <div className="featured-title">Check out our Featured Parks!</div>
         <div className="upper-featured">
+          <FeaturedPark park={this.props.parks[0]} />
           <FeaturedPark park={this.props.parks[1]} />
           <FeaturedPark park={this.props.parks[2]} />
-          <FeaturedPark park={this.props.parks[3]} />
         </div>
         <div className="lower-featured">
+          <FeaturedPark park={this.props.parks[3]} />
           <FeaturedPark park={this.props.parks[4]} />
           <FeaturedPark park={this.props.parks[5]} />
-          <FeaturedPark park={this.props.parks[6]} />
         </div>
       </div>
 		);
