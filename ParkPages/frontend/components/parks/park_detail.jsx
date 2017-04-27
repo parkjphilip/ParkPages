@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router';
 import ReviewFormContainer from '../reviews/review_form_container';
 import ReviewIndexContainer from '../reviews/review_index_container';
+import ParkMap from '../maps/park_map';
 var Rating = require('react-rating');
 
 class ParkDetail extends React.Component {
@@ -72,7 +73,7 @@ class ParkDetail extends React.Component {
             </div>
             <div className="show-lower-right">
               <div className="show-map">
-                <div> Google Maps here </div>
+                <ParkMap className="map"/>
               </div>
               <div className="review-form">
                 <ReviewFormContainer />

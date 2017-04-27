@@ -125,8 +125,13 @@
 
 .show-map {
   margin-top: 100px;
-  height: 40%;
-  width: 100%;
+  height: 350px;
+  width: 350px;
+  border: 1px solid black;
+  position: relative;
+  div:first-child {
+    height: 100%;
+  }
 }
 
 .login-to-review {
