@@ -89,7 +89,7 @@
 
 .featured-parks-container {
   position: relative;
-  top: 700px;
+  top: 600px;
 }
 
 .upper-featured, .lower-featured {
@@ -101,14 +101,37 @@
 .featured-title {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 45px;
+  font-size: 30px;
+  color: #11931e;
 }
 
-.featured-name, .featured-reviews {
-  text-align: center;
+.featured-park {
+  border: 1px solid rgb(170, 182, 175);
+  border-radius: 10px;
+}
+.featured-image {
+  padding: 10px;
 }
 
+.featured-detail-1, .featured-detail-2 {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.featured-detail-1 {
+  color: rgb(40, 69, 121);
+  font-size: 17px;
+  word-wrap: break-word;
+  white-space: initial;
+  width: 300px;;
+}
+
+.featured-lower {
+  height: 80px;
+  justify-content: space-between;
+}
 .featured-stars {
   position: relative;
-  left: 100px;
 }

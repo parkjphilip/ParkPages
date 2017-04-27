@@ -18,7 +18,7 @@ class FeaturedParks extends React.Component {
       // debugger
 		return (
       <div className="featured-parks">
-        <div className="featured-title">Featured Parks</div>
+        <div className="featured-title">Check out our Featured Parks!</div>
         <div className="upper-featured">
           <FeaturedPark park={this.props.parks[1]} />
           <FeaturedPark park={this.props.parks[2]} />

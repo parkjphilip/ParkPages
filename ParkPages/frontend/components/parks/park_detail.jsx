@@ -41,7 +41,7 @@ class ParkDetail extends React.Component {
                       start={0} stop={5} readonly={true} fractions={2}
                     />
                   </div>
-                  <div className="detail-reviews">{this.props.currentPark.num_ratings} total reviews</div>
+                  <div className="detail-reviews">{this.props.currentPark.num_ratings} reviews</div>
                   <div className="detail-tags">Basketball, Tennis, Dog-walking</div>
                 </div>
               </div>

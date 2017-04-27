@@ -9,16 +9,21 @@ class FeaturedPark extends React.Component {
 		return (
       <div>
         <div className="featured-park">
-          <div className="featured-name"> {this.props.park.name} </div>
-          <Rating
-            className="featured-stars"
-            empty={<img height="28" width="28" src="images/star-empty.png"/>}
-            full={<img height="28" width="28" src="images/star-full.png"/>}
-            initialRate={this.props.park.avg_rating}
-            start={0} stop={5} readonly={true} fractions={2}
-          />
-          <div className="featured-reviews">{this.props.park.num_ratings} total reviews</div>
-          <img height="250" width="350" src={this.props.park.image_url}/>
+          <img className="featured-image cursor-pointer" height="250" width="350" onClick={()=>{this.props.router.push(`/parks/${this.props.park.id}`);}} src={this.props.park.image_url}/>
+          <div className="featured-lower">
+            <div className="featured-detail-1 cursor-pointer" onClick={()=>{this.props.router.push(`/parks/${this.props.park.id}`);}}>
+              {this.props.park.name} - {this.props.park.city}, {this.props.park.state}
+            </div>
+            <div className="featured-detail-2">
+              <Rating
+                className="featured-stars"
+                empty={<img height="20" width="20" src="images/star-empty.png"/>}
+                full={<img height="20" width="20" src="images/star-full.png"/>}
+                initialRate={this.props.park.avg_rating}
+                start={0} stop={5} readonly={true} fractions={2}
+              /> - {this.props.park.num_ratings} reviews
+            </div>
+          </div>
         </div>
       </div>
 		);

@@ -38,7 +38,7 @@ class ParkIndexItem extends React.Component {
             />
           </div>
           <div className="index-reviews">
-            {this.props.park.num_ratings} total reviews
+            {this.props.park.num_ratings} reviews
           </div>
           <div className="index-tags">
             {`${tag_string}`}
