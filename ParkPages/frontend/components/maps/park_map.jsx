@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { withRouter } from 'react-router';
-import MarkerManager from '../../util/marker_manager';
 
 class ParkMap extends React.Component {
 
