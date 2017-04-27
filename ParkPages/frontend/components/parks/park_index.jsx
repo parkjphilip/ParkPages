@@ -13,10 +13,17 @@ class ParkIndex extends React.Component {
   }
 
   render() {
+    debugger
     if (!this.props.parks.length) {
-      return (
-        <div className="enter-search-message">Search Results not found. Please try again!</div>
-      );
+      if (this.props.parks.park){
+        debugger
+        return (
+          <div className="spinner"></div>
+        );
+      } else {
+        debugger
+        return <div className="enter-search-message">Search Results not found. Please try again!</div>;
+      }
     } else {
       return (
         <div>
@@ -33,3 +40,16 @@ class ParkIndex extends React.Component {
 }
 
 export default withRouter(ParkIndex);
+
+
+//
+// if (!this.props.parks.length) {
+//   if (this.props.location.query.query.length > 0){
+//     debugger
+//     return (
+//       <div className="enter-search-message">Search Results not found. Please try again!</div>
+//     );
+//   } else {
+//     debugger
+//     return <div className="spinner"></div>;
+//   }

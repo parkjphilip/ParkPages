@@ -20,6 +20,7 @@ class Search extends React.Component {
 	}
 
   render() {
+    debugger
     return (
         <form className="search-form" onSubmit={this.handleSubmit} >
           <input type="text" value={this.state.query} onChange={this.update("query")} className="home-search" placeholder="Search by Park or Activity.." />

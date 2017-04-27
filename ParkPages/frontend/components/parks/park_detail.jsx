@@ -23,7 +23,7 @@ class ParkDetail extends React.Component {
 
   render() {
     if (!this.props.currentPark) {
-      return <div>No result found</div>;
+      return <div className="spinner"></div>;
     } else {
       return (
         <div className="show-park-area">
