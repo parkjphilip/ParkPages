@@ -8,6 +8,9 @@ class Search extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
+  // componentWillMount() {
+  //   this.setState({query: ""});
+  // }
   handleSubmit(e){
     e.preventDefault();
     this.props.fetchParks(this.state.query);
@@ -20,7 +23,6 @@ class Search extends React.Component {
 	}
 
   render() {
-    debugger
     return (
         <form className="search-form" onSubmit={this.handleSubmit} >
           <input type="text" value={this.state.query} onChange={this.update("query")} className="home-search" placeholder="Search by Park or Activity.." />

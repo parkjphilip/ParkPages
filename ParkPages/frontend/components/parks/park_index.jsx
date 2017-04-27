@@ -15,7 +15,7 @@ class ParkIndex extends React.Component {
   render() {
     debugger
     if (!this.props.parks.length) {
-      if (this.props.parks.park){
+      if (this.props.parks){
         debugger
         return (
           <div className="spinner"></div>
