@@ -22,6 +22,16 @@ class ParkDetail extends React.Component {
   }
 
   render() {
+
+    let tag_string = "";
+    for (var i = 0; i < this.props.park.tags.length; i++) {
+      tag_string += this.props.park.tags[i].tag_name;
+      if (i === (this.props.park.tags.length - 1)){
+        break;
+      }
+      tag_string += ", ";
+    }
+
     if (!this.props.currentPark) {
       return <div className="spinner"></div>;
     } else {
@@ -42,7 +52,7 @@ class ParkDetail extends React.Component {
                     />
                   </div>
                   <div className="detail-reviews">{this.props.currentPark.num_ratings} reviews</div>
-                  <div className="detail-tags">Basketball, Tennis, Dog-walking</div>
+                  <div className="detail-tags">{`${tag_string}`}</div>
                 </div>
               </div>
               <div className="detail-lower">

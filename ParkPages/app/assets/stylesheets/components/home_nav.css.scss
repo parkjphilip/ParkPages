@@ -113,11 +113,12 @@
   padding: 10px;
 }
 
-.featured-detail-1, .featured-detail-2 {
+.featured-detail-1, .featured-detail-2, .featured-detail-3 {
   font-family: 'Open Sans', sans-serif;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5px;
+  width: 300px;
 }
 
 .featured-detail-1 {
@@ -125,11 +126,10 @@
   font-size: 17px;
   word-wrap: break-word;
   white-space: initial;
-  width: 300px;;
 }
 
 .featured-lower {
-  height: 80px;
+  height: 120px;
   justify-content: space-between;
 }
 .featured-stars {
