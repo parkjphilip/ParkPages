@@ -16,9 +16,21 @@ class IndexParkMap extends React.Component {
       };
       this.map = new google.maps.Map(this.mapNode, mapOptions);
       newProps.parks.forEach(park => {
+        var contentString =
+          `<div id="content">${park.name}</div>
+          <div> ${park.city}, ${park.state}</div>
+          <div> ${park.lat}, ${park.lng}</div>`;
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+
         var marker = new google.maps.Marker({
           position: { lat: park.lat, lng: park.lng },
           map: this.map
+        });
+        marker.addListener('click', function() {
+          infowindow.open(this.map, marker);
         });
       });
     }
