@@ -9,7 +9,7 @@ class Header extends React.Component {
     let headerStatus = this.props.location.pathname !== '/' ? "solid" : "transparent";
     let searchPosition = this.props.location.pathname!== '/' ? "top-search" : "mid-search";
     if (this.props.currentUser){
-      debugger
+
       return (
         <div className={`header ${headerStatus}`}>
           <div className={`header-left ${headerStatus}`}>
@@ -27,7 +27,7 @@ class Header extends React.Component {
         </div>
       );
     } else {
-      debugger
+
       return (
         <div className={`header ${headerStatus}`}>
           <div className={`header-left ${headerStatus}`}>

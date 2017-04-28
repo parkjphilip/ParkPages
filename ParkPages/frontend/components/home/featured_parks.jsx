@@ -6,22 +6,22 @@ import FeaturedPark from './featured_park';
 class FeaturedParks extends React.Component {
 
   componentDidMount(){
-    // debugger
+    //
     this.props.fetchFeaturedParks("");
   }
   componentWillMount(){
-    // debugger
+    //
     this.props.fetchFeaturedParks("");
   }
 
   // componentWillReceiveProps(newProps) {
-  //   // debugger
+  //   //
   //   if (Object.keys(this.props.parks).length != Object.keys(newProps.parks).length) {
   //     this.props.fetchFeaturedParks("");
   //   }
   // }
 	render() {
-    // debugger
+    //
     if (Object.keys(this.props.parks).length === 0 || Object.keys(this.props.parks).length != 9){
       return <div></div>;
     } else {
@@ -57,13 +57,13 @@ export default withRouter(FeaturedParks);
 //   // }
 //   //
 //   // componentWillReceiveProps(newProps) {
-//   //   debugger
+//   //
 //   //   if (Object.keys(this.props.parks).length != Object.keys(newProps.parks).length) {
 //   //     this.props.fetchFeaturedParks("");
 //   //   }
 //   // }
 // 	render() {
-//     // debugger
+//     //
 //     if (Object.keys(this.props.parks).length === 0){
 //       return <div></div>;
 //     } else {

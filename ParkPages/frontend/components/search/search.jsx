@@ -14,6 +14,7 @@ class Search extends React.Component {
   handleSubmit(e){
     e.preventDefault();
     this.props.fetchParks(this.state.query);
+    this.setState({ query: ""});
   }
 
   update(field) {

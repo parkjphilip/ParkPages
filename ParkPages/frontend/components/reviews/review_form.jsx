@@ -16,9 +16,14 @@ class ReviewForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     let currentReview = this.state;
-    this.props.createReview(currentReview)
-              .then(() => this.props.fetchPark(this.props.currentParkId))
-              .then(() => this.props.fetchReviews(this.props.currentParkId));
+    if (this.state.body === "") {
+      alert('Please provide text for your review.');
+    } else {
+            this.props.createReview(currentReview)
+            .then(() => this.props.fetchPark(this.props.currentParkId))
+            .then(() => this.props.fetchReviews(this.props.currentParkId))
+            .then(() => this.setState({rating: 0, body: ""}));
+          }
   }
 
   update(field) {
