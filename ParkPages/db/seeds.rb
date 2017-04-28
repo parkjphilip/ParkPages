@@ -48,7 +48,15 @@ park9 = Park.create!({name: "Teardrop Park", street: "Warren St",
 park10 = Park.create!({name: "Madison Square Park", street: "Eleven Madison Avenue",
               city: "New York", state: "New York", zip_code: "10010", phone_number: "(212) 520-7600", lat: 40.742017, lng: -73.987510,
               image: File.open("app/assets/images/madisonsquarepark.jpg"), website: "https://www.madisonsquarepark.org/"})
-
+park11 = Park.create!({name: "Teaneck Creek Conservatory", street: "20 Puffin Way",
+              city: "Teaneck", state: "New Jersey", zip_code: "07666", phone_number: "(201) 836-2403", lat: 40.874044, lng: -74.011580,
+              image: File.open("app/assets/images/teaneckcreekconservatory.jpg"), website: "http://www.teaneckcreek.org/"})
+park12 = Park.create!({name: "Votee Park", street: "Palisade Ave",
+              city: "Teaneck", state: "New Jersey", zip_code: "07666", phone_number: "(201) 837-7130", lat: 40.895687, lng: -74.008945,
+              image: File.open("app/assets/images/teaneckcreekconservatory.jpg"), website: "http://www.teanecknj.gov/index.cfm?fuseaction=content.mapLocation&mapLocationId=20698"})
+park13 = Park.create!({name: "Philip Park", street: "424 Pine Hill Road",
+              city: "Leonia", state: "New Jersey", zip_code: "07666", phone_number: "(201) 562-0016", lat: 40.865940, lng: -73.980018,
+              image: File.open("app/assets/images/philippark.jpg"), website: "www.linkedin.com/in/philipjpark"})
 
 tag1 = Tag.create!({tag_name: "Basketball"})
 tag2 = Tag.create!({tag_name: "Tennis"})
@@ -77,6 +85,7 @@ tag20 = Tag.create!({tag_name: "Dog"})
 tag21 = Tag.create!({tag_name: "Sight-seeing"})
 
 
+
 park1.tag_ids = [8, 12, 13, 15] #central park
 park2.tag_ids = [2, 3, 4, 6, 8, 10, 16] #overpeck park
 park3.tag_ids = [1, 2, 14, 20] #wood park
@@ -87,15 +96,8 @@ park7.tag_ids = [1, 3, 9, 16, 17, 18] #prospect park
 park8.tag_ids = [1, 2, 11, 14, 19] #astoria park
 park9.tag_ids = [11, 14] #teardrop park
 park10.tag_ids = [8, 13, 20] #madison square park
-
-park10review1 = Review.create!({user_id: 2, park_id: 10, rating: 1, body: "I've never waited in line for Shake Shack, but it's inside the park if you need to get your burger on.
-I'll go to Madison Square Park to meet up with my husband during his lunch break or after work.
-It's people watching heaven here. You'll see all types of people - office workers who come here for a break from their work, dog people who walk their pouches and congregate at the dog run, little kids at the playground, people on their phones (free wi-if) sitting on benches or sprawled out on the green.
-It's a nice little park!"})
-park10review2 = Review.create!({user_id: 3, park_id: 10, rating: 2, body: "As someone who works across the street from this park and walks through the belly of the operation several days per week, Madison Square Park is a necessary oasis in the middle of Flatiron."})
-park10review3 = Review.create!({user_id: 4, park_id: 10, rating: 3, body: "I was blessed that I experienced a heavy snow day, downpour of rain and a sunny day during my trip in Manhattan."})
-park10review4 = Review.create!({user_id: 5, park_id: 10, rating: 4, body: "This is a cute little park for dog walking, relaxing and kids jungle gym. The dog park is super busy and all the doggies love to run and play with each other here.  There is an artistic area where different art is presented but it was closed off for winter. I wonder if that art is rotated?  We went to the kids playground too. This jungle gym is for little kids mostly. Our 7 year old was a bit bored by it. Over all this park is pleasing, relaxing and close to shops housings and offices. Oh and a bonus the original Shake Shack is in there."})
-park10review5 = Review.create!({user_id: 6, park_id: 10, rating: 5, body: "If it weren't so cold during my visit to NYC, I could've sat here and people watched all day. This was the closest park to my hotel The Hotel Giraffe. It's within view of the flatiron Building. There is a section for the pups, a fountain and massive structure/work of art that I couldn't quite figure out what it was...  "})
+park11.tag_ids = [8, 11, 21]
+park12.tag_ids = [8, 14, 19]
 
 park1review1 = Review.create!({user_id: 2, park_id: 1, rating: 4, body: "What more can I say about the world's greatest park.. 2.5 miles of rocky hills, lakes and lawns fenced in by NYC skyscrapers!
 It's an absolute must-see for everyone and worth a trip all by itself into the Big Apple!  There's a children's zoo in there, art museums, in addition to hiking trails and breathtaking scenery! Strangely it's almost as if it's one of the wonders of the world!"})
@@ -159,3 +161,20 @@ Please city listen"})
 park9review2 = Review.create!({user_id: 5, park_id: 9, rating: 3, body: "Not sure why this place is called TEARdrop Park, but I had a joyful experience here! *cries tears of joy huehuehue* It's really close by to Pier 11 and Brookfield Place. There's plenty of green foliage to shield you from the beating sun, and a maze of paths leading to different areas. The way the sprinklers are placed can be said to be zen-like.  Bathrooms here are way cleaner than the ones at other parks throughout the city. I came here just to try out the slide. :D"})
 park9review3 = Review.create!({user_id: 6, park_id: 9, rating: 5, body: "Amazing little park. An absolute must if you have kids 5+. There is a huge metal slide and a small water area. Just be prepared for the kids to get messy. The slide dumps them into a large sand area.
 There is a restroom if you walk towards the water (river, not the play area). This park is not dog friendly!"})
+
+park10review1 = Review.create!({user_id: 2, park_id: 10, rating: 1, body: "I've never waited in line for Shake Shack, but it's inside the park if you need to get your burger on.
+I'll go to Madison Square Park to meet up with my husband during his lunch break or after work.
+It's people watching heaven here. You'll see all types of people - office workers who come here for a break from their work, dog people who walk their pouches and congregate at the dog run, little kids at the playground, people on their phones (free wi-if) sitting on benches or sprawled out on the green.
+It's a nice little park!"})
+park10review2 = Review.create!({user_id: 3, park_id: 10, rating: 2, body: "As someone who works across the street from this park and walks through the belly of the operation several days per week, Madison Square Park is a necessary oasis in the middle of Flatiron."})
+park10review3 = Review.create!({user_id: 4, park_id: 10, rating: 3, body: "I was blessed that I experienced a heavy snow day, downpour of rain and a sunny day during my trip in Manhattan."})
+park10review4 = Review.create!({user_id: 5, park_id: 10, rating: 4, body: "This is a cute little park for dog walking, relaxing and kids jungle gym. The dog park is super busy and all the doggies love to run and play with each other here.  There is an artistic area where different art is presented but it was closed off for winter. I wonder if that art is rotated?  We went to the kids playground too. This jungle gym is for little kids mostly. Our 7 year old was a bit bored by it. Over all this park is pleasing, relaxing and close to shops housings and offices. Oh and a bonus the original Shake Shack is in there."})
+park10review5 = Review.create!({user_id: 6, park_id: 10, rating: 5, body: "If it weren't so cold during my visit to NYC, I could've sat here and people watched all day. This was the closest park to my hotel The Hotel Giraffe. It's within view of the flatiron Building. There is a section for the pups, a fountain and massive structure/work of art that I couldn't quite figure out what it was...  "})
+
+park11review1 = Review.create!({user_id: 4, park_id: 11, rating: 3, body: "Nice trails...Brought my son here for a nice walk. Saw bunnies all over. Would go back very quiet and a place to go and think."})
+park11review2 = Review.create!({user_id: 6, park_id: 11, rating: 5, body: "Love coming here for a peaceful walk or to walk my dog. The foliage in the Spring and Summer are dope! It's a nice long walk to get your mind out of the daily BS !
+Note: please be respectful of others and pick up after your dog."})
+
+park12review1 = Review.create!({user_id: 9, park_id: 12, rating: 1, body: "This was not a fun park for me."})
+park12review2 = Review.create!({user_id: 8, park_id: 12, rating: 3, body: "This park was ok."})
+park12review3 = Review.create!({user_id: 6, park_id: 12, rating: 5, body: "This park was great!"})

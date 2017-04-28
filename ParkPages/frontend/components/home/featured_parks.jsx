@@ -21,7 +21,7 @@ class FeaturedParks extends React.Component {
   //   }
   // }
 	render() {
-    if (Object.keys(this.props.parks).length === 0 || Object.keys(this.props.parks).length != 10){
+    if (Object.keys(this.props.parks).length === 0 || Object.keys(this.props.parks).length < 6){
       return <div></div>;
     } else {
 		return (

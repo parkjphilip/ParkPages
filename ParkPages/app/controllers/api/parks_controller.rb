@@ -1,7 +1,7 @@
 class Api::ParksController < ApplicationController
 
   def index
-
+    @parks=Park.all
     if (params[:park][:name].blank?)
 
       @parks = Park.all
@@ -11,7 +11,6 @@ class Api::ParksController < ApplicationController
       tagparks = Park.tag_search(params[:park][:name])
       @parks = nameparks + tagparks
     end
-      
   end
 
   def create
