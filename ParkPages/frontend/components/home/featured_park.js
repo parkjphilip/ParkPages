@@ -7,10 +7,10 @@ class FeaturedPark extends React.Component {
 	render() {
     let tag_string = "";
     for (var i = 0; i < this.props.park.tags.length; i++) {
-      if (i === (this.props.park.tags.length)){
+      tag_string += this.props.park.tags[i].tag_name;
+      if (i === (this.props.park.tags.length - 1)){
         break;
       }
-      // tag_string += this.props.park.tags[i].tag_name;
       tag_string += ", ";
     }
 		return (
@@ -31,6 +31,7 @@ class FeaturedPark extends React.Component {
               /> - {this.props.park.num_ratings} reviews
             </div>
             <div className="featured-detail-3">
+              {tag_string}
             </div>
           </div>
         </div>
