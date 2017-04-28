@@ -6,14 +6,14 @@ import SearchContainer from '../search/search_container';
 class Header extends React.Component {
 
   render() {
-
     let headerStatus = this.props.location.pathname !== '/' ? "solid" : "transparent";
     let searchPosition = this.props.location.pathname!== '/' ? "top-search" : "mid-search";
     if (this.props.currentUser){
+      debugger
       return (
         <div className={`header ${headerStatus}`}>
           <div className={`header-left ${headerStatus}`}>
-            <img className={`logo ${headerStatus}`} onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" alt="Logo" />
+            <img className={`logo ${headerStatus}`} onClick={this.props.fetchFeaturedParks} src="/images/ParkPages.png" alt="Logo" />
           </div>
           <div className="header-middle">
             <div className={`home-search-container ${searchPosition}`}>
@@ -27,10 +27,11 @@ class Header extends React.Component {
         </div>
       );
     } else {
+      debugger
       return (
         <div className={`header ${headerStatus}`}>
           <div className={`header-left ${headerStatus}`}>
-            <img className={`logo ${headerStatus}`} onClick={()=>{this.props.router.push("/");}} src="/images/ParkPages.png" alt="Logo" />
+            <img className={`logo ${headerStatus}`} onClick={this.props.fetchFeaturedParks} src="/images/ParkPages.png" alt="Logo" />
           </div>
           <div className="header-middle">
             <div className={`home-search-container ${searchPosition}`}>

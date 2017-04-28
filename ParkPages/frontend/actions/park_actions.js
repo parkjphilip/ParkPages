@@ -17,7 +17,8 @@ export const fetchParks = (query) => dispatch => {
 
 export const fetchFeaturedParks = () => dispatch => {
   return ParkAPIUtil.fetchFeaturedParks()
-                    .then(parks => dispatch(receiveParks(parks)));
+                    .then(parks => dispatch(receiveParks(parks)))
+                    .then(hashHistory.push('/'));
 };
 
 export const receivePark = park => {

@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
+import { fetchFeaturedParks } from '../../actions/park_actions';
 import Header from './header';
 
 const mapStateToProps = ( state ) => {
@@ -9,7 +10,8 @@ const mapStateToProps = ( state ) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  logout: () => dispatch(logout())
+  logout: () => dispatch(logout()),
+  fetchFeaturedParks: () => dispatch(fetchFeaturedParks())
 });
 
 export default connect(
