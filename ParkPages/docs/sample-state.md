@@ -36,7 +36,6 @@
         }
       ]
     }
-<<<<<<< HEAD
   }
   photos: {
     1: {
@@ -47,8 +46,6 @@
       // image_url: "testpicture.com"
     }
   }
-=======
   ]
->>>>>>> 9d520beae7d419c589138ba5732170d6f9bf884a
 }
 ```

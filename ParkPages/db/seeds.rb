@@ -55,8 +55,8 @@ park12 = Park.create!({name: "Votee Park", street: "Palisade Ave",
               city: "Teaneck", state: "New Jersey", zip_code: "07666", phone_number: "(201) 837-7130", lat: 40.895687, lng: -74.008945,
               image: File.open("app/assets/images/teaneckcreekconservatory.jpg"), website: "http://www.teanecknj.gov/index.cfm?fuseaction=content.mapLocation&mapLocationId=20698"})
 park13 = Park.create!({name: "Philip Park", street: "424 Pine Hill Road",
-              city: "Leonia", state: "New Jersey", zip_code: "07666", phone_number: "(201) 562-0016", lat: 40.865940, lng: -73.980018,
-              image: File.open("app/assets/images/philippark.jpg"), website: "www.linkedin.com/in/philipjpark"})
+              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 562-0016", lat: 40.865940, lng: -73.980018,
+              image: File.open("app/assets/images/philippark.jpg"), website: "www.linkedin.com/in/philipjpark https://github.com/parkjphilip"})
 
 tag1 = Tag.create!({tag_name: "Basketball"})
 tag2 = Tag.create!({tag_name: "Tennis"})
@@ -155,12 +155,12 @@ park8review1 = Review.create!({user_id: 9, park_id: 8, rating: 1, body: "This wa
 park8review2 = Review.create!({user_id: 8, park_id: 8, rating: 3, body: "This park was ok."})
 park8review3 = Review.create!({user_id: 6, park_id: 8, rating: 5, body: "This park was great!"})
 
-park9review1 = Review.create!({user_id: 3, park_id: 9, rating: 3, body: "A dream
-My only wish is that all these parks that cost do much money were placed in neighborhoods not so well to do. There is a park in Chinatown that is like walking into China that is always filled with children's voices. The water part of the park does not even work. Chinatown has one of the most dense people per room of any part of the city.
-Please city listen"})
-park9review2 = Review.create!({user_id: 5, park_id: 9, rating: 3, body: "Not sure why this place is called TEARdrop Park, but I had a joyful experience here! *cries tears of joy huehuehue* It's really close by to Pier 11 and Brookfield Place. There's plenty of green foliage to shield you from the beating sun, and a maze of paths leading to different areas. The way the sprinklers are placed can be said to be zen-like.  Bathrooms here are way cleaner than the ones at other parks throughout the city. I came here just to try out the slide. :D"})
-park9review3 = Review.create!({user_id: 6, park_id: 9, rating: 5, body: "Amazing little park. An absolute must if you have kids 5+. There is a huge metal slide and a small water area. Just be prepared for the kids to get messy. The slide dumps them into a large sand area.
-There is a restroom if you walk towards the water (river, not the play area). This park is not dog friendly!"})
+# park9review1 = Review.create!({user_id: 3, park_id: 9, rating: 3, body: "A dream
+# My only wish is that all these parks that cost do much money were placed in neighborhoods not so well to do. There is a park in Chinatown that is like walking into China that is always filled with children's voices. The water part of the park does not even work. Chinatown has one of the most dense people per room of any part of the city.
+# Please city listen"})
+# park9review2 = Review.create!({user_id: 5, park_id: 9, rating: 3, body: "Not sure why this place is called TEARdrop Park, but I had a joyful experience here! *cries tears of joy huehuehue* It's really close by to Pier 11 and Brookfield Place. There's plenty of green foliage to shield you from the beating sun, and a maze of paths leading to different areas. The way the sprinklers are placed can be said to be zen-like.  Bathrooms here are way cleaner than the ones at other parks throughout the city. I came here just to try out the slide. :D"})
+# park9review3 = Review.create!({user_id: 6, park_id: 9, rating: 5, body: "Amazing little park. An absolute must if you have kids 5+. There is a huge metal slide and a small water area. Just be prepared for the kids to get messy. The slide dumps them into a large sand area.
+# There is a restroom if you walk towards the water (river, not the play area). This park is not dog friendly!"})
 
 park10review1 = Review.create!({user_id: 2, park_id: 10, rating: 1, body: "I've never waited in line for Shake Shack, but it's inside the park if you need to get your burger on.
 I'll go to Madison Square Park to meet up with my husband during his lunch break or after work.
