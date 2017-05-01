@@ -97,5 +97,4 @@ class ParkDetail extends React.Component {
 
 }
 
-// <ReviewIndexContainer currentParkId={this.props.currentPark.id}/>
 export default withRouter(ParkDetail);

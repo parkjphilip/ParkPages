@@ -2,9 +2,6 @@ import React from 'react';
 import { Link, withRouter } from 'react-router';
 var Rating = require('react-rating');
 
-
-//need to pass down current user and check if they are logged in
-
 class ReviewForm extends React.Component {
 	constructor(props) {
 		super(props);

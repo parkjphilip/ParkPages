@@ -4,7 +4,6 @@ import FeaturedParks from './featured_parks';
 
 
 const mapStateToProps = ( state ) => {
-  //
   return ({
     parks: state.parks
   });

@@ -4,12 +4,6 @@ var Rating = require('react-rating');
 
 class PersonalPark extends React.Component {
 
-  // componentWillReceiveProps(newProps) {
-  //   if (this.props.parkId != newProps.parkId){
-  //     this.props.fetchPark(13);
-  //   }
-  // }
-
   render() {
     return (
       <div className="personal-park">
@@ -37,5 +31,4 @@ class PersonalPark extends React.Component {
 
 }
 
-// <ReviewIndexContainer currentParkId={this.props.currentPark.id}/>
 export default withRouter(PersonalPark);

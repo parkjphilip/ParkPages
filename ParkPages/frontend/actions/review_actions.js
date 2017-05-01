@@ -1,5 +1,4 @@
 import * as ReviewAPIUtil from '../util/review_api_util';
-// import { hashHistory } from 'react-router';
 
 export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
 export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
