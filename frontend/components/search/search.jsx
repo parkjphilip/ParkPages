@@ -8,9 +8,6 @@ class Search extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-  // componentWillMount() {
-  //   this.setState({query: ""});
-  // }
   handleSubmit(e){
     e.preventDefault();
     this.props.fetchParks(this.state.query);
@@ -34,12 +31,3 @@ class Search extends React.Component {
 }
 
 export default withRouter(Search);
-
-
-
-
-// <div className="search-button-container">
-// <input type="image" value="submit" className="home-search-button" alt="search submit button" >
-// </input>
-// <img className="home-search-glass" src="/images/glass.png" />
-// </div>

@@ -14,11 +14,4 @@ const mapDispatchToProps = ( dispatch ) => {
   };
 };
 
-// const mapDispatchToProps = ( dispatch ) => {
-//   return ({
-//      
-//     fetchParks: query => dispatch(fetchParks(query))
-//   });
-// };
-
 export default connect(mapStateToProps, mapDispatchToProps)(Search);

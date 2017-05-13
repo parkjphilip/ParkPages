@@ -7,11 +7,9 @@ export default class MarkerManager {
   }
 
   updateMarkers(parks){
-    //adds parks to the parks hash
     const parksObj = {};
     parks.forEach(park => parksObj[park.id] = park);
 
-    //creates new markers for each park that isnt already in the markers hash
     parks
       .filter(park => !this.markers[park.id])
       .forEach(newPark => this.createMarkerFromPark(newPark, this.handleClick));

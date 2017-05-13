@@ -15,7 +15,7 @@ const Root = ({ store }) => {
       replace('/parks');
     }
   };
-   
+
   return (
     <Provider store={ store }>
       <Router history={ hashHistory }>
@@ -32,5 +32,3 @@ const Root = ({ store }) => {
 };
 
 export default Root;
-
-// <Route path="parks" component={ParkIndexContainer} />

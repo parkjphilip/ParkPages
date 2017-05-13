@@ -93,8 +93,3 @@ class SessionForm extends React.Component {
 }
 
 export default withRouter(SessionForm);
-
-
-// <form onClick={this.handleGuestLogin}>
-// <input type="submit" className="guest-submit cursor-pointer" value="Guest Login"/>
-// </form>

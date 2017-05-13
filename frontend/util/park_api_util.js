@@ -1,10 +1,3 @@
-// export const fetchParks = () => {
-//   return $.ajax({
-//     method: 'get',
-//     url: '/api/parks'
-//   });
-// };
-
 export const fetchParks = (query) => {
   return $.ajax({
     method: 'get',
