@@ -9,8 +9,8 @@ const ParkReducer = (state = {}, action) => {
       // let parks = action.parks;
       return action.parks;
     case RECEIVE_PARK:
-      let park = action.park;
-      return merge({}, state, { park });
+      let currentPark = action.park;
+      return merge({}, state, { currentPark });
     default:
       return state;
   }

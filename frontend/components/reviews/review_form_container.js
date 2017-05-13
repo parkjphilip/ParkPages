@@ -12,7 +12,7 @@ const mapStateToProps = ( state ) => {
     checkCurrentUser = state.session.currentUser.id;
   }
   return ({
-    currentParkId: state.parks.park.id,
+    currentParkId: state.parks.currentPark.id,
     currentUserId: checkCurrentUser
   });
 };

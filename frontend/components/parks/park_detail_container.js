@@ -6,7 +6,7 @@ import ParkDetail from './park_detail';
 const mapStateToProps = ( state, ownProps ) => {
   return ({
     parkId: ownProps.params.parkId,
-    currentPark: state.parks.park
+    currentPark: state.parks.currentPark
   });
 };
 
