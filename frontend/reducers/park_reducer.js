@@ -6,21 +6,20 @@ const ParkReducer = (state = {}, action) => {
 
   switch(action.type) {
     case RECEIVE_PARKS:
-      // let parks = action.parks;
       return action.parks;
     case RECEIVE_PARK:
-      let currentPark = action.park;
-      return merge({}, state, { currentPark });
+      let park = action.park;
+      return merge({}, state, { park });
     default:
       return state;
   }
 };
 
 export default ParkReducer;
-
-
-//inside of here, right now it is bringing back a state tat is like
-// parks: {1: [paoiwjgoiwagjioa], 2: [wrgoiwjgiowjg], park: [wegwegeg]}
-
-//aim for parks state to be like
-//parks:{ parks: [], parkdetail: {} }
+//
+//
+// inside of here, right now it is bringing back a state tat is like
+// parks: [{1: paoiwjgoiwagjioa], 2: [wrgoiwjgiowjg], park: [wegwegeg]]
+//
+// aim for parks state to be like
+// parks:{ parks: [], parkdetail: {} }
