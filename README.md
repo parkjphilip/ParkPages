@@ -2,7 +2,7 @@
 
 [ParkPages live][heroku]
 
-[heroku]: https://parkpages.herokuapp.com/#/
+[heroku]: http://www.parkpages.us/#/
 Welcome to ParkPages - an easy way to find parks in the New York & New Jersey area. ParkPages is a full stack web application based off of Yelp built using React with Redux architectural framework on the frontend and Ruby on Rails on the backend with a PostgreSQL database. ParkPages aims to enhance the user's park-finding experience in the New York/New Jersey area with the ability to read and create reviews for restaurants.
 
 ## Libraries

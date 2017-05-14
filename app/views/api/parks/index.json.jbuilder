@@ -1,5 +1,4 @@
 json.array! @parks do |park|
-  debugger
   json.id park.id
   json.name park.name
   json.street park.street
