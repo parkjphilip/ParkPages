@@ -23,4 +23,8 @@ class Park < ApplicationRecord
     foreign_key: :park_id,
     class_name: "Review"
 
+  has_many :photos,
+      primary_key: :id,
+      foreign_key: :park_id,
+      class_name: "Photo"
 end

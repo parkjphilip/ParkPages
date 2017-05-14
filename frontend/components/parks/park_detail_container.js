@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchPark, fetchParks } from '../../actions/park_actions';
+import { fetchPark, fetchParks, createPhoto } from '../../actions/park_actions';
 import ParkDetail from './park_detail';
 
 
@@ -13,7 +13,8 @@ const mapStateToProps = ( state, ownProps ) => {
 const mapDispatchToProps = ( dispatch ) => {
   return ({
     fetchPark: id => dispatch(fetchPark(id)),
-    fetchParks: () => dispatch(fetchParks())
+    fetchParks: () => dispatch(fetchParks()),
+    createPhoto: (data) => dispatch(createPhoto(data))
   });
 };
 

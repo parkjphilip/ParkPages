@@ -9,5 +9,9 @@ class Review < ApplicationRecord
     primary_key: :id,
     foreign_key: :park_id,
     class_name: "Park"
-    
+
+  has_one :photo,
+    primary_key: :id,
+    foreign_key: :review_id,
+    class_name: "Photo"
 end

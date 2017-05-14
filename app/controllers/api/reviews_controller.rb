@@ -15,18 +15,6 @@ class Api::ReviewsController < ApplicationController
     end
   end
 
-  def show
-    @park = Park.find(params[:id])
-    render :show
-  end
-
-  def edit
-    @review = Review.find(params[:id])
-  end
-
-  def destroy
-  end
-
   private
   def review_params
     params.require(:review).permit(:user_id, :park_id, :body, :rating)

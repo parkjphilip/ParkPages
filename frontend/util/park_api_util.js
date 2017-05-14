@@ -28,3 +28,21 @@ export const fetchPark = (id) => {
     url: `/api/parks/${id}`
   });
 };
+
+export const createPhoto = (data) => {
+  debugger
+  return $.ajax({
+    method: 'post',
+    contentType: false,
+    processData: false,
+    datatype: "json",
+    url: `api/parks/1/photos`,
+    url: `api/parks/${data.photo.id}/photos`,
+    data: {
+      photo: {
+        park_id: data.photo.id,
+        image: data.photo.file
+      }
+    }
+  });
+};

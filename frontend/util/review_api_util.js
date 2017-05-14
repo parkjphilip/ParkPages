@@ -14,7 +14,7 @@ export const createReview = (review) => {
         user_id: review.user_id,
         park_id: review.park_id,
         body: review.body,
-        rating: review.rating
+        rating: review.rating,
       }
     }
   });
