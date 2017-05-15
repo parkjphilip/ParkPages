@@ -1,6 +1,5 @@
 class Api::PhotosController < ApplicationController
   def create
-    debugger
     @photo = Photo.new(photo_params)
     debugger
     if @photo.save
@@ -12,6 +11,6 @@ class Api::PhotosController < ApplicationController
 
   private
   def photo_params
-    params.require(:photo).permit(:park_id, :image)
+    params.require(:photo).permit(:image, :park_id)
   end
 end

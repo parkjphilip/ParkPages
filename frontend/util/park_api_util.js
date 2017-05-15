@@ -29,19 +29,22 @@ export const fetchPark = (id) => {
   });
 };
 
-export const createPhoto = (data) => {
-  debugger
+export const createPhoto = (photo) => {
+
   return $.ajax({
     method: 'post',
+    // contentType: 'application-json',
     contentType: false,
     processData: false,
-    datatype: "json",
-    url: `api/parks/1/photos`,
-    url: `api/parks/${data.photo.id}/photos`,
-    data: {
+    url: `api/parks/${photo.get("photo[park_id]")}/photos`,
+    // data: { photo }
+    data:
+    {
       photo: {
-        park_id: data.photo.id,
-        image: data.photo.file
+        // park_id: photo.park_id,
+        // image: photo.image
+        // image: photo.get("photo[image]"),
+        // park_id: photo.get("photo[park_id]"),
       }
     }
   });

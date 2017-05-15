@@ -21,7 +21,6 @@ export const fetchFeaturedParks = () => dispatch => {
 };
 
 export const createPhoto = (data) => dispatch => {
-  debugger
   return ParkAPIUtil.createPhoto(data)
                     .then(photo => dispatch(receivePhoto(photo)));
 };

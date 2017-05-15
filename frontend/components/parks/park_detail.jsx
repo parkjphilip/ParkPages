@@ -45,9 +45,11 @@ class ParkDetail extends React.Component {
 
     var file = this.state.imageFile;
     var id = this.props.currentPark.id;
+
     formData.append("photo[image]", file);
     formData.append("photo[park_id]", id);
     // let formData = {photo: {image: file, park_id: id}};
+
     this.props.createPhoto(formData);
   }
 
@@ -104,8 +106,6 @@ class ParkDetail extends React.Component {
               </div>
             </div>
             <div className="show-park-image-container">
-              <input type="file" onChange={this.updateFile}/>
-              <button onClick={this.handleSubmit}>Add Photo!</button>
               <img className="show-park-image" src={this.props.currentPark.image_url}/>
             </div>
 
@@ -131,3 +131,13 @@ class ParkDetail extends React.Component {
 }
 
 export default withRouter(ParkDetail);
+
+
+
+
+
+
+
+
+// <input type="file" onChange={this.updateFile}/>
+// <button onClick={this.handleSubmit}>Add Photo!</button>

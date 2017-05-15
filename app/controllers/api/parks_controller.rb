@@ -2,7 +2,7 @@ class Api::ParksController < ApplicationController
 
   def index
     @parks = Park.all
-    if (params[:park].nil?)
+    if (params[:park][:name].blank?)
       @parks = Park.all
     else
       nameparks = Park.name_search(params[:park][:name])
