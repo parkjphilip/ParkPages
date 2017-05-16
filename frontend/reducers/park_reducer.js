@@ -9,7 +9,7 @@ const ParkReducer = (state = {}, action) => {
       return action.parks;
     case RECEIVE_PARK:
       let park = action.park;
-      return merge({}, state, { park });
+      return merge({}, {park});
     case RECEIVE_PHOTO:
       let newState = merge({}, state);
       newState.photos.push(action.photo);

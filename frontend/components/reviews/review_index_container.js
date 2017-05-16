@@ -5,6 +5,7 @@ import { withRouter } from 'react-router';
 
 
 const mapStateToProps = ( state, ownProps ) => {
+   
   return ({
     reviews: state.reviews,
     currentParkId: ownProps.params.parkId

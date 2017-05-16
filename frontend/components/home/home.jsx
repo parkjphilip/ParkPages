@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
 import SearchContainer from '../search/search_container';
-import FeaturedParksContainer from './featured_parks_container';
+// import FeaturedParksContainer from './featured_parks_container';
+import SimpleSliderContainer from './simple_slider_container';
 import PersonalPark from './personal_park';
 
 class Home extends React.Component {
@@ -27,7 +28,7 @@ class Home extends React.Component {
           </button>
         </div>
         <div className="featured-parks-container">
-          <FeaturedParksContainer />
+          <SimpleSliderContainer />
         </div>
         <div className="personal-park-container">
           <div className="personal-park-title"> Our "Park" of the Year </div>
@@ -38,4 +39,5 @@ class Home extends React.Component {
 	}
 }
 
+// <FeaturedParksContainer />
 export default withRouter(Home);
