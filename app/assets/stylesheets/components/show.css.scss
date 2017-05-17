@@ -193,3 +193,12 @@
   min-width: 0;
   margin-bottom: 50px;
 }
+
+.slick-next:before, .slick-prev:before {
+  color: green !important;
+}
+
+// .slick-prev, .slick-next {
+//   width: 400px !important;
+//   height: 400px !important;
+// }

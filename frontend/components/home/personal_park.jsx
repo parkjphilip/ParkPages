@@ -7,7 +7,7 @@ class PersonalPark extends React.Component {
   render() {
     return (
       <div className="personal-park">
-        <img className="personal-image cursor-pointer" height="150" width="180" src="/images/philippark.jpg/" onClick={()=>{this.props.router.push(`/parks/13`);}} />
+        <img className="personal-image" height="150" width="180" src="/images/philippark.jpg/" />
         <div className="featured-lower">
           <div className="personal-detail-1"> Philip Park - Leonia, NJ </div>
           <div className="featured-detail-2">
