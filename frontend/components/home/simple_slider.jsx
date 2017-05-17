@@ -26,12 +26,12 @@ class SimpleSlider extends React.Component {
       <div className="featured-parks">
         <div className="featured-title">Check out our Featured Parks!</div>
         <Slider className="slider" {...settings}>
-          <div><FeaturedPark park={this.props.parks[0]} /></div>
-          <div><FeaturedPark park={this.props.parks[1]} /></div>
-          <div><FeaturedPark park={this.props.parks[2]} /></div>
-          <div><FeaturedPark park={this.props.parks[3]} /></div>
-          <div><FeaturedPark park={this.props.parks[4]} /></div>
-          <div><FeaturedPark park={this.props.parks[5]} /></div>
+          <div className="featured-park-container"><FeaturedPark park={this.props.parks[0]} /></div>
+          <div className="featured-park-container"><FeaturedPark park={this.props.parks[1]} /></div>
+          <div className="featured-park-container"><FeaturedPark park={this.props.parks[2]} /></div>
+          <div className="featured-park-container"><FeaturedPark park={this.props.parks[3]} /></div>
+          <div className="featured-park-container"><FeaturedPark park={this.props.parks[4]} /></div>
+          <div className="featured-park-container"><FeaturedPark park={this.props.parks[5]} /></div>
         </Slider>
       </div>
 		);
