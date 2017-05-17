@@ -62,7 +62,7 @@
   color: white;
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
-  padding-right: 25px;
+  padding-right: 30px;
   font-size: 18px;
 }
 
@@ -85,6 +85,18 @@
   background-color: white;
   color: gray;
   cursor: pointer;
+}
+
+.user-icon {
+  margin-right: 20px;
+  position: relative;
+  top: 3px;
+  padding-bottom: 5px;
+}
+
+.user-icon:hover {
+  border-bottom: solid;
+  border-color: white;
 }
 
 .solid {

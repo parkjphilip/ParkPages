@@ -22,6 +22,7 @@ class Header extends React.Component {
           </div>
           <div className="header-right header-right-logged-in">
             <h2 className="header-name">Hi, {this.props.currentUser.username}!</h2>
+            <i className="user-icon fa fa-user-o fa-2x cursor-pointer" onClick={()=>{this.props.router.push(`/users/${this.props.currentUser.id}`);}} aria-hidden="true"></i>
             <button className="header-button" onClick={this.props.logout}>Log Out</button>
           </div>
         </div>
