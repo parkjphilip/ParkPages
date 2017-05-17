@@ -12,7 +12,8 @@ const mapStateToProps = ( state ) => {
 
 const mapDispatchToProps = ( dispatch ) => {
   return ({
-    fetchUserReviews: userId => dispatch(fetchUserReviews(userId))
+    fetchUserReviews: userId => dispatch(fetchUserReviews(userId)),
+    createUserPhoto: formData => dispatch(createUserPhoto(formData))
   });
 };
 

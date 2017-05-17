@@ -20,8 +20,8 @@ export const fetchFeaturedParks = () => dispatch => {
                     .then(hashHistory.push('/'));
 };
 
-export const createPhoto = (data) => dispatch => {
-  return ParkAPIUtil.createPhoto(data)
+export const createUserPhoto = (formData) => dispatch => {
+  return ParkAPIUtil.createPhoto(formData)
                     .then(photo => dispatch(receivePhoto(photo)));
 };
 
