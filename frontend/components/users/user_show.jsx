@@ -9,16 +9,27 @@ class UserShow extends React.Component {
   }
 
 	render() {
-		return (
-      <div>
-        <div className="user-container-upper">
-          <div className="user-proflie-picture"> Profile Image here</div>
+    if(Object.keys(this.props.reviews).length === 0) {
+      return (
+        <div>
+          <div className="user-container-upper">
+            <div className="user-proflie-picture"> Profile Image here</div>
+          </div>
+          <div className="user-no-reviews">You have not written any reviews!</div>
         </div>
-        <div className="user-container-lower">
-          <UserReviewsIndex currentUser={this.props.currentUser} reviews={this.props.reviews}/>
+      );
+    } else {
+      return (
+        <div>
+          <div className="user-container-upper">
+            <div className="user-proflie-picture"> Profile Image here</div>
+          </div>
+          <div className="user-container-lower">
+            <UserReviewsIndex currentUser={this.props.currentUser} reviews={this.props.reviews}/>
+          </div>
         </div>
-      </div>
-		);
+      );
+    }
 	}
 }
 

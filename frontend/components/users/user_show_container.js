@@ -5,6 +5,7 @@ import { fetchUserReviews } from '../../actions/review_actions';
 
 const mapStateToProps = ( state ) => {
   return ({
+    reviews: state.reviews,
     currentUser: state.session.currentUser
   });
 };
