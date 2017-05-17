@@ -5,6 +5,7 @@ var Rating = require('react-rating');
 class UserReviewsIndexItem extends React.Component {
 
 	render() {
+
     let timestamp = new Date(this.props.review.date);
     let newTimestamp = timestamp.toLocaleDateString();
     return (

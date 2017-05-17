@@ -12,13 +12,16 @@
   width: 45%;
 }
 .user-review-index-item {
-  // display: flex;
   border-top: 1px solid rgb(182, 183, 187);
   padding-top: 15px;
   padding-bottom: 15px;
   left: 10%;
 }
 
+.user-review-item-left {
+  width: 50px;
+  height: 50px;
+}
 .user-review-index-info {
   width: 75%;
 }
@@ -56,6 +59,7 @@
 
 .user-reviews-intro {
   font-size: 25px;
+  margin-bottom: 10px;
 }
 
 .user-container-lower {
@@ -69,8 +73,13 @@
 .user-review-index-author-info {
   display: flex;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .user-show-park-name {
   margin-right: 10px;
+}
+
+.review-index-body {
+  margin-top: 5px;
 }
