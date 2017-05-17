@@ -40,11 +40,3 @@ class SimpleSlider extends React.Component {
 }
 
 export default withRouter(SimpleSlider);
-
-
-// <FeaturedPark park={this.props.parks[0]} />
-// <FeaturedPark park={this.props.parks[1]} />
-// <FeaturedPark park={this.props.parks[2]} />
-// <FeaturedPark park={this.props.parks[3]} />
-// <FeaturedPark park={this.props.parks[4]} />
-// <FeaturedPark park={this.props.parks[5]} />

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
 import SearchContainer from '../search/search_container';
-// import FeaturedParksContainer from './featured_parks_container';
 import SimpleSliderContainer from './simple_slider_container';
 import PersonalPark from './personal_park';
 
@@ -39,5 +38,4 @@ class Home extends React.Component {
 	}
 }
 
-// <FeaturedParksContainer />
 export default withRouter(Home);
