@@ -1,0 +1,44 @@
+.user-review-index-item {
+  display: flex;
+  border-top: 1px solid rgb(182, 183, 187);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 500px;
+  left: 10%;
+}
+
+.user-review-index-author-info {
+  padding-left: 30px;
+  margin: auto auto;
+  width: 30%;
+  font-weight: bold;
+}
+
+.user-review-index-info {
+  width: 75%;
+}
+
+.user-profile-picture {
+  position: relative;
+  left: 30%;
+}
+
+.user-greeting {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #11931e;
+  position: relative;
+  left: 35%;
+  top: 25%;
+  font-size: 30px;
+  height: 100px;
+}
+
+.user-reviews-intro {
+  font-size: 25px;
+}
+
+.user-container-lower {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  left: 30%;
+}

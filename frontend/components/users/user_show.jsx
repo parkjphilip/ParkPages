@@ -14,6 +14,7 @@ class UserShow extends React.Component {
         <div>
           <div className="user-container-upper">
             <img className="user-profile-picture" src="/images/useravatar.png" />
+            <div className="user-greeting">Hello {this.props.currentUser.username}!</div>
           </div>
           <div className="user-no-reviews">You have not written any reviews!</div>
         </div>
@@ -23,8 +24,10 @@ class UserShow extends React.Component {
         <div>
           <div className="user-container-upper">
             <img className="user-profile-picture" src="/images/useravatar.png" />
+            <div className="user-greeting">Hello {this.props.currentUser.username}!</div>
           </div>
           <div className="user-container-lower">
+            <div className="user-reviews-intro" >Below are all of your reviews! </div>
             <UserReviewsIndex currentUser={this.props.currentUser} reviews={this.props.reviews} />
           </div>
         </div>

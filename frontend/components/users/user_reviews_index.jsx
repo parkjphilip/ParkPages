@@ -6,11 +6,9 @@ class UserReviewsIndex extends React.Component {
 
 	render() {
 		return (
-      <div>
-        <ul className="user-review-index-container">
-          {this.props.reviews.map((review,i) => <UserReviewsIndexItem key={`review-${i}`} review={review} />)}
-        </ul>
-      </div>
+      <ul className="user-review-index-container">
+        {this.props.reviews.map((review,i) => <UserReviewsIndexItem key={`review-${i}`} review={review} />)}
+      </ul>
 		);
 	}
 }

@@ -8,8 +8,8 @@ class UserReviewsIndexItem extends React.Component {
     let timestamp = new Date(this.props.review.date);
     let newTimestamp = timestamp.toLocaleDateString();
     return (
-      <div className="review-index-item">
-        <div className="review-index-author-info">
+      <div className="user-review-index-item">
+        <div className="user-review-index-author-info">
           <div>
             {this.props.review.park.name}
           </div>
@@ -17,7 +17,7 @@ class UserReviewsIndexItem extends React.Component {
             {newTimestamp}
           </div>
         </div>
-        <div className="review-index-info">
+        <div className="user-review-index-info">
           <Rating
             className="review-index-stars"
             empty={<img height="28" width="28" src="images/star-empty.png"/>}
