@@ -4,7 +4,7 @@ import UserShow from './user_show';
 
 const mapStateToProps = ( state ) => {
   return ({
-
+    currentUser: state.session.currentUser
   });
 };
 

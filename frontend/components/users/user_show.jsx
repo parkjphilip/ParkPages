@@ -1,11 +1,19 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
+import UserReviewsIndex from './user_reviews_index';
 
 class UserShow extends React.Component {
 
 	render() {
 		return (
-      null
+      <div>
+        <div className="user-container-upper">
+
+        </div>
+        <div className="user-container-lower">
+          <UserReviewsIndex currentUser={this.props.currentUser} />
+        </div>
+      </div>
 		);
 	}
 }
