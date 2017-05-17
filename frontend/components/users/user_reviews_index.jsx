@@ -8,7 +8,7 @@ class UserReviewsIndex extends React.Component {
 		return (
       <div>
         <ul className="user-review-index-container">
-          {this.props.reviews.map(review => <UserReviewsIndexItem key={review.id} review={review} />)}
+          {this.props.reviews.map((review,i) => <UserReviewsIndexItem key={`review-${i}`} review={review} />)}
         </ul>
       </div>
 		);
