@@ -22,10 +22,10 @@ const Root = ({ store }) => {
       <Router history={ hashHistory }>
         <Route path="/" component={ App } >
           <IndexRoute component={Home} />
+          <Route path="/users/:userId" component={UserShowContainer}/>
           <Route path="/parks" component={ParkIndexContainer} />
           <Route path="/parks/:parkId" component={ParkDetailContainer} />
         </Route>
-        <Route path="/users/:userId" component={UserShowContainer}/>
         <Route path="/signup" component={SessionFormContainer} onEnter={redirectIfLoggedIn} />
         <Route path="/login" component={SessionFormContainer} onEnter={redirectIfLoggedIn} />
       </Router>
