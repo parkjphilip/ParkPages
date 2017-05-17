@@ -5,7 +5,6 @@ json.array! @reviews do |review|
   json.body review.body
   json.rating review.rating
   json.author review.author.username
-  json.park_image_url review.park.image_url
   json.park review.park.name
   json.date review.created_at
 end

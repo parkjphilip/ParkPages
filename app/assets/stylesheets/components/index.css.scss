@@ -1,16 +1,18 @@
 .index-container {
-  margin-left: 10%;
+  margin-left: 150px;
   padding-top: 40px;
   width: 600px;
-  height: 98%;
+  height: 100%;
   top: 50px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   border: 1px solid black;
   border-radius: 3px;
   background-color: rgb(195, 222, 189);
-  overflow: scroll;
-  overflow-x: hidden;
+  position: absolute;
+  height: stretch;
+  // overflow: scroll;
+  // overflow-x: hidden;
 }
 
 .index-item-container {
@@ -51,16 +53,16 @@
 
 .index-lower {
   display: flex;
-  height: 95%;
+  height: 100%;
 }
 
 .index-map {
-  margin-left: 20px;
-  margin-top: 100px;
-  height: 430px;
-  width: 430px;
+  top: 130px;
+  left: 800px;
+  height: 80%;
+  width: 800px;
   border: 1px solid black;
-  position: relative;
+  position: fixed;
   div:first-child {
     height: 100%;
   }

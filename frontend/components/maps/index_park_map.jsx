@@ -12,7 +12,7 @@ class IndexParkMap extends React.Component {
 
       const mapOptions = {
         center: myCenter,
-        zoom: 10
+        zoom: 11
       };
       this.map = new google.maps.Map(this.mapNode, mapOptions);
       newProps.parks.forEach(park => {
@@ -41,7 +41,7 @@ class IndexParkMap extends React.Component {
 
     const mapOptions = {
       center: myCenter,
-      zoom: 10
+      zoom: 11
     };
     this.map = new google.maps.Map(this.mapNode,mapOptions);
     this.props.parks.forEach(park => {
