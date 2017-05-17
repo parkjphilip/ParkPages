@@ -8,10 +8,6 @@ var Rating = require('react-rating');
 class ParkDetail extends React.Component {
 	constructor(props) {
 		super(props);
-
-    // this.state = this.props.parks;
-    // this.updateFile = this.updateFile.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
   componentWillMount(){
@@ -23,36 +19,6 @@ class ParkDetail extends React.Component {
       this.props.fetchPark(this.props.parkId);
     }
   }
-
-  // updateFile(e) {
-  //   e.preventDefault();
-  //   var reader = new FileReader();
-  //   var file = e.currentTarget.files[0];
-  //   reader.onloadend = function() {
-  //     this.setState({ imageUrl: reader.result, imageFile: file});
-  //   }.bind(this);
-  //
-  //   if (file) {
-  //     reader.readAsDataURL(file);
-  //   } else {
-  //     this.setState({ imageUrl: "", imageFile: null });
-  //   }
-  // }
-  //
-  // handleSubmit(e) {
-  //   e.preventDefault();
-  //   // console.log(formdata);
-  //   let formData = new FormData();
-  //
-  //   var file = this.state.imageFile;
-  //   var id = this.props.parks.id;
-  //
-  //   formData.append("photo[image]", file);
-  //   formData.append("photo[park_id]", id);
-  //   // let formData = {photo: {image: file, park_id: id}};
-  //
-  //   this.props.createPhoto(formData);
-  // }
 
   render() {
     let tag_string = "";
@@ -132,13 +98,3 @@ class ParkDetail extends React.Component {
 }
 
 export default withRouter(ParkDetail);
-
-
-
-
-
-
-
-
-// <input type="file" onChange={this.updateFile}/>
-// <button onClick={this.handleSubmit}>Add Photo!</button>

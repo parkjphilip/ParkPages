@@ -1,7 +1,7 @@
 class Api::PhotosController < ApplicationController
   def create
-    @photo = Photo.new(photo_params)
     debugger
+    @photo = Photo.new(photo_params)
     if @photo.save
       render "api/photos/show"
     else

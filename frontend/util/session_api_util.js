@@ -43,19 +43,3 @@ export const loginGuest = () => {
     }
   });
 };
-
-export const createUserPhoto = (formData) => {
-  $.ajax({
-    url: `/api/users/${formData.user.id}`,
-    method: "POST",
-    dataType: "json",
-    contentType: false,
-    processData: false,
-    data: {
-      photo: {
-        user_id: formData.user.id,
-        image: formData.user.image
-      }
-    },
-  });
-};
