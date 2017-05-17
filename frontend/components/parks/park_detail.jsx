@@ -14,12 +14,15 @@ class ParkDetail extends React.Component {
     this.props.fetchPark(this.props.parkId);
   }
 
-  componentWillReceiveProps(newProps) {
-    if (this.props.parkId != newProps.parkId){
-      this.props.fetchPark(this.props.parkId);
-    }
-  }
-
+  // componentWillReceiveProps(newProps) {
+  //   if (this.props.parkId != newProps.parkId){
+  //     this.props.fetchPark(this.props.parkId);
+  //   }
+  // }
+  //
+  // componentDidMount() {
+  //   this.props.fetchPark(this.props.parkId);
+  // }
   render() {
     let tag_string = "";
     if(this.props.currentPark) {

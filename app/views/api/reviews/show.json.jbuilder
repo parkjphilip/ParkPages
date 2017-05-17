@@ -1,5 +1,5 @@
 # json.extract! @review, :user_id, :park_id, :body, :rating
-debugger
+  
 
 json.@review do
   json.user_id @review.user_id

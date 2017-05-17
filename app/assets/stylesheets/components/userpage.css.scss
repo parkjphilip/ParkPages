@@ -1,17 +1,22 @@
-.user-review-index-item {
+.user-container-upper {
+  background: #F5F5F5;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: flex;
+  height: 300px;
+}
+
+.user-upper-left {
+  width: 55%;
+}
+.user-upper-right {
+  width: 45%;
+}
+.user-review-index-item {
+  // display: flex;
   border-top: 1px solid rgb(182, 183, 187);
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 500px;
   left: 10%;
-}
-
-.user-review-index-author-info {
-  padding-left: 30px;
-  margin: auto auto;
-  width: 30%;
-  font-weight: bold;
 }
 
 .user-review-index-info {
@@ -20,17 +25,33 @@
 
 .user-profile-picture {
   position: relative;
-  left: 30%;
+  left: 90%;
+  margin-left: -180px;
+  top: 40px;
+  width: 180px;
+  height: 200px;
 }
 
 .user-greeting {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #11931e;
   position: relative;
-  left: 35%;
-  top: 25%;
+  top: 30%;
   font-size: 30px;
-  height: 100px;
+  height: 40px;
+}
+
+.user-review-count {
+  position: relative;
+  top: 30%;
+  display: flex;
+  height: 35px;
+}
+
+.user-review-count-text {
+  position: relative;
+  top: 5px;
+  left: 5px;
 }
 
 .user-reviews-intro {
@@ -38,7 +59,18 @@
 }
 
 .user-container-lower {
+  margin-top: 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
   left: 30%;
+  width: 50%;
+}
+
+.user-review-index-author-info {
+  display: flex;
+  font-weight: bold;
+}
+
+.user-show-park-name {
+  margin-right: 10px;
 }

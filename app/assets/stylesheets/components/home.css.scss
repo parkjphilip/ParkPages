@@ -66,18 +66,18 @@
   top: 10px;
 }
 
-@media (max-width:800px) {
+@media (max-width:1090px) {
   .logo, .header-right {
     display: none!important;
     width: 0px;
     margin: 0px;
   }
   .search-form, .home-search-container {
-    width: 100%;
+    width: 95%;
   }
 }
 
-@media (max-width:900px) {
+@media (max-width:500px) {
   .login {
     display: none!important;
     width: 0px;

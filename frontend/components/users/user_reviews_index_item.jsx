@@ -10,11 +10,11 @@ class UserReviewsIndexItem extends React.Component {
     return (
       <div className="user-review-index-item">
         <div className="user-review-index-author-info">
-          <div>
+          <div className="user-show-park-name">
             {this.props.review.park.name}
           </div>
           <div>
-            {newTimestamp}
+            - {newTimestamp}
           </div>
         </div>
         <div className="user-review-index-info">
