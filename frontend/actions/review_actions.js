@@ -9,6 +9,11 @@ export const fetchReviews = (currentParkId) => dispatch => {
                       .then(reviews => dispatch(receiveReviews(reviews)));
 };
 
+export const fetchUserReviews = (currentUserId) => dispatch => {
+  return ReviewAPIUtil.fetchUserReviews(currentUserId)
+                      .then(reviews => dispatch(receiveReviews(reviews)));
+};
+
 export const createReview = review => dispatch => {
   return ReviewAPIUtil.createReview(review)
                       .then(review => dispatch(receiveReview(review)));

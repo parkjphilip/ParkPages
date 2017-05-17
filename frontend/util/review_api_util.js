@@ -5,6 +5,13 @@ export const fetchReviews = (currentParkId) => {
   });
 };
 
+export const fetchUserReviews = (currentUserId) => {
+  return $.ajax({
+    method: 'get',
+    url: `/api/users/${currentUserId}`,
+  });
+};
+
 export const createReview = (review) => {
   return $.ajax({
     method: 'post',

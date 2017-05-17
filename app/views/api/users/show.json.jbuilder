@@ -1,1 +1,10 @@
-json.partial! "api/users/user", user: @user
+# json.partial! "api/users/user", user: @user
+
+json.array! @reviews do |review|
+  json.user_id review.user_id
+  json.park_id review.park_id
+  json.body review.body
+  json.rating review.rating
+  json.author review.author.username
+  json.date review.created_at
+end
