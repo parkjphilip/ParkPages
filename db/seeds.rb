@@ -20,91 +20,91 @@ user10 = User.create({username: "ashley", password: "password123"});
 
 park1 = Park.create!({name: "Central Park", street: "5th Ave to Central Park West, 59th Street to 110 Street",
               city: "Manhattan", state: "New York", zip_code: "10024", phone_number: "(212) 310-6600", lat: 40.782873, lng: -73.965334,
-              image: File.open("app/assets/images/centralpark.jpg"), website: "https://www.nycgovparks.org/parks/central-park"})
+              image: File.open("app/assets/images/centralpark.jpg"), website: "https://www.nycgovparks.org/parks/central-park"});
 park2 = Park.create!({name: "Overpeck Park", street: "321 Overpeck Avenue",
               city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 336-7275", lat: 40.871116, lng: -73.991944,
-              image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"})
+              image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"});
 park3 = Park.create!({name: "Bryant Park", street: "41 W 40th Street",
               city: "New York", state: "New York", zip_code: "10018", phone_number: "(212) 768-4242", lat: 40.754345, lng: -73.9852543,
-              image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"})
+              image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"});
 park4 = Park.create!({name: "Battery Park", street: "State St & Battery Pl",
               city: "New York", state: "New York", zip_code: "10079", phone_number: "(212) 417-2000", lat: 40.7126244, lng: -74.0126367,
-              image: File.open("app/assets/images/batterypark.jpg"), website: "http://www.thebattery.org/"})
+              image: File.open("app/assets/images/batterypark.jpg"), website: "http://www.thebattery.org/"});
 park5 = Park.create!({name: "Brooklyn Bridge Park", street: "334 Furman St",
               city: "Brooklyn", state: "New York", zip_code: "11201", phone_number: "(718) 222-9939", lat: 40.700316, lng: -73.996410,
-              image: File.open("app/assets/images/bryantpark.jpg"), website: "http://www.bryantpark.org/"})
+              image: File.open("app/assets/images/bryantpark.jpg"), website: "http://www.bryantpark.org/"});
 park6 = Park.create!({name: "Gantry Plaza State Park", street: "474 48th Ave",
               city: "Long Island City", state: "New York", zip_code: "11101", phone_number: "(718) 786-6385", lat: 40.745483, lng: -73.958716,
-              image: File.open("app/assets/images/gantryplaza.jpg"), website: "https://parks.ny.gov/parks/149/details.aspx/"})
+              image: File.open("app/assets/images/gantryplaza.jpg"), website: "https://parks.ny.gov/parks/149/details.aspx/"});
 park7 = Park.create!({name: "Prospect Park", street: "95 Prospect Park W",
               city: "Brooklyn", state: "New York", zip_code: "11215", phone_number: "(718) 965-8951", lat: 40.660179, lng: -73.968924,
-              image: File.open("app/assets/images/prospect.jpg"), website: "https://www.prospectpark.org/"})
+              image: File.open("app/assets/images/prospect.jpg"), website: "https://www.prospectpark.org/"});
 park8 = Park.create!({name: "Astoria Park", street: "Astoria Park",
               city: "Astoria", state: "New York", zip_code: "11102", phone_number: "(212) 639-9675", lat: 40.779628, lng: -73.921589,
-              image: File.open("app/assets/images/astoria.jpg"), website: "https://www.nycgovparks.org/parks/astoria-park"})
+              image: File.open("app/assets/images/astoria.jpg"), website: "https://www.nycgovparks.org/parks/astoria-park"});
 park9 = Park.create!({name: "Teardrop Park", street: "Warren St",
               city: "New York", state: "New York", zip_code: "10005", phone_number: "(212) 267-9700", lat: 40.717039, lng: -74.015556,
-              image: File.open("app/assets/images/teardrop.jpg"), website: "http://bpcparks.org/whats-here/parks/teardrop-park/"})
+              image: File.open("app/assets/images/teardrop.jpg"), website: "http://bpcparks.org/whats-here/parks/teardrop-park/"});
 park10 = Park.create!({name: "Madison Square Park", street: "Eleven Madison Avenue",
               city: "New York", state: "New York", zip_code: "10010", phone_number: "(212) 520-7600", lat: 40.742017, lng: -73.987510,
-              image: File.open("app/assets/images/madisonsquarepark.jpg"), website: "https://www.madisonsquarepark.org/"})
+              image: File.open("app/assets/images/madisonsquarepark.jpg"), website: "https://www.madisonsquarepark.org/"});
 park11 = Park.create!({name: "Teaneck Creek Conservatory", street: "20 Puffin Way",
               city: "Teaneck", state: "New Jersey", zip_code: "07666", phone_number: "(201) 836-2403", lat: 40.874044, lng: -74.011580,
-              image: File.open("app/assets/images/teaneckcreekconservatory.jpg"), website: "http://www.teaneckcreek.org/"})
+              image: File.open("app/assets/images/teaneckcreekconservatory.jpg"), website: "http://www.teaneckcreek.org/"});
 park12 = Park.create!({name: "Votee Park", street: "Palisade Ave",
               city: "Teaneck", state: "New Jersey", zip_code: "07666", phone_number: "(201) 837-7130", lat: 40.895687, lng: -74.008945,
-              image: File.open("app/assets/images/teaneckcreekconservatory.jpg"), website: "http://www.teanecknj.gov/index.cfm?fuseaction=content.mapLocation&mapLocationId=20698"})
+              image: File.open("app/assets/images/teaneckcreekconservatory.jpg"), website: "http://www.teanecknj.gov/index.cfm?fuseaction=content.mapLocation&mapLocationId=20698"});
 park13 = Park.create!({name: "Wood Park", street: "370 Broad Avenue",
               city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783", lat: 40.863537, lng: -73.988549,
-              image: File.open("app/assets/images/woodpark.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
+              image: File.open("app/assets/images/woodpark.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"});
 park14 = Park.create!({name: "Overpeck County Dog Park", street: "Fort Lee Road",
               city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783", lat: 40.871270, lng: -73.992062,
-              image: File.open("app/assets/images/overpeckdog.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
+              image: File.open("app/assets/images/overpeckdog.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"});
 park15 = Park.create!({name: "Washington Square Park", street: "1 Washington Sq E",
               city: "New York", state: "New York", zip_code: "10011", phone_number: "(212) 396-5873", lat: 40.7308228, lng: -73.997332,
-              image: File.open("app/assets/images/washingtonsqpark.jpg"), website: "http://www.washingtonsquareparkconservancy.org/"})
+              image: File.open("app/assets/images/washingtonsqpark.jpg"), website: "http://www.washingtonsquareparkconservancy.org/"});
 
-tag1 = Tag.create!({tag_name: "Basketball"})
-tag2 = Tag.create!({tag_name: "Tennis"})
-tag3 = Tag.create!({tag_name: "Baseball"})
-tag4 = Tag.create!({tag_name: "Volleyball"})
-tag5 = Tag.create!({tag_name: "Football"})
+tag1 = Tag.create!({tag_name: "Basketball"});
+tag2 = Tag.create!({tag_name: "Tennis"});
+tag3 = Tag.create!({tag_name: "Baseball"});
+tag4 = Tag.create!({tag_name: "Volleyball"});
+tag5 = Tag.create!({tag_name: "Football"});
 
-tag6 = Tag.create!({tag_name: "Soccer"})
-tag7 = Tag.create!({tag_name: "Hockey"})
-tag8 = Tag.create!({tag_name: "Jogging"})
-tag9 = Tag.create!({tag_name: "Fishing"})
-tag10 = Tag.create!({tag_name: "Track"})
+tag6 = Tag.create!({tag_name: "Soccer"});
+tag7 = Tag.create!({tag_name: "Hockey"});
+tag8 = Tag.create!({tag_name: "Jogging"});
+tag9 = Tag.create!({tag_name: "Fishing"});
+tag10 = Tag.create!({tag_name: "Track"});
 
-tag11 = Tag.create!({tag_name: "Hiking"})
-tag12 = Tag.create!({tag_name: "Relaxing"})
-tag13 = Tag.create!({tag_name: "People-watching"})
-tag14 = Tag.create!({tag_name: "Playground"})
-tag15 = Tag.create!({tag_name: "Zoo"})
+tag11 = Tag.create!({tag_name: "Hiking"});
+tag12 = Tag.create!({tag_name: "Relaxing"});
+tag13 = Tag.create!({tag_name: "People-watching"});
+tag14 = Tag.create!({tag_name: "Playground"});
+tag15 = Tag.create!({tag_name: "Zoo"});
 
-tag16 = Tag.create!({tag_name: "Barbecue"})
-tag17 = Tag.create!({tag_name: "Skate-park"})
-tag18 = Tag.create!({tag_name: "Horse-riding"})
-tag19 = Tag.create!({tag_name: "Pool"})
-tag20 = Tag.create!({tag_name: "Dog"})
+tag16 = Tag.create!({tag_name: "Barbecue"});
+tag17 = Tag.create!({tag_name: "Skate-park"});
+tag18 = Tag.create!({tag_name: "Horse-riding"});
+tag19 = Tag.create!({tag_name: "Pool"});
+tag20 = Tag.create!({tag_name: "Dog"});
 
-tag21 = Tag.create!({tag_name: "Sight-seeing"})
+tag21 = Tag.create!({tag_name: "Sight-seeing"});
 
-park1.tag_ids = [8, 12, 13, 15] #central park
-park2.tag_ids = [2, 3, 4, 6, 8, 10, 16] #overpeck park
-park3.tag_ids = [11, 12, 13, 21] #bryant park
-park4.tag_ids = [11, 12, 13, 21] #battery park
-park5.tag_ids = [12, 13, 21] #brooklyn bridge park
-park6.tag_ids = [9, 12, 13, 21] #gantry plaza state park
-park7.tag_ids = [1, 3, 9, 16, 17, 18] #prospect park
-park8.tag_ids = [1, 2, 11, 14, 19] #astoria park
-park9.tag_ids = [11, 14] #teardrop park
-park10.tag_ids = [8, 13, 20] #madison square park
-park11.tag_ids = [8, 11, 21] #teaneck creek conservatory
-park12.tag_ids = [8, 14, 19] #votee Park
-park13.tag_ids = [1, 2, 14, 20] #wood park
-park14.tag_ids = [20] #overpeck dog park
-park15.tag_ids = [11, 12, 13, 21] #washington sq park
+park1.tag_ids = [8, 12, 13, 15]; #central park
+park2.tag_ids = [2, 3, 4, 6, 8, 10, 16]; #overpeck park
+park3.tag_ids = [11, 12, 13, 21]; #bryant park
+park4.tag_ids = [11, 12, 13, 21]; #battery park
+park5.tag_ids = [12, 13, 21]; #brooklyn bridge park
+park6.tag_ids = [9, 12, 13, 21]; #gantry plaza state park
+park7.tag_ids = [1, 3, 9, 16, 17, 18]; #prospect park
+park8.tag_ids = [1, 2, 11, 14, 19]; #astoria park
+park9.tag_ids = [11, 14]; #teardrop park
+park10.tag_ids = [8, 13, 20]; #madison square park
+park11.tag_ids = [8, 11, 21]; #teaneck creek conservatory
+park12.tag_ids = [8, 14, 19]; #votee Park
+park13.tag_ids = [1, 2, 14, 20]; #wood park
+park14.tag_ids = [20]; #overpeck dog park
+park15.tag_ids = [11, 12, 13, 21]; #washington sq park
 
 park1review1 = Review.create!({user_id: 2, park_id: 1, rating: 4, body: "What more can I say about the world's greatest park.. 2.5 miles of rocky hills, lakes and lawns fenced in by NYC skyscrapers!
 It's an absolute must-see for everyone and worth a trip all by itself into the Big Apple!  There's a children's zoo in there, art museums, in addition to hiking trails and breathtaking scenery! Strangely it's almost as if it's one of the wonders of the world!"})
