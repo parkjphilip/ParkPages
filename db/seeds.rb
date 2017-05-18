@@ -24,15 +24,15 @@ park1 = Park.create!({name: "Central Park", street: "5th Ave to Central Park Wes
 park2 = Park.create!({name: "Overpeck Park", street: "321 Overpeck Avenue",
               city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 336-7275", lat: 40.871116, lng: -73.991944,
               image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"})
-park3 = Park.create!({name: "Wood Park", street: "370 Broad Avenue",
-              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783", lat: 40.863537, lng: -73.988549,
-              image: File.open("app/assets/images/woodpark.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
-park4 = Park.create!({name: "Overpeck County Dog Park", street: "Fort Lee Road",
-              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783", lat: 40.871270, lng: -73.992062,
-              image: File.open("app/assets/images/overpeckdog.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
+park3 = Park.create!({name: "Bryant Park", street: "41 W 40th Street",
+              city: "New York", state: "New York", zip_code: "10018", phone_number: "(212) 768-4242", lat: 40.754345, lng: -73.9852543,
+              image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"})
+park4 = Park.create!({name: "Battery Park", street: "State St & Battery Pl",
+              city: "New York", state: "New York", zip_code: "10079", phone_number: "(212) 417-2000", lat: 40.7126244, lng: -74.0126367,
+              image: File.open("app/assets/images/batterypark.jpg"), website: "http://www.thebattery.org/"})
 park5 = Park.create!({name: "Brooklyn Bridge Park", street: "334 Furman St",
               city: "Brooklyn", state: "New York", zip_code: "11201", phone_number: "(718) 222-9939", lat: 40.700316, lng: -73.996410,
-              image: File.open("app/assets/images/brooklynbridge.jpg"), website: "http://www.brooklynbridgepark.org/"})
+              image: File.open("app/assets/images/bryantpark.jpg"), website: "http://www.bryantpark.org/"})
 park6 = Park.create!({name: "Gantry Plaza State Park", street: "474 48th Ave",
               city: "Long Island City", state: "New York", zip_code: "11101", phone_number: "(718) 786-6385", lat: 40.745483, lng: -73.958716,
               image: File.open("app/assets/images/gantryplaza.jpg"), website: "https://parks.ny.gov/parks/149/details.aspx/"})
@@ -54,9 +54,15 @@ park11 = Park.create!({name: "Teaneck Creek Conservatory", street: "20 Puffin Wa
 park12 = Park.create!({name: "Votee Park", street: "Palisade Ave",
               city: "Teaneck", state: "New Jersey", zip_code: "07666", phone_number: "(201) 837-7130", lat: 40.895687, lng: -74.008945,
               image: File.open("app/assets/images/teaneckcreekconservatory.jpg"), website: "http://www.teanecknj.gov/index.cfm?fuseaction=content.mapLocation&mapLocationId=20698"})
-park13 = Park.create!({name: "Philip Park", street: "424 Pine Hill Road",
-              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 562-0016", lat: 40.865940, lng: -73.980018,
-              image: File.open("app/assets/images/philippark.jpg"), website: "www.linkedin.com/in/philipjpark https://github.com/parkjphilip"})
+park13 = Park.create!({name: "Wood Park", street: "370 Broad Avenue",
+              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783", lat: 40.863537, lng: -73.988549,
+              image: File.open("app/assets/images/woodpark.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
+park14 = Park.create!({name: "Overpeck County Dog Park", street: "Fort Lee Road",
+              city: "Leonia", state: "New Jersey", zip_code: "07605", phone_number: "(201) 592-5783", lat: 40.871270, lng: -73.992062,
+              image: File.open("app/assets/images/overpeckdog.jpg"), website: "http://www.leonianj.gov/content/Parks.aspx"})
+park15 = Park.create!({name: "Washington Square Park", street: "1 Washington Sq E",
+              city: "New York", state: "New York", zip_code: "10011", phone_number: "(212) 396-5873", lat: 40.7308228, lng: -73.997332,
+              image: File.open("app/assets/images/washingtonsqpark.jpg"), website: "http://www.washingtonsquareparkconservancy.org/"})
 
 tag1 = Tag.create!({tag_name: "Basketball"})
 tag2 = Tag.create!({tag_name: "Tennis"})
@@ -88,16 +94,19 @@ tag21 = Tag.create!({tag_name: "Sight-seeing"})
 
 park1.tag_ids = [8, 12, 13, 15] #central park
 park2.tag_ids = [2, 3, 4, 6, 8, 10, 16] #overpeck park
-park3.tag_ids = [1, 2, 14, 20] #wood park
-park4.tag_ids = [20] #overpeck dog park
+park3.tag_ids = [11, 12, 13, 21] #bryant park
+park4.tag_ids = [11, 12, 13, 21] #battery park
 park5.tag_ids = [12, 13, 21] #brooklyn bridge park
 park6.tag_ids = [9, 12, 13, 21] #gantry plaza state park
 park7.tag_ids = [1, 3, 9, 16, 17, 18] #prospect park
 park8.tag_ids = [1, 2, 11, 14, 19] #astoria park
 park9.tag_ids = [11, 14] #teardrop park
 park10.tag_ids = [8, 13, 20] #madison square park
-park11.tag_ids = [8, 11, 21]
-park12.tag_ids = [8, 14, 19]
+park11.tag_ids = [8, 11, 21] #teaneck creek conservatory
+park12.tag_ids = [8, 14, 19] #votee Park
+park13.tag_ids = [1, 2, 14, 20] #wood park
+park14.tag_ids = [20] #overpeck dog park
+park15.tag_ids = [11, 12, 13, 21] #washington sq park
 
 park1review1 = Review.create!({user_id: 2, park_id: 1, rating: 4, body: "What more can I say about the world's greatest park.. 2.5 miles of rocky hills, lakes and lawns fenced in by NYC skyscrapers!
 It's an absolute must-see for everyone and worth a trip all by itself into the Big Apple!  There's a children's zoo in there, art museums, in addition to hiking trails and breathtaking scenery! Strangely it's almost as if it's one of the wonders of the world!"})
@@ -106,6 +115,10 @@ park1review3 = Review.create!({user_id: 4, park_id: 1, rating: 5, body: "On a Su
 Even though there was still snow on the ground (the majority of it was already cleared away so that you can can walk along some of the sidewalk paths), it did not stop visitors from walking around this park. Some with strollers, some with their 4 legged little friends (my cousin's kids begged me to dog sit our dog while we were visiting the museum so unfortunately she did not get the chance to walk around with us), some with families, etc. "})
 park1review4 = Review.create!({user_id: 5, park_id: 1, rating: 4, body: "Great place for people watching! The zoo is small but is worth a stop if you enjoy that sort of thing, $18 for adults. Check the times of operation before you go, though. We also really enjoyed all the musicians in the park. Beware of pick pocketers and people trying to sell you things"})
 park1review5 = Review.create!({user_id: 6, park_id: 1, rating: 5, body: "Oh, central park! Who doesn't like it, who? It is definitely a mesmerizing place. I have visited Central park several times and I fell in love with it everytime. Last time I went it was mid winter. It was foggy and surprisingly not horribly cold. I went with a friend and we walked the whole park. The lakes were defrosting and the little creatures, that call central park home, were starting to explore the areas again, watching every person very carefully."})
+park1review6 = Review.create!({user_id: 7, park_id: 1, rating: 5, body: "Definitely a must when in New York!
+One of the largest parks I've ever seen. You can spend hours surrounded by all this greenery. At every turn, I find myself exploring something new.
+My favorite parts of this park is the overview from the Bow Bridge and the Belvedere Castle. "})
+park1review7 = Review.create!({user_id: 8, park_id: 1, rating: 5, body: "This place is just, simply put...ridiculous!!!! There is so much to do here I don't have any idea how long it would take to experience everything they have to offer here."})
 
 park2review1 = Review.create!({user_id: 10, park_id: 2, rating: 4, body: "Gorgeous park with tons of activities!
 Thanks to the Bergen County government, this park has been hugely expanded in recent years.
@@ -116,19 +129,22 @@ park2review3 = Review.create!({user_id: 8, park_id: 2, rating: 4, body: "Tennis 
 park2review4 = Review.create!({user_id: 7, park_id: 2, rating: 4, body: "Love this park! They really fixed it up nice over the years. Beautiful twin towers tribute. Big grass area with spacious walk/bike/blade trail around the park. Soccer field, track, volleyball, tennis, and basketball court. Bathrooms at the park too. Small river and even a small doggy park. Now they have a dinosaur exhibit but I have not seen it yet. Great park!"})
 park2review5 = Review.create!({user_id: 6, park_id: 2, rating: 5, body: "Awesome park wherein you run overlooking the lake. Running the whole park is around 5k. What I like most about it is that the walking/running path is a mix of uphill/downhill and level ground. If you want to intensify your workout then go to the hilly/grassy part and do some hill sprints."})
 
-park3review1 = Review.create!({user_id: 2, park_id: 3, rating: 4, body: "Great park. basketball court is awesome"})
-park3review2 = Review.create!({user_id: 3, park_id: 3, rating: 1, body: "Library should be more accessible. There should be more bathrooms at the park, there are none now."})
-park3review2 = Review.create!({user_id: 4, park_id: 3, rating: 5, body: "Tennis courts were just laid down 2 years ago, 4 courts, so there are no cracks however there are a few dead spots.  park has a 2 sided tennis wall and a two full sized basket courts.  Tennis courts are lit up at night, lights are supposed to go off at 10 but there not on a timer and often stay lit all night.
-The rest of the park contains a stick ball field, a base ball field, and two playgrounds for children.
-Parking for the park is at the public library."})
+park3review1 = Review.create!({user_id: 2, park_id: 3, rating: 4, body: "After eating a late lunch, we decided to go on a carousel in Bryant park. I never been there so we went. It's three dollars per person or if you have a large group it's 2.00 dollars a coin.
+Loved it. I actually wish that I could go there every week, and ride it. It's about a minute in ahalf. "})
+park3review2 = Review.create!({user_id: 3, park_id: 3, rating: 5, body: "This park is great!!"})
+park3review3 = Review.create!({user_id: 4, park_id: 3, rating: 4, body: "Love it-right down the street from our-Hilton Garden Inn. Took our Starbucks(across street) and sat at one of the many tables scattered throughout the park-watched a fierce bocci ball tournament, followed by little kids enjoying the carousel. "})
+park3review4 = Review.create!({user_id: 5, park_id: 3, rating: 3, body: "This park is alright... was a bit too crowded"})
+park3review5 = Review.create!({user_id: 6, park_id: 3, rating: 4, body: "This park was great. Can't wait to come back next year"})
+park3review6 = Review.create!({user_id: 7, park_id: 3, rating: 5, body: "What is not to love about Bryant Park in the Spring time! "})
 
-park4review1 = Review.create!({user_id: 10, park_id: 4, rating: 1, body: "1st thing to know - There is no water here.  There are metal bowls.  Bring water.
-2nd thing to know - It's north of Ft Lee Road.  As soon as you drive in, parking is on your left.  It's across the large field at the far end on the western edge of the park.
-OK, about some of the comments below.  It's good that you have to walk a bit to get to the dog park.  Dogs should never be allowed into a dog park in a highly agitated state.  This is not a substitute for taking your dog for a daily long walk or exercise.  It does exercise your dog but also socializes him/her with other dogs.  Having to walk a bit allows you to get the dog under control and enter the park in a relaxed state.  I do not allow my dog to go in unless he's in the right frame of mind."})
-park4review2 = Review.create!({user_id: 9, park_id: 4, rating: 2, body: "This is my favorite dog park in the area. It's well maintained and other owners are always leaving toys and jugs of water for the next person. Sometimes people with big dogs let them in the small dog section and I'm like  The only reason I'm not giving this place five starts is that the parking isn't close."})
-park4review3 = Review.create!({user_id: 8, park_id: 4, rating: 3, body: "I haven't been to a lot of dog runs before. This one was alright. Thankfully they separated the big dogs and smaller dogs. However, there isn't much shade in the smaller dog park and I was sweating within seconds. There is limited seating in the run and it was right out in the bright sun rather than under some shade.
-"})
-park4review4 = Review.create!({user_id: 7, park_id: 4, rating: 4, body: "I like it but always check your dog before leaving. Alot of tickss perhaps fleas too. Make sure your not bringing extra tiny pets home with you riding on your dog."})
+park4review1 = Review.create!({user_id: 2, park_id: 4, rating: 3, body: "This park was really crowded when I went there. Will look for a better experience next time."})
+park4review2 = Review.create!({user_id: 3, park_id: 4, rating: 4, body: "Big fan of any/all parks in the world so that being said, the numerous patches of green in such a dense city brings a visual and emotional escape from the concrete jungle of skyscrapers."})
+park4review3 = Review.create!({user_id: 4, park_id: 4, rating: 5, body: "Whenever I go to Bowling Green, I visit Battery Park if I have some time. There are great views of the water from Lower Manhattan and you can see the Statue of Liberty from here. It's also a great place to kill time while waiting for the Staten Island Ferry. "})
+park4review4 = Review.create!({user_id: 5, park_id: 4, rating: 3, body: "The park is great but I found that the people were rude."})
+park4review5 = Review.create!({user_id: 6, park_id: 4, rating: 4, body: "Beautiful area to run in the southern part of Manhattan. It's next to the Staten Island Ferry terminal and provides excellent views of the Statue of Liberty. Also, the beautiful Seaglass Carousel here."})
+park4review6 = Review.create!({user_id: 7, park_id: 4, rating: 3, body: "A good spot to hang out and walk around. View of the harbor is breathtaking.  There are two café's, one dine-in restaurant and a glass carousel ride to explore. There is a  lot of street performers, artists, food sellers and people from all walks of life surrounded the area but definitely add to a wonderful experience. Lots of benches to sit on during stay. Lots of trees shading good sitting spots. Clean restroom is at the end of the southern part. Sculptures, plants, flowers, walk path are some of the things this park offers. "})
+park4review7 = Review.create!({user_id: 8, park_id: 4, rating: 4, body: "Not as big as Central Park, but a nice place to visit nonetheless."})
+park4review8 = Review.create!({user_id: 9, park_id: 4, rating: 5, body: "Barry Park is great for a stroll with the family and connects to the west side highway path. "})
 
 park5review1 = Review.create!({user_id: 4, park_id: 5, rating: 3, body: "My hubby & I got married at this location. This was our favorite date night place. Which eventually turned into our go to photography spot. Then of course our big day!!
 I don't know how many words I can use to describe how amazing this park is.
@@ -155,12 +171,12 @@ park8review1 = Review.create!({user_id: 9, park_id: 8, rating: 1, body: "This wa
 park8review2 = Review.create!({user_id: 8, park_id: 8, rating: 3, body: "This park was ok."})
 park8review3 = Review.create!({user_id: 6, park_id: 8, rating: 5, body: "This park was great!"})
 
-# park9review1 = Review.create!({user_id: 3, park_id: 9, rating: 3, body: "A dream
-# My only wish is that all these parks that cost do much money were placed in neighborhoods not so well to do. There is a park in Chinatown that is like walking into China that is always filled with children's voices. The water part of the park does not even work. Chinatown has one of the most dense people per room of any part of the city.
-# Please city listen"})
-# park9review2 = Review.create!({user_id: 5, park_id: 9, rating: 3, body: "Not sure why this place is called TEARdrop Park, but I had a joyful experience here! *cries tears of joy huehuehue* It's really close by to Pier 11 and Brookfield Place. There's plenty of green foliage to shield you from the beating sun, and a maze of paths leading to different areas. The way the sprinklers are placed can be said to be zen-like.  Bathrooms here are way cleaner than the ones at other parks throughout the city. I came here just to try out the slide. :D"})
-# park9review3 = Review.create!({user_id: 6, park_id: 9, rating: 5, body: "Amazing little park. An absolute must if you have kids 5+. There is a huge metal slide and a small water area. Just be prepared for the kids to get messy. The slide dumps them into a large sand area.
-# There is a restroom if you walk towards the water (river, not the play area). This park is not dog friendly!"})
+park9review1 = Review.create!({user_id: 3, park_id: 9, rating: 3, body: "A dream
+My only wish is that all these parks that cost do much money were placed in neighborhoods not so well to do. There is a park in Chinatown that is like walking into China that is always filled with children's voices. The water part of the park does not even work. Chinatown has one of the most dense people per room of any part of the city.
+Please city listen"})
+park9review2 = Review.create!({user_id: 5, park_id: 9, rating: 3, body: "Not sure why this place is called TEARdrop Park, but I had a joyful experience here! *cries tears of joy huehuehue* It's really close by to Pier 11 and Brookfield Place. There's plenty of green foliage to shield you from the beating sun, and a maze of paths leading to different areas. The way the sprinklers are placed can be said to be zen-like.  Bathrooms here are way cleaner than the ones at other parks throughout the city. I came here just to try out the slide. :D"})
+park9review3 = Review.create!({user_id: 6, park_id: 9, rating: 5, body: "Amazing little park. An absolute must if you have kids 5+. There is a huge metal slide and a small water area. Just be prepared for the kids to get messy. The slide dumps them into a large sand area.
+There is a restroom if you walk towards the water (river, not the play area). This park is not dog friendly!"})
 
 park10review1 = Review.create!({user_id: 2, park_id: 10, rating: 1, body: "I've never waited in line for Shake Shack, but it's inside the park if you need to get your burger on.
 I'll go to Madison Square Park to meet up with my husband during his lunch break or after work.
@@ -178,3 +194,24 @@ Note: please be respectful of others and pick up after your dog."})
 park12review1 = Review.create!({user_id: 9, park_id: 12, rating: 1, body: "This was not a fun park for me."})
 park12review2 = Review.create!({user_id: 8, park_id: 12, rating: 3, body: "This park was ok."})
 park12review3 = Review.create!({user_id: 6, park_id: 12, rating: 5, body: "This park was great!"})
+
+park13review1 = Review.create!({user_id: 2, park_id: 13, rating: 4, body: "Great park. basketball court is awesome"})
+park13review2 = Review.create!({user_id: 3, park_id: 13, rating: 1, body: "Library should be more accessible. There should be more bathrooms at the park, there are none now."})
+park13review2 = Review.create!({user_id: 4, park_id: 13, rating: 5, body: "Tennis courts were just laid down 2 years ago, 4 courts, so there are no cracks however there are a few dead spots.  park has a 2 sided tennis wall and a two full sized basket courts.  Tennis courts are lit up at night, lights are supposed to go off at 10 but there not on a timer and often stay lit all night.
+The rest of the park contains a stick ball field, a base ball field, and two playgrounds for children. Parking for the park is at the public library."})
+
+park14review1 = Review.create!({user_id: 10, park_id: 14, rating: 1, body: "1st thing to know - There is no water here.  There are metal bowls.  Bring water.
+2nd thing to know - It's north of Ft Lee Road.  As soon as you drive in, parking is on your left.  It's across the large field at the far end on the western edge of the park.
+OK, about some of the comments below.  It's good that you have to walk a bit to get to the dog park.  Dogs should never be allowed into a dog park in a highly agitated state.  This is not a substitute for taking your dog for a daily long walk or exercise.  It does exercise your dog but also socializes him/her with other dogs.  Having to walk a bit allows you to get the dog under control and enter the park in a relaxed state.  I do not allow my dog to go in unless he's in the right frame of mind."})
+park14review2 = Review.create!({user_id: 9, park_id: 14, rating: 2, body: "This is my favorite dog park in the area. It's well maintained and other owners are always leaving toys and jugs of water for the next person. Sometimes people with big dogs let them in the small dog section and I'm like  The only reason I'm not giving this place five starts is that the parking isn't close."})
+park14review3 = Review.create!({user_id: 8, park_id: 14, rating: 3, body: "I haven't been to a lot of dog runs before. This one was alright. Thankfully they separated the big dogs and smaller dogs. However, there isn't much shade in the smaller dog park and I was sweating within seconds. There is limited seating in the run and it was right out in the bright sun rather than under some shade."})
+park14review4 = Review.create!({user_id: 7, park_id: 14, rating: 4, body: "I like it but always check your dog before leaving. Alot of tickss perhaps fleas too. Make sure your not bringing extra tiny pets home with you riding on your dog."})
+
+park15review1 = Review.create!({user_id: 2, park_id: 15, rating: 4, body: "Washington Square Park is people watching heaven. It's close to NYU and the Village. Often street performers wow crowds of people. Skateboarders rail grind and do kick flips. During the Spring and Summer seasons, Washington Square Park is a must-see/must-visit."})
+park15review2 = Review.create!({user_id: 3, park_id: 15, rating: 5, body: "This is a beautiful park! Would definitely come here again"})
+park15review3 = Review.create!({user_id: 4, park_id: 15, rating: 4, body: "This park is amazing. Love coming here with my friends"})
+park15review4 = Review.create!({user_id: 5, park_id: 15, rating: 5, body: "Super nice park near NYU to sit and chill, maybe eat or picnic as well. There are a bunch of benches around, as well as an arc and a fountain that makes the park look better. There's some patches of grass as well to sit on and relax, and it's in general a very pleasant place to be!"})
+park15review5 = Review.create!({user_id: 6, park_id: 15, rating: 4, body: "Washington Park is a fun lively place to grab a bite to eat and people watch. You see so many different people and personalities walk through the park."})
+park15review6 = Review.create!({user_id: 7, park_id: 15, rating: 5, body: "One of my favorite spots in New York. I can stay here for hours to enjoy the music and relax with a cup of coffee."})
+park15review7 = Review.create!({user_id: 8, park_id: 15, rating: 4, body: "What a transformation over the last  pulls of decades. Gone are the pushers and junkies. Now a place for free thinkers, artists, families and friends. I spend a lot of time in Manhattan and this is a stop I enjoy making with my local friends. Nice spot to grab lunch and just people watch."})
+park15review8 = Review.create!({user_id: 9, park_id: 15, rating: 5, body: "Pretty cool area. There's a lot going on in every direction. Theres a view of the Statue of Liberty, view of the freedom tower at ground zero, street dancers and singers all over to enjoy. There's a cool children's park that even adults can play in if they dare to. Fun fact: there's a tree in the park that's the oldest tree on Manhattan and legend has it that people were hung from it during the pre civil war times. I just love how there's so much to do and so much to enjoy in this little area of the wonderful NYC"})
