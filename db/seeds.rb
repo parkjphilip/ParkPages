@@ -90,8 +90,6 @@ tag20 = Tag.create!({tag_name: "Dog"})
 
 tag21 = Tag.create!({tag_name: "Sight-seeing"})
 
-
-
 park1.tag_ids = [8, 12, 13, 15] #central park
 park2.tag_ids = [2, 3, 4, 6, 8, 10, 16] #overpeck park
 park3.tag_ids = [11, 12, 13, 21] #bryant park
