@@ -14,10 +14,16 @@ class UserShow extends React.Component {
       return (
         <div>
           <div className="user-container-upper">
-            <img className="user-profile-picture" src="/images/useravatar.png" />
-            <div className="user-greeting">Hello {this.props.currentUser.username}!</div>
+            <div className="user-upper-left">
+              <img className="user-profile-picture" src="/images/useravatar.png" />
+            </div>
+            <div className="user-upper-right">
+              <div className="user-greeting">Hello {this.props.currentUser.username}!</div>
+            </div>
           </div>
-          <div className="user-no-reviews">You have not written any reviews!</div>
+          <div className="user-container-lower">
+            <div className="user-reviews-intro">You have not written any reviews!</div>
+          </div>
         </div>
       );
     } else {
