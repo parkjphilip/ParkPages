@@ -29,7 +29,7 @@ park2 = Park.create!({name: "Overpeck Park", street: "321 Overpeck Avenue",
               image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"});
 park3 = Park.create!({name: "Bryant Park", street: "41 W 40th Street",
               city: "New York", state: "New York", zip_code: "10018", phone_number: "(212) 768-4242", lat: 40.754345, lng: -73.9852543,
-              image: File.open("app/assets/images/overpeck.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"});
+              image: File.open("app/assets/images/bryantpark.jpg"), website: "http://www.co.bergen.nj.us/841/Overpeck-County-Park"});
 park4 = Park.create!({name: "Battery Park", street: "State St & Battery Pl",
               city: "New York", state: "New York", zip_code: "10079", phone_number: "(212) 417-2000", lat: 40.7126244, lng: -74.0126367,
               image: File.open("app/assets/images/batterypark.jpg"), website: "http://www.thebattery.org/"});
