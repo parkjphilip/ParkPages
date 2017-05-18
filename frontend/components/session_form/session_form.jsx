@@ -83,7 +83,7 @@ class SessionForm extends React.Component {
               <button className="guest-submit cursor-pointer" onClick={this.handleGuestLogin} >Guest Login</button>
 						</form>
             <div className='login-page-right'>
-					     <img className="login-signup-image" src="/images/login.jpg" />
+					     <img className="login-signup-image" src="https://s3.amazonaws.com/parkpages-pro/parks/images/000/000/login.jpg" />
             </div>
 				</div>
 			</div>
