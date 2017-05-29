@@ -20,10 +20,3 @@ const ParkReducer = (state = {}, action) => {
 };
 
 export default ParkReducer;
-//
-//
-// inside of here, right now it is bringing back a state tat is like
-// parks: [{1: paoiwjgoiwagjioa], 2: [wrgoiwjgiowjg], park: [wegwegeg]]
-//
-// aim for parks state to be like
-// parks:{ parks: [], parkdetail: {} }

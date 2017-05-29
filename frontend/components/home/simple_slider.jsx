@@ -18,13 +18,6 @@ class SimpleSlider extends React.Component {
       arrows: true,
       autoplay: true,
       slidesToShow: 3,
-      // responsive: [
-      //   { breakpoint: 500,
-      //     settings: { slidesToShow: 1 ,  fade:true} },
-      //     { breakpoint: 1100,
-      //       settings: { slidesToShow: 2 } },
-      //       { breakpoint: 10000,
-      //         settings: { slidesToShow: 3  } }]
     };
     if (Object.keys(this.props.parks).length === 0 || Object.keys(this.props.parks).length < 6){
       return <div></div>;
