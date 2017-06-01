@@ -10,10 +10,6 @@ const ParkReducer = (state = {}, action) => {
     case RECEIVE_PARK:
       let park = action.park;
       return merge({}, {park});
-    case RECEIVE_PHOTO:
-      let newState = merge({}, state);
-      newState.photos.push(action.photo);
-      return newState;
     default:
       return state;
   }
