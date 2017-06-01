@@ -20,11 +20,6 @@ export const fetchFeaturedParks = () => dispatch => {
                     .then(hashHistory.push('/'));
 };
 
-export const createUserPhoto = (formData) => dispatch => {
-  return ParkAPIUtil.createPhoto(formData)
-                    .then(photo => dispatch(receivePhoto(photo)));
-};
-
 export const receivePark = park => {
   return ({
     type: RECEIVE_PARK,
@@ -36,12 +31,5 @@ export const receiveParks = parks => {
   return ({
     type: RECEIVE_PARKS,
     parks
-  });
-};
-
-export const receivePhoto = photo => {
-  return ({
-    type: RECEIVE_PHOTO,
-    photo
   });
 };
